@@ -1,0 +1,12 @@
+[22-Jan-2025 09:01:06 America/New_York] PHP Warning:  Undefined array key "file" in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 574
+[22-Jan-2025 09:01:06 America/New_York] PHP Warning:  Undefined array key "line" in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 574
+[22-Jan-2025 09:01:06 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:01:06 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:01:06 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:01:06 America/New_York] SQL Error with statement:query failed: SELECT fname, lname, phone_cell, email FROM Patient_data WHERE pid = ?--Table &#039;root3375_medsovghdemo.Patient_data&#039; doesn&#039;t exist==&gt;/home/root3375/ghdemo.medsov.com/interface/modules/custom_modules/oe-module-faxsms/src/Controller/AppDispatch.php at 549:sqlQuery
+[22-Jan-2025 09:04:05 America/New_York] PHP Warning:  Undefined array key "file" in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 574
+[22-Jan-2025 09:04:05 America/New_York] PHP Warning:  Undefined array key "line" in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 574
+[22-Jan-2025 09:04:05 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:04:05 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:04:05 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/library/sql.inc.php on line 576
+[22-Jan-2025 09:04:05 America/New_York] SQL Error with statement:query failed: SELECT fname, lname, phone_cell, email FROM Patient_data WHERE pid = ?--Table &#039;root3375_medsovghdemo.Patient_data&#039; doesn&#039;t exist==&gt;/home/root3375/ghdemo.medsov.com/interface/modules/custom_modules/oe-module-faxsms/src/Controller/AppDispatch.php at 549:sqlQuery

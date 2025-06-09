@@ -1,0 +1,5 @@
+[12-Dec-2024 06:16:45 America/New_York] PHP Warning:  Undefined array key 2 in /home/root3375/ghdemo.medsov.com/interface/patient_file/pos_checkout_normal.php on line 621
+[12-Dec-2024 06:16:45 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/patient_file/pos_checkout_normal.php on line 621
+[12-Dec-2024 06:21:22 America/New_York] PHP Warning:  Undefined array key "adj_amount" in /home/root3375/ghdemo.medsov.com/interface/patient_file/deleter.php on line 331
+[17-Feb-2025 09:35:51 America/New_York] PHP Warning:  Undefined array key "home_facility" in /home/root3375/ghdemo.medsov.com/interface/patient_file/manage_dup_patients.php on line 67
+[17-Feb-2025 09:35:51 America/New_York] PHP Warning:  Undefined array key "home_facility" in /home/root3375/ghdemo.medsov.com/interface/patient_file/manage_dup_patients.php on line 67

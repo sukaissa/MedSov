@@ -1,0 +1,899 @@
+[06-Nov-2024 05:49:12 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[06-Nov-2024 05:50:05 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 84
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 88
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 36
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 38
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 44
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 67
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 75
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 80
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 75
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 80
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 75
+[06-Nov-2024 05:50:17 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/new.php on line 80
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 0 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 106
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined variable $showbutton in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 113
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 105
+[15-Nov-2024 09:07:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/track_anything/report.php on line 111
+[15-Nov-2024 16:18:48 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[16-Nov-2024 12:12:06 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[16-Nov-2024 12:13:55 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1137
+[16-Nov-2024 12:23:55 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[16-Nov-2024 15:02:45 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Nov-2024 13:11:55 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Nov-2024 13:12:11 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1137
+[17-Nov-2024 13:41:48 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[19-Nov-2024 09:51:18 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[19-Nov-2024 09:51:27 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/library/lab.inc.php on line 25
+[19-Nov-2024 09:51:27 America/New_York] PHP Warning:  Undefined array key 5 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 49
+[19-Nov-2024 09:51:27 America/New_York] PHP Warning:  Undefined array key 7 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 50
+[19-Nov-2024 09:51:27 America/New_York] PHP Fatal error:  Uncaught TypeError: getLabProviders(): Return value must be of type ?array, bool returned in /home/root3375/ghdemo.medsov.com/library/lab.inc.php:115
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php(51): getLabProviders(NULL)
+#1 /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/load_form.php(41): include_once('/home/root3375/...')
+#2 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/library/lab.inc.php on line 115
+[19-Nov-2024 09:51:44 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[19-Nov-2024 09:51:44 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[19-Nov-2024 09:51:44 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[19-Nov-2024 09:51:44 America/New_York] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1253
+[27-Nov-2024 09:14:56 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[27-Nov-2024 09:18:31 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[09-Dec-2024 10:23:32 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 10:41:17 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 11:12:47 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 11:12:52 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 11:12:52 America/New_York] PHP Warning:  Undefined variable $patient_id in /home/root3375/ghdemo.medsov.com/interface/orders/single_order_results.inc.php on line 258
+[09-Dec-2024 11:27:16 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 11:27:16 America/New_York] PHP Warning:  Undefined variable $patient_id in /home/root3375/ghdemo.medsov.com/interface/orders/single_order_results.inc.php on line 258
+[09-Dec-2024 11:28:45 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 11:28:45 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 11:28:45 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 11:28:45 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 11:43:52 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 11:43:52 America/New_York] PHP Warning:  Undefined variable $patient_id in /home/root3375/ghdemo.medsov.com/interface/orders/single_order_results.inc.php on line 258
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[09-Dec-2024 11:44:01 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[09-Dec-2024 12:30:24 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 12:30:24 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 12:30:24 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 12:30:24 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[09-Dec-2024 13:30:44 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[09-Dec-2024 13:30:51 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[10-Dec-2024 08:32:16 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 09:09:57 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 09:39:05 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 10:19:21 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 10:19:26 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 10:19:26 America/New_York] PHP Warning:  Undefined variable $patient_id in /home/root3375/ghdemo.medsov.com/interface/orders/single_order_results.inc.php on line 258
+[10-Dec-2024 10:26:11 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 10:26:11 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 10:26:11 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[10-Dec-2024 10:31:44 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[10-Dec-2024 10:42:19 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[10-Dec-2024 10:42:19 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[10-Dec-2024 10:42:19 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[10-Dec-2024 10:42:19 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[10-Dec-2024 11:59:54 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 25
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 25
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 37
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 37
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 56
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 56
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 105
+[10-Dec-2024 12:00:04 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 105
+[10-Dec-2024 12:16:08 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 25
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 25
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 37
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 37
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 56
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 56
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Undefined array key "reportMode" in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 105
+[10-Dec-2024 12:18:08 America/New_York] PHP Warning:  Attempt to read property "value" on null in /home/root3375/ghdemo.medsov.com/sites/default/documents/smarty/main/88d207b961fe5408aa04ff6d01ad46f1f7d3fe49_0.file.general_new.html.php on line 105
+[10-Dec-2024 12:18:49 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 12:21:41 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 12:21:41 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 12:21:41 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[10-Dec-2024 12:23:24 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[10-Dec-2024 12:26:44 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[10-Dec-2024 12:26:48 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[10-Dec-2024 12:40:29 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[10-Dec-2024 12:44:02 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[12-Dec-2024 06:16:21 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[12-Dec-2024 09:21:47 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[12-Dec-2024 09:21:56 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 31
+[12-Dec-2024 09:21:56 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 36
+[12-Dec-2024 09:21:56 America/New_York] ERROR: The following variable contains invalid characters:0
+[12-Dec-2024 09:26:22 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[12-Dec-2024 09:31:36 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 32
+[12-Dec-2024 09:31:36 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 37
+[12-Dec-2024 09:31:36 America/New_York] ERROR: The following variable contains invalid characters:0
+[12-Dec-2024 09:32:39 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 32
+[12-Dec-2024 09:32:39 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 38
+[12-Dec-2024 09:32:39 America/New_York] ERROR: The following variable contains invalid characters:0
+[12-Dec-2024 09:33:49 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 32
+[12-Dec-2024 09:33:49 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 37
+[12-Dec-2024 09:33:49 America/New_York] ERROR: The following variable contains invalid characters:0
+[12-Dec-2024 09:34:21 America/New_York] PHP Warning:  Undefined array key "id" in /home/root3375/ghdemo.medsov.com/interface/forms/scanned_notes/new.php on line 32
+[14-Jan-2025 05:49:52 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[14-Jan-2025 09:47:18 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GENWELL" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "EYECP" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTTM" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTNASAL" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTORAL" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTNECK" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTTHY" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVRRR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVNTOH" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVCP" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVNPE" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CHNSD" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "RECTAB" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "REEFF" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIMASS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIOG" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIHERN" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIRECT" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUTEST" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUPROS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUEG" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUAD" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "LYAD" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUSTR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUROM" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUSTAB" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUINSP" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUCN2" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUREF" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUSENS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "PSYOR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "PSYAFF" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "SKRASH" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "OTHER" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "TRTLABS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "TRTXRAY" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTTM" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTNASAL" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTORAL" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTNECK" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "ENTTHY" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVRRR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVNTOH" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVCP" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "CVNPE" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "RECTAB" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIMASS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIOG" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIHERN" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GIRECT" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUTEST" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "GUEG" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "LYAD" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUSTR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUROM" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUSTAB" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "MUINSP" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUCN2" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUREF" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "NEUSENS" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "PSYOR" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "PSYAFF" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Undefined array key "OTHER" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 34
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 36
+[14-Jan-2025 10:01:53 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/report.php on line 37
+[14-Jan-2025 10:14:37 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[14-Jan-2025 11:06:17 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[14-Jan-2025 11:09:59 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[14-Jan-2025 11:14:14 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[14-Jan-2025 11:14:14 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[15-Jan-2025 12:52:33 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[15-Jan-2025 12:53:10 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[15-Jan-2025 12:53:19 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 12:53:19 America/New_York] PHP Warning:  Undefined variable $patient_id in /home/root3375/ghdemo.medsov.com/interface/orders/single_order_results.inc.php on line 258
+[15-Jan-2025 12:53:30 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 12:53:36 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[15-Jan-2025 12:53:50 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[15-Jan-2025 12:53:55 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Jan-2025 12:53:55 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Jan-2025 12:53:55 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Jan-2025 12:54:08 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[15-Jan-2025 12:54:15 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[15-Jan-2025 12:55:02 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 14:07:07 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 14:11:52 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Jan-2025 14:52:48 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 09:41:46 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 09:42:51 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 09:46:51 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:46:51 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:46:51 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:48:47 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 09:48:52 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:48:52 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:48:52 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[17-Jan-2025 09:50:30 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[17-Jan-2025 09:51:29 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[17-Jan-2025 10:10:04 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[17-Jan-2025 10:10:04 America/New_York] PHP Warning:  Undefined global variable $gbl_auto_create_rx in /home/root3375/ghdemo.medsov.com/interface/forms/fee_sheet/new.php on line 417
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 21
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "type" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 22
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "code" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 23
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "modifier" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 24
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "units" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 25
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "fee" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 26
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "text" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 27
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "payment_method" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 28
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "insurance_company" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 29
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "LAB ORDER" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 288
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "MEDICAL SERVS" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 288
+[17-Jan-2025 10:23:58 America/New_York] PHP Warning:  Undefined array key "CPT4" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 348
+[17-Jan-2025 10:38:05 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 10:39:40 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[17-Jan-2025 10:46:44 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 10:43:45 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:07:10 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:21:46 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:23:16 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:34:23 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:44:13 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 21
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "type" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 22
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "code" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 23
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "modifier" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 24
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "units" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 25
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "fee" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 26
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "text" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 27
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "payment_method" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 28
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "insurance_company" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 29
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "CPT4" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 288
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "LAB ORDER" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 288
+[24-Jan-2025 11:44:44 America/New_York] PHP Warning:  Undefined array key "MEDICAL SERVS" in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/diagnosis.php on line 288
+[24-Jan-2025 11:48:57 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:49:19 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[24-Jan-2025 11:49:19 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[24-Jan-2025 11:49:19 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[24-Jan-2025 11:50:11 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:51:40 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 11:52:00 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 22
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "hidden_category" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 60
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "hidden_subcategory" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 64
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "hidden_item" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 68
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 107
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "hidden_mode" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 179
+[24-Jan-2025 12:02:44 America/New_York] PHP Warning:  Undefined array key "clone_others_search" in /home/root3375/ghdemo.medsov.com/interface/forms/CAMOS/new.php on line 1219
+[07-Feb-2025 05:24:15 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[07-Feb-2025 05:24:33 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[07-Feb-2025 06:45:13 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[07-Feb-2025 06:46:05 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Feb-2025 17:24:14 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Feb-2025 17:24:21 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:24:21 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:24:21 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:24:21 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1137
+[15-Feb-2025 17:27:53 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Feb-2025 17:27:57 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:27:57 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:27:57 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[15-Feb-2025 17:27:57 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1137
+[15-Feb-2025 17:29:15 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[15-Feb-2025 17:32:24 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[20-Feb-2025 12:19:28 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[20-Feb-2025 12:20:45 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[20-Feb-2025 12:32:12 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[20-Feb-2025 12:32:12 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[20-Feb-2025 12:32:12 America/New_York] PHP Warning:  Undefined array key "account_facility" in /home/root3375/ghdemo.medsov.com/interface/forms/procedure_order/common.php on line 1129
+[20-Feb-2025 12:33:27 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[20-Feb-2025 12:35:48 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 308
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 309
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 310
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 311
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 312
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 314
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 1 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 315
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 17 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 16 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 326
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 28 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 29 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 327
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 18 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 338
+[20-Feb-2025 12:36:02 America/New_York] PHP Warning:  Undefined array key 30 in /home/root3375/ghdemo.medsov.com/interface/forms/requisition/new.php on line 339
+[24-Feb-2025 09:00:16 America/New_York] PHP Warning:  Undefined global variable $charset in /home/root3375/ghdemo.medsov.com/interface/patient_file/encounter/forms.php on line 66

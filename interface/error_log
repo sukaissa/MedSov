@@ -1,0 +1,49 @@
+[06-Nov-2024 20:48:15 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[06-Nov-2024 20:48:17 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[12-Nov-2024 23:20:14 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[19-Nov-2024 00:26:31 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[09-Dec-2024 10:33:08 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[20-Jan-2025 11:58:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:00:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:02:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:10:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:10:41 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:11:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:12:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oeFormatShortDate() in /home/root3375/ghdemo.medsov.com/interface/cal.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 12
+[20-Jan-2025 12:12:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oeFormatShortDate() in /home/root3375/ghdemo.medsov.com/interface/cal.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 12
+[20-Jan-2025 12:12:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oeFormatShortDate() in /home/root3375/ghdemo.medsov.com/interface/cal.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 12
+[20-Jan-2025 12:14:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oeFormatShortDate() in /home/root3375/ghdemo.medsov.com/interface/cal.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 12
+[20-Jan-2025 12:15:04 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:16:45 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:23:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sqlStatement() in /home/root3375/ghdemo.medsov.com/interface/cal.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 38
+[20-Jan-2025 12:35:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sqlStatement() in /home/root3375/ghdemo.medsov.com/interface/cal.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 38
+[20-Jan-2025 12:35:55 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:36:57 UTC] PHP Warning:  require_once(/home/root3375/ghdemo.medsov.com/interface./globals.php): Failed to open stream: No such file or directory in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 4
+[20-Jan-2025 12:36:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/root3375/ghdemo.medsov.com/interface./globals.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/root3375/ghdemo.medsov.com/interface/cal.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/cal.php on line 4
+[20-Jan-2025 12:37:45 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:40:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[20-Jan-2025 12:40:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[27-Jan-2025 15:28:36 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[06-Feb-2025 15:39:12 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135
+[24-Feb-2025 08:31:27 UTC] PHP Warning:  Undefined array key "site_id" in /home/root3375/ghdemo.medsov.com/library/auth.inc.php on line 135

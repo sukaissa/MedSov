@@ -1,0 +1,25 @@
+[09-Dec-2024 10:26:15 America/New_York] PHP Warning:  Undefined variable $doctotal2 in /home/root3375/ghdemo.medsov.com/interface/billing/sl_receipts_report.php on line 719
+[09-Dec-2024 10:26:15 America/New_York] PHP Warning:  Undefined variable $grandtotal2 in /home/root3375/ghdemo.medsov.com/interface/billing/sl_receipts_report.php on line 734
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "PROD:1017" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "chg" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "bal" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 108
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "dtl" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 111
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "PROD:479" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "chg" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "bal" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 108
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "dtl" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 111
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "PROD:188" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "chg" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "bal" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 108
+[09-Dec-2024 12:10:59 America/New_York] PHP Warning:  Undefined array key "dtl" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 111
+[09-Dec-2024 12:12:49 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[09-Dec-2024 12:12:49 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[09-Dec-2024 12:12:49 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[10-Dec-2024 12:50:36 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[10-Dec-2024 12:50:36 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[10-Dec-2024 12:50:36 America/New_York] PHP Warning:  Undefined variable $DivPut in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 977
+[14-Jan-2025 11:21:49 America/New_York] PHP Warning:  Undefined array key "PROD:1017" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[14-Jan-2025 11:21:49 America/New_York] PHP Warning:  Undefined array key "chg" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 107
+[14-Jan-2025 11:21:49 America/New_York] PHP Warning:  Undefined array key "bal" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 108
+[14-Jan-2025 11:21:49 America/New_York] PHP Warning:  Undefined array key "dtl" in /home/root3375/ghdemo.medsov.com/src/Billing/InvoiceSummary.php on line 111
+[14-Jan-2025 11:23:05 America/New_York] PHP Warning:  Undefined variable $default_x12_partner in /home/root3375/ghdemo.medsov.com/interface/billing/billing_report.php on line 1148

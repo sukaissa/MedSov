@@ -1,0 +1,2 @@
+[04-Nov-2024 04:54:50 America/New_York] install script does not exist. skipping InstModuleTable->installSQL for module
+[09-Dec-2024 05:27:28 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/modules/custom_modules/oe-module-faxsms/src/BootstrapService.php on line 139

@@ -1,0 +1,63 @@
+[01-Nov-2024 22:45:53 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_XH4wmfxehNBy2RHTdrVtyUrSxgG9-ZpVMkrJMj9W8pzT1X9I, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:45:53 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR CSRF token authentication error
+[01-Nov-2024 22:45:53 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_vzNPR1auhk2ECMevlAoHbqHXl-tJaz85ABeEeO023XDHAObZ, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:45:53 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:45:53 America/New_York] OpenEMR CSRF token authentication error
+[01-Nov-2024 22:45:55 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_1cf4O,X-Cg0s8iSVF8m29FhHB20JEx1c,tWu9ylkVhR407lk, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:45:55 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR CSRF token authentication error
+[01-Nov-2024 22:45:55 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_JCMAWzLLRjB4zH3CjoX1-5f46Rf,arwZJjK0tlrWB,4isLxQ, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:45:55 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:45:55 America/New_York] OpenEMR CSRF token authentication error
+[01-Nov-2024 22:46:26 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_1XyuthEzn,mbUrBgwWQUnDAjxLjwa7Z4eNKnYtfnqSb3i5yh, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:46:26 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:46:26 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:46:26 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:46:26 America/New_York] OpenEMR CSRF token authentication error
+[01-Nov-2024 22:46:27 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php73/sess_seqxY1J8evX8-WrZrUt0AUAwlui,amvC6CtKf4KC10j-0jIP, O_RDWR) failed: No such file or directory (2) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 22:46:27 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php73) in /home/root3375/ghdemo.medsov.com/src/Common/Session/SessionUtil.php on line 100
+[01-Nov-2024 18:46:27 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF key is empty.
+[01-Nov-2024 18:46:27 America/New_York] OpenEMR Error : OpenEMR is potentially not secure because CSRF token was not formed correctly.
+[01-Nov-2024 18:46:27 America/New_York] OpenEMR CSRF token authentication error
+[04-Nov-2024 04:38:42 America/New_York] Custom module /home/root3375/ghdemo.medsov.com/interface/modules/custom_modules/oe-inpatient-module/openemr.bootstrap.php is enabled but missing bootstrap.php script. Install and enable in module manager. This is the only warning.
+[04-Nov-2024 04:38:42 America/New_York] Custom module Inpatient Module v1.0.0 has been disabled
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "total_active_actions" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 150
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "total_pre_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 151
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "total_pre_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 152
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "number_new_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 153
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "number_updated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 154
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "number_unchanged_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 155
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "number_inactivated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 156
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "total_post_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 157
+[09-Dec-2024 06:13:06 America/New_York] PHP Warning:  Undefined array key "total_post_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 158
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "total_active_actions" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 150
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "total_pre_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 151
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "total_pre_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 152
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "number_new_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 153
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "number_updated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 154
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "number_unchanged_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 155
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "number_inactivated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 156
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "total_post_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 157
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined array key "total_post_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 158
+[09-Dec-2024 06:13:35 America/New_York] PHP Warning:  Undefined variable $where in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 463
+[09-Dec-2024 06:13:39 America/New_York] PHP Warning:  Undefined variable $where in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 463
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "total_active_actions" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 150
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "total_pre_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 151
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "total_pre_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 152
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "number_new_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 153
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "number_updated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 154
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "number_unchanged_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 155
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "number_inactivated_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 156
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "total_post_active_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 157
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined array key "total_post_unsent_reminders" in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 158
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined variable $where in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 463
+[09-Dec-2024 06:19:00 America/New_York] PHP Warning:  Undefined variable $where in /home/root3375/ghdemo.medsov.com/library/reminders.php on line 463

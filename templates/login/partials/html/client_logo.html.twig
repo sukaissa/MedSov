@@ -1,0 +1,19 @@
+{#
+Modified to display only secondary logo
+#}
+{% set displayClientLogo = "true" %}
+
+<div class="{{ logo_container_class_list|default(['d-flex', 'justify-content-center', 'align-items-center'])|join(' ')|attr }}">
+    {% if displayClientLogo and clientLogo %}
+    {% set secondaryLogoWidth = "w-75" %}
+        <div class="{{ secondary_logo_container_class_list|default([secondaryLogoWidth])|join(' ')|attr }}">
+            <img src="{{ clientLogo|attr }}" alt="" class="img-fluid">
+        </div>
+    {% endif %}
+</div>
+
+{% if showTitleOnLogin %}
+<div class="w-100 text-center my-3">
+    <h1>{{ title|text }}</h1>
+</div>
+{% endif %}

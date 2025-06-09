@@ -1,0 +1,26 @@
+{
+  "name": "medsov/oe-module-inpatient",
+  "description": "Inpatient Module",
+  "type": "openemr-module",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Stanley Kwamina Otabil",
+      "email": "kwaminaotabil@medsov.com"
+    },
+    {
+      "name": "Kofi Appiah",
+      "email": "kkappiah@medsov.com"
+    }
+  ],
+  "require": {
+    "openemr/oe-module-installer-plugin": "0.1.0",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "php": ">=7.4"
+  },
+  "conflict": {
+    "openemr/openemr": ">=6.0.0"
+  }
+}

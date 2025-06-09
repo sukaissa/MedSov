@@ -1,0 +1,167 @@
+{% extends "login/base.html.twig" %}
+
+{% block css %}
+	{{ parent() }}
+	<style>
+		#loginPageWrapper {
+			background-image: url({{ primaryImageBackground }});
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 1rem;
+			display: flex;
+			align-items: center;
+		}
+
+		.box {
+			width: 100%;
+			max-width: 1200px;
+			margin: 2rem auto;
+			border-radius: 1rem;
+			overflow: hidden;
+		}
+
+		.form-group {
+			margin-bottom: 0.5rem;
+		}
+
+		#logoContainer {
+			background-image: url({{ secondaryImageBackground }});
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 2rem;
+			min-height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.login-details {
+			padding: 2rem;
+			background: white;
+		}
+
+		/* Responsive breakpoints */
+		@media(min-width: 576px) {
+			#loginPageWrapper {
+				padding: 2rem;
+			}
+
+			.box {
+				width: 90%;
+			}
+		}
+
+		@media(min-width: 768px) {
+			.box {
+				width: 100%;
+				transform: scale(0.85); /* Scales down to 85% of original size */
+				transform-origin: center center;
+				margin: 0 auto; /* Adjust margin to account for scaling */
+			}
+
+			#logoContainer,
+			.login-details {
+				flex: 1;
+				min-height: 400px;
+			}
+
+			#logoContainer {
+				padding: 3rem;
+			}
+
+			.login-details {
+				padding: 3rem;
+			}
+		}
+
+		@media(max-height: 800px) {
+
+			#loginPageWrapper {
+				padding: 1rem;
+			}
+
+			.box {
+				margin: 1rem auto;
+			}
+
+			#logoContainer,
+			.login-details {
+				min-height: 350px;
+				padding: 2rem;
+			}
+		}
+
+		@media(min-width:830px) {
+			#loginPageWrapper {
+				padding: 1rem;
+				height: 100vh;
+				/* overflow: hidden; */
+			}
+
+			.box {
+				display: flex;
+				flex-direction: row;
+				transform: scale(0.7);
+			}
+		}
+
+		@media(min-width: 992px) {
+			#loginPageWrapper {
+				padding: 1rem;
+			}
+
+			.box {
+				display: flex;
+				flex-direction: row;
+				transform: scale(0.8);
+				width: 90%;
+				max-width: 1000px;
+			}
+		}
+
+		@media(min-width: 1100px) {
+			.box {
+				transform: scale(0.82);
+			}
+		}
+
+
+		/* For even larger screens, we might want to scale less */
+		@media screen and(min-width: 1200px) {
+			.box {
+				transform: scale(0.9);
+			}
+		}
+
+		/* For Windows-specific scaling if needed */
+		@media screen and(-ms-high-contrast: active),
+		(-ms-high-contrast: none) {
+			.box {
+				transform: scale(0.8);
+			}
+		}
+
+		.shadow-lg {
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div id="loginPageWrapper">
+		<div class="box shadow-lg {{ login_box_classes|default([])|join(' ') }}">
+			<div id="logoContainer">
+				<div class="logo-wrapper">
+					{% include "login/partials/html/client_logo.html.twig" %}
+				</div>
+			</div>
+
+			<div class="login-details">
+				{% include "login/partials/html/login_details.html.twig" %}
+				{% include "login/partials/html/acknowledgements.html.twig" %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

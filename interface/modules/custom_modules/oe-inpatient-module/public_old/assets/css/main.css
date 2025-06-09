@@ -1,0 +1,113 @@
+.main-links {
+  font-size: 20px;
+  border-radius: 16px;
+}
+
+.main-containerx {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left-con {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+table tr {
+  border-bottom: 1px solid black;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  padding: 6px;
+  /* text-align: center; */
+}
+
+table td {
+  padding: 6px;
+  font-weight: 700;
+}
+
+.right-con {
+  width: 100%;
+  margin-top: 70px;
+  /* margin-left: 10px; */
+}
+
+.section-head {
+  color: #007bff;
+}
+
+.inpatient-item {
+  padding: 15px 20px;
+  border: 1px solid rgb(82, 82, 255);
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.inpatient-item p {
+  margin: 0;
+}
+
+.inpatient-item-bottom {
+  padding: 10px;
+  border-top: 1px solid rgb(168, 168, 168);
+  margin-top: 26px;
+  display: flex;
+  padding-top: 17px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inpatient-item-bottom img {
+  margin: 0 10px;
+}
+
+.buttonx {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/* vitals */
+.side_details_container {
+  margin-left: 10px;
+  flex: 1;
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.vital_card {
+  background-color: #eeebeb;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border: 1px solid #636363;
+  border-radius: 5px;
+  display: flex;
+}
+.vital_card div {
+  flex: 1;
+}
+.vital_card p {
+  margin: 0;
+}
+
+.search_container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media print {
+  .no_print {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}

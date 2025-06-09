@@ -1,0 +1,300 @@
+[29-Jan-2025 12:43:25 America/New_York] gets here
+[29-Jan-2025 17:10:59 America/New_York] gets here
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 17:36:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php:150) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:16:55 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(40): OpenEMR\Services\SpreadSheetService->__construct(NULL, NULL, 'appts')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 23:17:46 UTC] PHP Warning:  require_once(./globals.php): Failed to open stream: No such file or directory in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 23:17:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './globals.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 23:19:49 UTC] PHP Warning:  require_once(./globals.php): Failed to open stream: No such file or directory in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 23:19:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './globals.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 23:20:18 UTC] PHP Warning:  require_once(./globals.php): Failed to open stream: No such file or directory in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 23:20:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './globals.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 14
+[29-Jan-2025 18:21:08 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(45): OpenEMR\Services\SpreadSheetService->__construct(NULL, Array, 'appts')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 18:32:29 America/New_York] PHP Fatal error:  Uncaught Error: Class "SpreadSheetService" not found in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 48
+[29-Jan-2025 18:32:40 America/New_York] PHP Fatal error:  Uncaught Error: Class "SpreadSheetService" not found in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 48
+[29-Jan-2025 18:33:49 America/New_York] PHP Fatal error:  Uncaught Error: Class "SpreadSheetService" not found in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 54
+[29-Jan-2025 18:34:01 America/New_York] PHP Fatal error:  Uncaught Error: Class "SpreadSheetService" not found in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 54
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:34:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:35:47 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:38:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:41:45 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:42:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 86
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 87
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 88
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 89
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 90
+[29-Jan-2025 18:43:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 91
+[29-Jan-2025 18:44:07 America/New_York] PHP Warning:  Undefined array key 0 in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:44:07 America/New_York] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:61
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php(61): array_keys(NULL)
+#1 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(55): OpenEMR\Services\SpreadSheetService->buildSpreadsheet()
+#2 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:47:28 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 21
+[29-Jan-2025 18:47:28 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 22
+[29-Jan-2025 18:47:28 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php:16) in /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php on line 23
+[29-Jan-2025 18:47:28 America/New_York] PHP Warning:  Undefined array key 0 in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:47:28 America/New_York] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:61
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php(61): array_keys(NULL)
+#1 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(58): OpenEMR\Services\SpreadSheetService->buildSpreadsheet()
+#2 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:48:27 America/New_York] PHP Warning:  Undefined array key 0 in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:48:27 America/New_York] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:61
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php(61): array_keys(NULL)
+#1 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(53): OpenEMR\Services\SpreadSheetService->buildSpreadsheet()
+#2 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 61
+[29-Jan-2025 18:51:51 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign bool to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(51): OpenEMR\Services\SpreadSheetService->__construct(false, NULL, 'immunizations')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 23:55:56 UTC] PHP Parse error:  Unmatched ')' in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 23:56:14 UTC] PHP Parse error:  Unmatched ')' in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 23:56:19 UTC] PHP Parse error:  Unmatched ')' in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 23:56:50 UTC] PHP Parse error:  Unmatched ')' in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 18:57:39 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 18:57:39 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 572
+[29-Jan-2025 18:57:46 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 18:57:46 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 572
+[29-Jan-2025 18:57:52 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(52): OpenEMR\Services\SpreadSheetService->__construct('function Array(...', NULL, 'immunizations')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 18:57:52 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 18:57:52 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 572
+[29-Jan-2025 19:01:07 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 19:01:10 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(52): OpenEMR\Services\SpreadSheetService->__construct('[object Object]...', NULL, 'immunizations')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 19:01:10 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 19:01:46 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(53): OpenEMR\Services\SpreadSheetService->__construct('[object Object]...', NULL, 'immunizations')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 19:08:17 America/New_York] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property OpenEMR\Services\SpreadSheetService::$arrayData of type array in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php:49
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/test_report.php(57): OpenEMR\Services\SpreadSheetService->__construct('[object Object]...', NULL, 'immunizations')
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/src/Services/SpreadSheetService.php on line 49
+[29-Jan-2025 19:12:39 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 19:15:24 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 19:15:32 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[29-Jan-2025 19:15:36 America/New_York] PHP Warning:  Array to string conversion in /home/root3375/ghdemo.medsov.com/interface/reports/encounters_report.php on line 557
+[30-Jan-2025 10:58:14 America/New_York] PHP Warning:  Undefined variable $total1_by_method in /home/root3375/ghdemo.medsov.com/interface/reports/front_receipts_report.php on line 310
+[30-Jan-2025 10:58:14 America/New_York] PHP Warning:  Undefined variable $total2_by_method in /home/root3375/ghdemo.medsov.com/interface/reports/front_receipts_report.php on line 310
+[30-Jan-2025 10:58:14 America/New_York] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in /home/root3375/ghdemo.medsov.com/interface/reports/front_receipts_report.php:310
+Stack trace:
+#0 /home/root3375/ghdemo.medsov.com/interface/reports/front_receipts_report.php(310): array_merge(NULL, NULL)
+#1 {main}
+  thrown in /home/root3375/ghdemo.medsov.com/interface/reports/front_receipts_report.php on line 310
+[20-Feb-2025 12:46:03 America/New_York] PHP Warning:  Undefined array key "form_action" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 354
+[20-Feb-2025 12:46:03 America/New_York] PHP Warning:  Undefined array key "form_product" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 358
+[20-Feb-2025 12:46:03 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 522
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 522
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 558
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 156
+[20-Feb-2025 12:46:12 America/New_York] PHP Warning:  Undefined array key "form_details" in /home/root3375/ghdemo.medsov.com/interface/reports/inventory_activity.php on line 270

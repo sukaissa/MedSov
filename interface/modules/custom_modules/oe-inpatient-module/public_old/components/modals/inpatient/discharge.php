@@ -1,0 +1,36 @@
+<!-- discharge modal -->
+<div class="modal fade" id="dischargePatient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Discharge Patient</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <input type="hidden" name="discharge" value="">
+                    <input type="hidden" name="dis_bed_id" id="dis_bed_id" value="">
+                    <input type="hidden" name="dis_admission_id" id="dis_admission_id" value="">
+
+                    <!-- <div class="form-group">
+                        <label for="discharge_date">Discharge Date</label>
+                        <input type="date" class="form-control" name="discharge_date" id="discharge_date" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Days Spent</label>
+                        <input type="time" name="delivery_time" class="form-control" id="formGroupExampleInput2" />
+                    </div> -->
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Discharge</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

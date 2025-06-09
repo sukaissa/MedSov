@@ -1,0 +1,20 @@
+[10-Dec-2024 10:27:01 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[15-Jan-2025 12:54:06 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[15-Jan-2025 12:54:59 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[15-Jan-2025 14:04:05 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/list_reports.php on line 61
+[15-Jan-2025 14:04:05 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/list_reports.php on line 61
+[15-Jan-2025 14:04:36 America/New_York] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/gen_hl7_order.inc.php on line 62
+[15-Jan-2025 14:38:24 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/list_reports.php on line 61
+[15-Jan-2025 14:38:24 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/list_reports.php on line 61
+[15-Jan-2025 14:38:39 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 60
+[15-Jan-2025 14:38:39 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 39
+[15-Jan-2025 14:49:23 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 60
+[15-Jan-2025 14:49:23 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 39
+[15-Jan-2025 14:49:33 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 60
+[15-Jan-2025 14:49:33 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 39
+[15-Jan-2025 14:49:36 America/New_York] PHP Warning:  Undefined array key "bn_save" in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 60
+[15-Jan-2025 14:49:36 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/orders/order_manifest.php on line 39
+[17-Jan-2025 09:47:46 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[24-Jan-2025 11:49:45 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[15-Feb-2025 17:29:10 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36
+[20-Feb-2025 12:32:55 America/New_York] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/orders/find_order_popup.php on line 36

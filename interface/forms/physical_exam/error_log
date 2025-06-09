@@ -1,0 +1,2 @@
+[06-Nov-2024 05:56:37 America/New_York] PHP Warning:  Undefined variable $issue in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/edit_diagnoses.php on line 24
+[06-Nov-2024 05:56:37 America/New_York] PHP Warning:  Undefined array key "form_save" in /home/root3375/ghdemo.medsov.com/interface/forms/physical_exam/edit_diagnoses.php on line 40

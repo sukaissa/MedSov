@@ -1,0 +1,11 @@
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 650
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 657
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 665
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 716
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 729
+[10-Dec-2024 12:30:57 America/New_York] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 106
+[10-Dec-2024 12:30:57 America/New_York] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 107
+[10-Dec-2024 12:30:57 America/New_York] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 106
+[10-Dec-2024 12:30:57 America/New_York] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 107
+[10-Dec-2024 12:30:57 America/New_York] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 118
+[10-Dec-2024 12:30:57 America/New_York] PHP Warning:  Trying to access array offset on value of type bool in /home/root3375/ghdemo.medsov.com/interface/drugs/add_edit_lot.php on line 743
