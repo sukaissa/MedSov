@@ -6,10 +6,10 @@ global $disable_utf8_flag;
 $disable_utf8_flag = false;
 
 $host	= 'localhost';
-$port	= '3306';
+$port	= '8889';
 $login	= 'root';
-$pass	= 'Hausawi@2025';
-$dbase	= 'mbmaa';
+$pass	= 'root';
+$dbase	= 'medsov';
 $db_encoding	= 'utf8mb4';
 
 $sqlconf = array();
