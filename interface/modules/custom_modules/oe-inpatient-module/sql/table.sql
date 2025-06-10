@@ -318,6 +318,19 @@ CREATE TABLE IF NOT EXISTS `inp_item` (
   PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
+CREATE TABLE IF NOT EXISTS `predischarge_checklist` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `patient_id` bigint(20) NOT NULL,
+  `discharge_date` date NOT NULL,
+  `list_option_id` varchar(100) NOT NULL,
+  `list_option_value` boolean NOT NULL DEFAULT 0,
+  `notes` text,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  `created_by` varchar(255),
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(),
+  `updated_by` varchar(255),
+  PRIMARY KEY (`checklist_id`)
+) ENGINE=InnoDB;
 
 INSERT INTO `inp_ward` (`name`, `short_name`) VALUES  ( 'Pediatrics Ward', 'PW');
 INSERT INTO `inp_ward` (`name`, `short_name`) VALUES ( 'Maternity Ward', 'MW');
@@ -334,6 +347,21 @@ INSERT INTO `inp_ward` (`name`, `short_name`) VALUES ( 'Intensive Care', 'IC');
 INSERT INTO `openemr_postcalendar_categories` ( `pc_constant_id`, `pc_catname`, `pc_catcolor`, `pc_catdesc`, `pc_recurrspec`, `pc_active`, `aco_spec`, `pc_seq`, `pc_duration`, `pc_cattype`) 
 VALUES ('surgical_appointment', 'Surgical Appointment', '#a2d9e2', 'Surgical Appointment', 'a:5:{s:17:"event_repeat_freq";s:1:"0";s:22:"event_repeat_freq_type";s:1:"0";s:19:"event_repeat_on_num";s:1:"1";s:19:"event_repeat_on_day";s:1:"0";s:20:"event_repeat_on_freq";s:1:"0";}', 1, 'encounters|notes', 20, 1800, 0);
 #EndIf
+
+#IfNotRow2D list_options list_id lists option_id pre_discharge_items
+    INSERT INTO `list_options` (`list_id`, `option_id`, `title`) 
+    VALUES ('lists', 'pre_discharge_items', 'Pre-Discharge Items');
+#EndIf
+
+#IfNotRow2Dx2 list_options list_id pre_discharge_items option_id discharge_summary title Discharge Summary
+    INSERT INTO `list_options` (`list_id`, `option_id`, `title`, `seq`, `is_default`) 
+    VALUES 
+    ('pre_discharge_items', 'discharge_summary', 'Discharge Summary', 10, 0),
+    ('pre_discharge_items', 'medication_review', 'Medication Review', 20, 0),
+    ('pre_discharge_items', 'follow_up_plan', 'Follow-Up Plan', 30, 0),
+    ('pre_discharge_items', 'patient_education', 'Patient Education', 40, 0);
+#EndIf
+
 
 -- ALTER TABLE inp_patient_admission
 -- ADD COLUMN admission_type varchar(100) DEFAULT NULL;
