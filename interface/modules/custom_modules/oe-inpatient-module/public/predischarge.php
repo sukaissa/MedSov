@@ -45,19 +45,10 @@ $message = $_GET['message'] ?? '';
 if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
     $patientId = $_POST['pid'];
     $checklistItems = $_POST['checklist_items'] ?? [];
+    $checklistNotes = $_POST['checklist_notes'] ?? [];
 
-    // Insert the new form
-    $formId = $preDischargeChecklist->insertForm($patientId);
-
-    // Insert selected checklist items
-    foreach ($checklistItems as $optionId => $value) {
-        sqlInsert(
-            "
-            INSERT INTO form_predischarge_items (form_id, list_option_id, list_option_value, created_by) 
-            VALUES (?, ?, ?, ?)",
-            [$formId, $optionId, $value, $_SESSION['authUser']]
-        );
-    }
+    // Insert the new predischarge form entry
+    $formId = $preDischargeChecklist->insertForm($patientId, $checklistItems, $checklistNotes);
 
     header('location:predischarge.php?status=success&message=Form created successfully');
 }
@@ -131,6 +122,9 @@ include_once "./components/head.php";
                                     <button class="btn btn-outline-danger btn-sm deleteBtn" data-bs-toggle="modal" data-bs-target="#deleteFormModal" data-id="<?php echo $record['form_id']; ?>">
                                         <?php echo xlt("Delete") ?>
                                     </button>
+                                    <button class="btn btn-outline-info btn-sm viewBtn" data-bs-toggle="modal" data-bs-target="#viewPreDischargeFormModal" data-id="<?php echo $record['form_id']; ?>">
+                                        <?php echo xlt("View") ?>
+                                    </button>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -190,6 +184,28 @@ include_once "./components/head.php";
     </div>
 </div>
 
+<div class="modal fade" id="viewPreDischargeFormModal" tabindex="-1" role="dialog" aria-labelledby="viewPreDischargeFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewPreDischargeFormModalLabel"><?php echo xlt("View Pre-Discharge Form"); ?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="viewFormContent">
+                    <!-- Content will be dynamically loaded here -->
+                    <p class="text-muted"><?php echo xlt("Loading form details..."); ?></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Close"); ?></button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script defer>
     window.onload = function() {
         $(".deleteBtn").click(function() {
@@ -213,6 +229,38 @@ include_once "./components/head.php";
                     notesField.classList.add('d-none'); // Hide notes field
                     notesField.value = ''; // Clear notes field
                 }
+            });
+        });
+
+        const viewButtons = document.querySelectorAll('.viewBtn');
+        viewButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const formId = this.dataset.id;
+                const modalContent = document.getElementById('viewFormContent');
+                modalContent.innerHTML = '<p class="text-muted"><?php echo xlt("Loading form details..."); ?></p>';
+
+                // Fetch form details via AJAX
+                fetch(`fetch_form_details.php?form_id=${formId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            modalContent.innerHTML = `
+                                <p><strong><?php echo xlt("Patient ID"); ?>:</strong> ${data.form.patient_id}</p>
+                                <p><strong><?php echo xlt("Created At"); ?>:</strong> ${data.form.created_at}</p>
+                                <p><strong><?php echo xlt("Checklist Items"); ?>:</strong></p>
+                                <ul>
+                                    ${data.form.checklist_items.map(item => `
+                                        <li>${item.title} - ${item.notes || '<?php echo xlt("No notes"); ?>'}</li>
+                                    `).join('')}
+                                </ul>
+                            `;
+                        } else {
+                            modalContent.innerHTML = `<p class="text-danger"><?php echo xlt("Failed to load form details."); ?></p>`;
+                        }
+                    })
+                    .catch(() => {
+                        modalContent.innerHTML = `<p class="text-danger"><?php echo xlt("An error occurred while loading the form details."); ?></p>`;
+                    });
             });
         });
     });

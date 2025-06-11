@@ -38,14 +38,27 @@ class PreDischargeChecklistQuery
      * @param int $patientId
      * @return int The ID of the newly created form
      */
-    public function insertForm($patientId)
+    public function insertForm($patientId, $checklistItems, $checklistNotes)
     {
+        // Insert the new form into form_predischarge
         $formId = sqlInsert("
             INSERT INTO form_predischarge (pid, created_by) 
             VALUES (?, ?)", 
             [$patientId, $_SESSION['authUser']]
         );
 
+        // Insert checklist items with notes into form_predischarge_items
+        foreach ($checklistItems as $optionId => $value) {
+            $note = $checklistNotes[$optionId] ?? ''; // Get the note for the checklist item, if any
+            sqlInsert(
+                "
+                INSERT INTO form_predischarge_items (form_id, list_option_id, list_option_value, notes, created_by) 
+                VALUES (?, ?, ?, ?, ?)",
+                [$formId, $optionId, $value, $note, $_SESSION['authUser']]
+            );
+        }
+
+        // Log the event
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: insert form_predischarge",
             $patientId, // pid
