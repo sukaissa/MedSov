@@ -13,6 +13,7 @@ use OpenEMR\Modules\InpatientModule\InpatientQuery;
 use OpenEMR\Modules\InpatientModule\PreDischargeChecklistQuery;
 use OpenEMR\Modules\InpatientModule\SurgeryQuery;
 use OpenEMR\Modules\InpatientModule\WardQuery;
+use OpenEMR\Modules\InpatientModule\ListsQuery;
 
 require_once "../../../../globals.php";
 require_once "./components/sql/PreDischargeChecklistQuery.php";
@@ -21,6 +22,7 @@ require_once "./components/sql/InpatientQuery.php";
 require_once "./components/sql/BedQuery.php";
 require_once "./components/sql/SurgeryQuery.php";
 require_once "./components/sql/WardQuery.php";
+require_once "./components/sql/ListsQuery.php";
 
 $admissionQueuQuery = new AdmissionQueueQuery();
 $bedQuery = new BedQuery();
@@ -28,17 +30,35 @@ $inpatientQuery = new InpatientQuery();
 $wardQuery = new WardQuery();
 $surgeryQuery = new SurgeryQuery();
 $preDischargeChecklist = new PreDischargeChecklistQuery();
+$listsQuery = new ListsQuery();
+
 
 $searchName = $_GET['search_name'] ?? '';
 $startDate = $_GET['start_date'] ?? '';
 $endDate = $_GET['end_date'] ?? '';
 $records = $preDischargeChecklist->getFilteredForms($searchName, $startDate, $endDate);
+$checklistItems = $listsQuery->getListItemsByListId('pre_discharge_items');
 
 $display_message = isset($_GET['status']) ? 'block' : 'none';
 $message = $_GET['message'] ?? '';
 
 if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
-    $formId = $preDischargeChecklist->insertForm($_POST['pid']);
+    $patientId = $_POST['pid'];
+    $checklistItems = $_POST['checklist_items'] ?? [];
+
+    // Insert the new form
+    $formId = $preDischargeChecklist->insertForm($patientId);
+
+    // Insert selected checklist items
+    foreach ($checklistItems as $optionId => $value) {
+        sqlInsert(
+            "
+            INSERT INTO form_predischarge_items (form_id, list_option_id, list_option_value, created_by) 
+            VALUES (?, ?, ?, ?)",
+            [$formId, $optionId, $value, $_SESSION['authUser']]
+        );
+    }
+
     header('location:predischarge.php?status=success&message=Form created successfully');
 }
 
@@ -59,7 +79,7 @@ include_once "./components/head.php";
 <section class="container-fluid mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold"><?php echo xlt("All Pre-Discharge Forms") ?></h4>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newFormModal">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
             <?php echo xlt("New Form") ?>
         </button>
     </div>
@@ -125,7 +145,46 @@ include_once "./components/head.php";
     </div>
 </section>
 
-<?php include_once "./components/modals/predischarge_modals.php"; ?>
+<div class="modal fade" id="newPreDischargeFormModal" tabindex="-1" role="dialog" aria-labelledby="newPreDischargeFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newPreDischargeFormModalLabel"><?php echo xlt("New Pre-Discharge Form"); ?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="POST" action="predischarge.php">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="patient_id" class="form-label"><?php echo xlt("Patient ID"); ?></label>
+                        <input type="text" name="pid" id="patient_id" class="form-control" placeholder="<?php echo xlt("Enter Patient ID"); ?>" required>
+                    </div>
+
+                    <h6 class="fw-bold"><?php echo xlt("Checklist Items"); ?></h6>
+                    <div class="form-checklist">
+                        <?php if (!empty($checklistItems)) { ?>
+                            <?php foreach ($checklistItems as $item) { ?>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" name="checklist_items[<?php echo htmlspecialchars($item['option_id']); ?>]" id="checklist_<?php echo htmlspecialchars($item['option_id']); ?>" value="1">
+                                    <label class="form-check-label" for="checklist_<?php echo htmlspecialchars($item['option_id']); ?>">
+                                        <?php echo htmlspecialchars($item['title']); ?>
+                                    </label>
+                                </div>
+                            <?php } ?>
+                        <?php } else { ?>
+                            <p><?php echo xlt("No checklist items found."); ?></p>
+                        <?php } ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Cancel"); ?></button>
+                    <button type="submit" name="new" class="btn btn-primary"><?php echo xlt("Save"); ?></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script defer>
     window.onload = function() {

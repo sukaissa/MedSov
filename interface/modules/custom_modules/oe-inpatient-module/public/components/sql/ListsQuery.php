@@ -69,4 +69,45 @@ class ListsQuery
         );
         sqlInsert("INSERT INTO lists SET $sets", $bindArray);
     }
+    /**
+     * Fetch list items by list_id
+     * @param string $listId
+     * @return array
+     */
+    public function getListItemsByListId($listId)
+    {
+        $query = "
+            SELECT 
+                option_id, 
+                title, 
+                seq, 
+                is_default 
+            FROM 
+                list_options 
+            WHERE 
+                list_id = ?
+            ORDER BY 
+                seq ASC
+        ";
+
+        $results = sqlStatement($query, [$listId]);
+
+        $data = [];
+        while ($row = sqlFetchArray($results)) {
+            $data[] = $row;
+        }
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: fetch list items by list_id",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        return $data;
+    }
 }
