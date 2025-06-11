@@ -91,7 +91,7 @@ include_once "./components/head.php";
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold"><?php echo xlt("All Pre-Discharge Forms") ?></h4>
         <div>
-            <button class="btn btn-outline-secondary mr-2" id="printAllToPdfBtn">
+            <button class="btn btn-secondary mr-2" id="printAllToPdfBtn">
                 <?php echo xlt("Print") ?>
             </button>
             <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
