@@ -16,6 +16,7 @@ use OpenEMR\Modules\InpatientModule\BedQuery;
 use OpenEMR\Modules\InpatientModule\InpatientQuery;
 use OpenEMR\Modules\InpatientModule\SurgeryQuery;
 use OpenEMR\Modules\InpatientModule\WardQuery;
+use OpenEMR\Modules\InpatientModule\PreDischargeChecklistQuery;
 
 require_once "../../../../globals.php";
 
@@ -24,12 +25,14 @@ require_once "./components/sql/BedQuery.php";
 require_once "./components/sql/SurgeryQuery.php";
 require_once "./components/sql/InpatientQuery.php";
 require_once "./components/sql/WardQuery.php";
+require_once "./components/sql/PreDischargeChecklistQuery.php";
 
 $admissionQueuQuery = new AdmissionQueueQuery();
 $bedQuery = new BedQuery();
 $inpatientQuery = new InpatientQuery();
 $wardQuery = new WardQuery();
 $surgeryQuery = new SurgeryQuery();
+$preDischargeChecklist = new PreDischargeChecklistQuery();
 
 $wards = $wardQuery->getWards();
 

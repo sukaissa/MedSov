@@ -28,6 +28,7 @@ use OpenEMR\Modules\InpatientModule\WardTransferQuery;
 use OpenEMR\Modules\InpatientModule\ProcedureQuery;
 use OpenEMR\Modules\InpatientModule\TheaterQuery;
 use OpenEMR\Modules\InpatientModule\SurgeryQuery;
+use OpenEMR\Modules\InpatientModule\PreDischargeChecklistQuery;
 use Ramsey\Uuid\Uuid;
 
 
@@ -48,6 +49,7 @@ require_once "./components/sql/WardTransferQuery.php";
 require_once "./components/sql/ProcedureQuery.php";
 require_once "./components/sql/TheaterQuery.php";
 require_once "./components/sql/SurgeryQuery.php";
+require_once "./components/sql/PreDischargeChecklistQuery.php";
 
 
 $inpatients = [];
@@ -67,6 +69,7 @@ $procedureQuery = new ProcedureQuery();
 $theaterQuery = new TheaterQuery();
 $surgeryQuery = new SurgeryQuery();
 $foodQuery = new FoodQuery();
+$preDischargeChecklist = new PreDischargeChecklistQuery();
 
 
 $wards = $wardQuery->getWards();
@@ -771,35 +774,37 @@ $beds = $bedQuery->getAvailableBeds();
         setTimeout(function() {
             $('#alert').hide();
         }, 3000);
-        
+
         $('#surgery_code').select2({
             dropdownParent: $('.surgery-modal'),
             // width: '100%',
-            id: function(item) { return source.procedure_code; },
-            ajax: {
-            url: 'ajax_search.php',
-            dataType: 'json',
-            data: function(params){
-                return {
-                term: params.term,
-                search: 'surgery_code',
-                };
+            id: function(item) {
+                return source.procedure_code;
             },
-            processResults: function(data, params) {
-                params.page = params.page || 1;
+            ajax: {
+                url: 'ajax_search.php',
+                dataType: 'json',
+                data: function(params) {
+                    return {
+                        term: params.term,
+                        search: 'surgery_code',
+                    };
+                },
+                processResults: function(data, params) {
+                    params.page = params.page || 1;
                     return {
                         results: data.results,
                         pagination: {
                             more: (params.page * 30) < data.total_count
                         }
                     };
-            }
+                }
             },
             minimumInputLength: 3,
             templateResult: formatOpt,
             templateSelection: formatOptSelection
         });
-        
+
         function formatOpt(source) {
             if (source.loading) {
                 return source.text;

@@ -18,7 +18,7 @@ $bed_count = $bedQuery->countBeds();
 $bed_count_av = $bedQuery->countBedsAvailable();
 $ward_count = $wardQuery->countWards();
 $surgery_count = $surgeryQuery->countSurgery();
-// $pre_discharge_checklist_count = $preDischargeChecklist->countChecklists();
+$pre_discharge_checklist_count = $preDischargeChecklist->countForms();
 
 $navLinks = [
     [
@@ -65,7 +65,7 @@ $navLinks = [
         'name' => 'PreDischarge',
         'link' => 'predischarge',
         'icon' => '<i class="bi bi-check-circle-fill"></i>',
-        'number' => 0
+        'number' => $pre_discharge_checklist_count
     ],
     // [
     //     'name' => 'Nurses Note',

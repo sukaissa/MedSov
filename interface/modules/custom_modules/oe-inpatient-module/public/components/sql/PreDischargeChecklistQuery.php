@@ -1,5 +1,5 @@
 <?php
-// filepath: /Applications/MAMP/htdocs/MedSov/interface/modules/custom_modules/oe-inpatient-module/public/components/sql/PreDischargeChecklist.php
+// filepath: /Applications/MAMP/htdocs/MedSov/interface/modules/custom_modules/oe-inpatient-module/public/components/sql/PreDischargeChecklistQuery.php
 
 namespace OpenEMR\Modules\InpatientModule;
 
@@ -8,23 +8,23 @@ use OpenEMR\Common\Logging\EventAuditLogger;
 class PreDischargeChecklistQuery
 {
     /**
-     * Count all predischarge checklist entries
+     * Count all predischarge forms
      * @return int
      */
-    public function countChecklists()
+    public function countForms()
     {
-        $results = sqlStatement("SELECT * FROM predischarge_checklist");
+        $results = sqlStatement("SELECT * FROM form_predischarge");
         $total = 0;
         foreach ($results as $value) {
-            $total = $total + 1;
+            $total++;
         }
 
         EventAuditLogger::instance()->newEvent(
-            "inpatient-module: query predischarge_checklist count",
+            "inpatient-module: query form_predischarge count",
             null, // pid
             $_SESSION["authUser"], // authUser
             $_SESSION["authProvider"], // authProvider
-            "SELECT * FROM predischarge_checklist",
+            "SELECT * FROM form_predischarge",
             1,
             'open-emr',
             'inpatient'
@@ -34,171 +34,90 @@ class PreDischargeChecklistQuery
     }
 
     /**
-     * Insert a new predischarge checklist entry
-     * @param array $data
-     * @return void
-     */
-    public function insertChecklist($data)
-    {
-        // Validate data
-        $errors = $this->validateChecklistData($data);
-        if (!empty($errors)) {
-            throw new \Exception("Validation errors: " . implode(", ", $errors));
-        }
-
-        $sets = "patient_id = ?, 
-            discharge_date = ?, 
-            list_option_id = ?, 
-            list_option_value = ?, 
-            notes = ?, 
-            created_by = ?
-        ";
-
-        $bindArray = array(
-            $data['patient_id'],
-            $data['discharge_date'],
-            $data['list_option_id'],
-            $data['list_option_value'],
-            $data['notes'],
-            $data['created_by'],
-        );
-
-        sqlInsert("INSERT INTO predischarge_checklist SET $sets", $bindArray);
-
-        EventAuditLogger::instance()->newEvent(
-            "inpatient-module: insert predischarge_checklist",
-            null, // pid
-            $_SESSION["authUser"], // authUser
-            $_SESSION["authProvider"], // authProvider
-            "INSERT INTO predischarge_checklist SET $sets",
-            1,
-            'open-emr',
-            'inpatient'
-        );
-    }
-
-    /**
-     * Get a predischarge checklist entry by ID
-     * @param int $id
-     * @return array|null
-     */
-    public function getChecklistById($id)
-    {
-        $query = "SELECT * FROM predischarge_checklist WHERE id = ?";
-        $result = sqlQuery($query, array($id));
-
-        EventAuditLogger::instance()->newEvent(
-            "inpatient-module: query predischarge_checklist",
-            null, // pid
-            $_SESSION["authUser"], // authUser
-            $_SESSION["authProvider"], // authProvider
-            $query,
-            1,
-            'open-emr',
-            'inpatient'
-        );
-
-        return $result;
-    }
-
-    /**
-     * Update a predischarge checklist entry
-     * @param array $data
-     * @return void
-     */
-    public function updateChecklist($data)
-    {
-        // Validate data
-        $errors = $this->validateChecklistData($data);
-        if (!empty($errors)) {
-            throw new \Exception("Validation errors: " . implode(", ", $errors));
-        }
-
-        $sets = "list_option_value = ?, 
-            notes = ?, 
-            updated_by = ?, 
-            updated_at = NOW()
-        ";
-
-        $bindArray = array(
-            $data['list_option_value'],
-            $data['notes'],
-            $data['updated_by'],
-            $data['id'],
-        );
-
-        $sql = "UPDATE predischarge_checklist SET $sets WHERE id = ?";
-        sqlStatement($sql, $bindArray);
-
-        EventAuditLogger::instance()->newEvent(
-            "inpatient-module: update predischarge_checklist",
-            null, // pid
-            $_SESSION["authUser"], // authUser
-            $_SESSION["authProvider"], // authProvider
-            $sql,
-            1,
-            'open-emr',
-            'inpatient'
-        );
-    }
-
-    /**
-     * Delete a predischarge checklist entry
-     * @param int $id
-     * @return void
-     */
-    public function deleteChecklist($id)
-    {
-        $sql = "DELETE FROM predischarge_checklist WHERE id = ?";
-        sqlStatement($sql, array($id));
-
-        EventAuditLogger::instance()->newEvent(
-            "inpatient-module: delete predischarge_checklist",
-            null, // pid
-            $_SESSION["authUser"], // authUser
-            $_SESSION["authProvider"], // authProvider
-            $sql,
-            1,
-            'open-emr',
-            'inpatient'
-        );
-    }
-
-    /**
-     * Get all predischarge checklist entries for a specific patient
+     * Insert a new predischarge form
      * @param int $patientId
-     * @return array
+     * @return int The ID of the newly created form
      */
-    public function getChecklistsByPatientId($patientId)
+    public function insertForm($patientId)
     {
-        $query = "SELECT * FROM predischarge_checklist WHERE patient_id = ?";
-        $results = sqlStatement($query, array($patientId));
+        $formId = sqlInsert("
+            INSERT INTO form_predischarge (pid, created_by) 
+            VALUES (?, ?)", 
+            [$patientId, $_SESSION['authUser']]
+        );
 
         EventAuditLogger::instance()->newEvent(
-            "inpatient-module: query predischarge_checklist",
-            null, // pid
+            "inpatient-module: insert form_predischarge",
+            $patientId, // pid
             $_SESSION["authUser"], // authUser
             $_SESSION["authProvider"], // authProvider
-            $query,
+            "INSERT INTO form_predischarge (pid, created_by)",
             1,
             'open-emr',
             'inpatient'
         );
 
-        return $results;
+        return $formId;
     }
 
     /**
-     * Get all predischarge checklist entries
+     * Insert checklist items for a predischarge form
+     * @param int $formId
+     * @return void
+     */
+    public function insertFormItems($formId)
+    {
+        $listOptions = sqlStatement("
+            SELECT option_id 
+            FROM list_options 
+            WHERE list_id = 'pre_discharge_items'
+        ");
+
+        while ($row = sqlFetchArray($listOptions)) {
+            sqlInsert("
+                INSERT INTO form_predischarge_items (form_id, list_option_id, created_by) 
+                VALUES (?, ?, ?)", 
+                [$formId, $row['option_id'], $_SESSION['authUser']]
+            );
+        }
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: insert form_predischarge_items",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            "INSERT INTO form_predischarge_items (form_id, list_option_id, created_by)",
+            1,
+            'open-emr',
+            'inpatient'
+        );
+    }
+
+    /**
+     * Get all predischarge forms with patient information
      * @return array
      */
-    public function getAllChecklists()
+    public function getAllForms()
     {
-        $query = "SELECT * FROM predischarge_checklist";
+        $query = "
+            SELECT 
+                fp.id AS form_id,
+                fp.pid AS patient_id,
+                CONCAT(pd.fname, ' ', pd.lname) AS patient_name,
+                fp.created_at AS form_created_at,
+                fp.created_by AS form_created_by
+            FROM 
+                form_predischarge fp
+            LEFT JOIN 
+                patient_data pd ON fp.pid = pd.pid
+            ORDER BY 
+                fp.created_at DESC
+        ";
+
         $results = sqlStatement($query);
 
         EventAuditLogger::instance()->newEvent(
-            "inpatient-module: query all predischarge_checklist",
+            "inpatient-module: query all form_predischarge with patient data",
             null, // pid
             $_SESSION["authUser"], // authUser
             $_SESSION["authProvider"], // authProvider
@@ -208,48 +127,107 @@ class PreDischargeChecklistQuery
             'inpatient'
         );
 
-        return $results;
+        $data = [];
+        while ($row = sqlFetchArray($results)) {
+            $data[] = $row;
+        }
+
+        return $data;
     }
 
     /**
-     * Validate predischarge checklist data
+     * Update a checklist item in a predischarge form
      * @param array $data
-     * @return array
+     * @return void
      */
-    private function validateChecklistData($data)
+    public function updateFormItem($data)
     {
-        $errors = [];
+        $sql = "
+            UPDATE form_predischarge_items 
+            SET list_option_value = ?, 
+                notes = ?, 
+                created_by = ?, 
+                created_at = NOW()
+            WHERE id = ?
+        ";
 
-        // Validate patient_id
-        if (empty($data['patient_id']) || !is_numeric($data['patient_id'])) {
-            $errors[] = "Invalid patient ID.";
+        sqlStatement($sql, [
+            $data['list_option_value'],
+            $data['notes'],
+            $_SESSION['authUser'],
+            $data['id']
+        ]);
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: update form_predischarge_items",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            $sql,
+            1,
+            'open-emr',
+            'inpatient'
+        );
+    }
+
+    /**
+     * Update checklist items in a predischarge form based on form_id
+     * @param int $formId
+     * @param array $items Array of checklist items to update (each item contains id, list_option_value, and notes)
+     * @return void
+     */
+    public function updateFormItems($formId, $items)
+    {
+        foreach ($items as $item) {
+            $sql = "
+                UPDATE form_predischarge_items 
+                SET list_option_value = ?, 
+                    notes = ?, 
+                    created_by = ?, 
+                    created_at = NOW()
+                WHERE form_id = ? AND id = ?
+            ";
+
+            sqlStatement($sql, [
+                $item['list_option_value'],
+                $item['notes'],
+                $_SESSION['authUser'],
+                $formId,
+                $item['id']
+            ]);
+
+            EventAuditLogger::instance()->newEvent(
+                "inpatient-module: update form_predischarge_items",
+                null, // pid
+                $_SESSION["authUser"], // authUser
+                $_SESSION["authProvider"], // authProvider
+                $sql,
+                1,
+                'open-emr',
+                'inpatient'
+            );
         }
+    }
 
-        // Validate discharge_date
-        if (empty($data['discharge_date']) || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $data['discharge_date'])) {
-            $errors[] = "Invalid discharge date. Use format YYYY-MM-DD.";
-        }
+    /**
+     * Delete a predischarge form and its items
+     * @param int $formId
+     * @return void
+     */
+    public function deleteForm($formId)
+    {
+        $sql = "DELETE FROM form_predischarge WHERE id = ?";
+        sqlStatement($sql, [$formId]);
 
-        // Validate list_option_id
-        if (empty($data['list_option_id']) || !is_string($data['list_option_id'])) {
-            $errors[] = "Invalid list option ID.";
-        }
-
-        // Validate list_option_value
-        if (!isset($data['list_option_value']) || !is_bool($data['list_option_value'])) {
-            $errors[] = "Invalid list option value. Must be a boolean.";
-        }
-
-        // Validate notes
-        if (!empty($data['notes']) && !is_string($data['notes'])) {
-            $errors[] = "Notes must be a string.";
-        }
-
-        // Validate created_by or updated_by
-        if (empty($data['created_by']) && empty($data['updated_by'])) {
-            $errors[] = "Created by or updated by field is required.";
-        }
-
-        return $errors;
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: delete form_predischarge",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            $sql,
+            1,
+            'open-emr',
+            'inpatient'
+        );
     }
 }

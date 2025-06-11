@@ -318,18 +318,24 @@ CREATE TABLE IF NOT EXISTS `inp_item` (
   PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `predischarge_checklist` (
+CREATE TABLE IF NOT EXISTS `form_predischarge` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `patient_id` bigint(20) NOT NULL,
-  `discharge_date` date NOT NULL,
-  `list_option_id` varchar(100) NOT NULL,
-  `list_option_value` boolean NOT NULL DEFAULT 0,
-  `notes` text,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(),
-  `created_by` varchar(255),
-  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(),
-  `updated_by` varchar(255),
-  PRIMARY KEY (`checklist_id`)
+  `pid` bigint(20) NOT NULL, -- Links to the patient_data table
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Form creation timestamp
+  `created_by` varchar(255) NOT NULL, -- User who created the form
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `form_predischarge_items` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `form_id` bigint(20) NOT NULL, -- Links to the form_predischarge table
+  `list_option_id` varchar(100) NOT NULL, -- Links to the list_options table (pre_discharge_items)
+  `list_option_value` boolean NOT NULL DEFAULT 0, -- Whether the checklist item is completed
+  `notes` text, -- Additional notes for the checklist item
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Item creation timestamp
+  `created_by` varchar(255) NOT NULL, -- User who created the item
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`form_id`) REFERENCES `form_predischarge`(`id`) ON DELETE CASCADE,
 ) ENGINE=InnoDB;
 
 INSERT INTO `inp_ward` (`name`, `short_name`) VALUES  ( 'Pediatrics Ward', 'PW');
