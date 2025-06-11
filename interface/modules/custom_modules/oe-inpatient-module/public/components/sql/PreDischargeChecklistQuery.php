@@ -5,8 +5,34 @@ namespace OpenEMR\Modules\InpatientModule;
 
 use OpenEMR\Common\Logging\EventAuditLogger;
 
-class PreDischargeChecklist
+class PreDischargeChecklistQuery
 {
+    /**
+     * Count all predischarge checklist entries
+     * @return int
+     */
+    public function countChecklists()
+    {
+        $results = sqlStatement("SELECT * FROM predischarge_checklist");
+        $total = 0;
+        foreach ($results as $value) {
+            $total = $total + 1;
+        }
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: query predischarge_checklist count",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            "SELECT * FROM predischarge_checklist",
+            1,
+            'open-emr',
+            'inpatient'
+        );
+
+        return $total;
+    }
+
     /**
      * Insert a new predischarge checklist entry
      * @param array $data
@@ -47,7 +73,7 @@ class PreDischargeChecklist
             "INSERT INTO predischarge_checklist SET $sets",
             1,
             'open-emr',
-            'dashboard'
+            'inpatient'
         );
     }
 
@@ -69,7 +95,7 @@ class PreDischargeChecklist
             $query,
             1,
             'open-emr',
-            'dashboard'
+            'inpatient'
         );
 
         return $result;
@@ -82,12 +108,12 @@ class PreDischargeChecklist
      */
     public function updateChecklist($data)
     {
-         // Validate data
+        // Validate data
         $errors = $this->validateChecklistData($data);
         if (!empty($errors)) {
             throw new \Exception("Validation errors: " . implode(", ", $errors));
         }
-        
+
         $sets = "list_option_value = ?, 
             notes = ?, 
             updated_by = ?, 
@@ -112,7 +138,7 @@ class PreDischargeChecklist
             $sql,
             1,
             'open-emr',
-            'dashboard'
+            'inpatient'
         );
     }
 
@@ -134,7 +160,7 @@ class PreDischargeChecklist
             $sql,
             1,
             'open-emr',
-            'dashboard'
+            'inpatient'
         );
     }
 
@@ -156,7 +182,30 @@ class PreDischargeChecklist
             $query,
             1,
             'open-emr',
-            'dashboard'
+            'inpatient'
+        );
+
+        return $results;
+    }
+
+    /**
+     * Get all predischarge checklist entries
+     * @return array
+     */
+    public function getAllChecklists()
+    {
+        $query = "SELECT * FROM predischarge_checklist";
+        $results = sqlStatement($query);
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: query all predischarge_checklist",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            $query,
+            1,
+            'open-emr',
+            'inpatient'
         );
 
         return $results;

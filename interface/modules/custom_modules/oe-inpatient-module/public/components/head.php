@@ -18,6 +18,7 @@ $bed_count = $bedQuery->countBeds();
 $bed_count_av = $bedQuery->countBedsAvailable();
 $ward_count = $wardQuery->countWards();
 $surgery_count = $surgeryQuery->countSurgery();
+// $pre_discharge_checklist_count = $preDischargeChecklist->countChecklists();
 
 $navLinks = [
     [
@@ -58,6 +59,12 @@ $navLinks = [
         'name' => 'Emergency',
         'link' => 'emergency',
         'icon' => '<i class="bi bi-thermometer-high"></i>',
+        'number' => 0
+    ],
+    [
+        'name' => 'PreDischarge',
+        'link' => 'predischarge',
+        'icon' => '<i class="bi bi-check-circle-fill"></i>',
         'number' => 0
     ],
     // [
