@@ -162,19 +162,23 @@ include_once "./components/head.php";
                     </div>
 
                     <h6 class="fw-bold"><?php echo xlt("Checklist Items"); ?></h6>
-                    <div class="form-checklist">
-                        <?php if (!empty($checklistItems)) { ?>
-                            <?php foreach ($checklistItems as $item) { ?>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" name="checklist_items[<?php echo htmlspecialchars($item['option_id']); ?>]" id="checklist_<?php echo htmlspecialchars($item['option_id']); ?>" value="1">
-                                    <label class="form-check-label" for="checklist_<?php echo htmlspecialchars($item['option_id']); ?>">
-                                        <?php echo htmlspecialchars($item['title']); ?>
-                                    </label>
-                                </div>
+                    <div class="form-checklist container">
+                        <div class="row">
+                            <?php if (!empty($checklistItems)) { ?>
+                                <?php foreach ($checklistItems as $item) { ?>
+                                    <div class="form-check mb-2 col-md-6">
+                                        <input class="form-check-input checklist-item" type="checkbox" name="checklist_items[<?php echo htmlspecialchars($item['option_id']); ?>]" id="checklist_<?php echo htmlspecialchars($item['option_id']); ?>" value="1">
+                                        <label class="form-check-label" for="checklist_<?php echo htmlspecialchars($item['option_id']); ?>">
+                                            <?php echo htmlspecialchars($item['title']); ?>
+                                        </label>
+                                        <!-- Hidden notes field -->
+                                        <textarea rows="2" type="text" class="form-control mt-2 checklist-notes d-none" name="checklist_notes[<?php echo htmlspecialchars($item['option_id']); ?>]" placeholder="<?php echo xlt('Enter notes'); ?>"></textarea>
+                                    </div>
+                                <?php } ?>
+                            <?php } else { ?>
+                                <p><?php echo xlt("No checklist items found."); ?></p>
                             <?php } ?>
-                        <?php } else { ?>
-                            <p><?php echo xlt("No checklist items found."); ?></p>
-                        <?php } ?>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -197,6 +201,21 @@ include_once "./components/head.php";
             $('#alert').fadeOut('slow');
         }, 3000);
     };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const checklistItems = document.querySelectorAll('.checklist-item');
+        checklistItems.forEach(item => {
+            item.addEventListener('change', function() {
+                const notesField = this.parentElement.querySelector('.checklist-notes');
+                if (this.checked) {
+                    notesField.classList.remove('d-none'); // Show notes field
+                } else {
+                    notesField.classList.add('d-none'); // Hide notes field
+                    notesField.value = ''; // Clear notes field
+                }
+            });
+        });
+    });
 </script>
 
 <?php include_once "./components/footer.php"; ?>
