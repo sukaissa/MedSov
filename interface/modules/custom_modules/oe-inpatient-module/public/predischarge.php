@@ -139,12 +139,12 @@ include_once "./components/head.php";
                                 <td><?php echo $record['form_created_at']; ?></td>
                                 <td><?php echo $record['form_created_by']; ?></td>
                                 <td>
-                                    <button class="btn btn-outline-danger btn-sm deleteBtn" data-bs-toggle="modal" data-bs-target="#deleteFormModal" data-id="<?php echo $record['form_id']; ?>">
-                                        <?php echo xlt("Delete") ?>
-                                    </button>
                                     <button class="btn btn-outline-info btn-sm viewBtn" data-toggle="modal" data-target="#viewPreDischargeFormModal" data-id="<?php echo $record['form_id']; ?>">
                                         <?php echo xlt("View") ?>
                                     </button>
+                                    <!-- <button class="btn btn-outline-danger btn-sm deleteBtn" data-bs-toggle="modal" data-bs-target="#deleteFormModal" data-id="<?php echo $record['form_id']; ?>">
+                                        <?php echo xlt("Delete") ?>
+                                    </button> -->
                                 </td>
                             </tr>
                         <?php } ?>
@@ -205,22 +205,28 @@ include_once "./components/head.php";
 </div>
 
 <div class="modal fade" id="viewPreDischargeFormModal" tabindex="-1" role="dialog" aria-labelledby="viewPreDischargeFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content shadow-sm border-0">
             <div class="modal-header">
-                <h5 class="modal-title" id="viewPreDischargeFormModalLabel"><?php echo xlt("View Pre-Discharge Details"); ?></h5>
+                <h5 class="modal-title" id="viewPreDischargeFormModalLabel">
+                    <?php echo xlt("Pre-Discharge Details"); ?>
+                </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <div id="viewFormContent">
-                    <!-- Content will be dynamically loaded here -->
-                    <p class="text-muted"><?php echo xlt("Loading form details..."); ?></p>
+            <div class="modal-body p-4">
+                <div id="viewFormContent" class="">
+                    <div class="text-center text-muted">
+                        <div class="spinner-border text-secondary" role="status"></div>
+                        <p class="mt-3"><?php echo xlt("Loading form details..."); ?></p>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Close"); ?></button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+                    <?php echo xlt("Close"); ?>
+                </button>
             </div>
         </div>
     </div>
@@ -242,12 +248,12 @@ include_once "./components/head.php";
         const checklistItems = document.querySelectorAll('.checklist-item');
         checklistItems.forEach(item => {
             item.addEventListener('change', function() {
-                const notesField = this.parentElement.querySelector('.checklist-notes');
+                const notesField = this.closest('div').querySelector('.checklist-notes');
                 if (this.checked) {
-                    notesField.classList.remove('d-none'); // Show notes field
+                    notesField.classList.remove('d-none');
                 } else {
-                    notesField.classList.add('d-none'); // Hide notes field
-                    notesField.value = ''; // Clear notes field
+                    notesField.classList.add('d-none');
+                    notesField.value = '';
                 }
             });
         });
@@ -257,9 +263,12 @@ include_once "./components/head.php";
             button.addEventListener('click', function() {
                 const formId = this.dataset.id;
                 const modalContent = document.getElementById('viewFormContent');
-                modalContent.innerHTML = '<p class="text-muted"><?php echo xlt("Loading form details..."); ?></p>';
+                modalContent.innerHTML = `
+                    <div class="text-center">
+                        <div class="spinner-border text-secondary" role="status"></div>
+                        <p class="mt-3"><?php echo xlt("Loading form details..."); ?></p>
+                    </div>`;
 
-                // Fetch form details via AJAX
                 fetch(`predischarge.php?form_id=${formId}`)
                     .then(response => {
                         if (!response.ok) {
@@ -270,22 +279,28 @@ include_once "./components/head.php";
                     .then(data => {
                         if (data.success) {
                             modalContent.innerHTML = `
-                <p><strong>Patient ID:</strong> ${data.form.patient_id}</p>
-                <p><strong>Created At:</strong> ${data.form.form_created_at}</p>
-                <p><strong>Checklist Items:</strong></p>
-                <ul>
-                    ${data.form.checklist_items.map(item => `
-                        <li>${item.item_title} - ${item.notes || 'No notes'}</li>
-                    `).join('')}
-                </ul>
-            `;
+                                <div class="mb-3">
+                                    <strong><?php echo xlt("Patient ID"); ?>:</strong> ${data.form.patient_id}<br>
+                                    <strong><?php echo xlt("Patient Name"); ?>:</strong> ${data.form.patient_name}<br>
+                                    <strong><?php echo xlt("Created At"); ?>:</strong> ${data.form.form_created_at}
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-0"><?php echo xlt("Pre-Discharge Checklist"); ?>:</p>
+                                    <ul class="list-group mt-1">
+                                        ${data.form.checklist_items.map(item => `
+                                            <li class="list-group-item">
+                                                <div class="font-weight-bold">${item.item_title}</div>
+                                                <small class="text-muted">${item.notes || '<?php echo xlt("No notes"); ?>'}</small>
+                                            </li>`).join('')}
+                                    </ul>
+                                </div>`;
                         } else {
                             modalContent.innerHTML = `<p class="text-danger">${data.message}</p>`;
                         }
                     })
                     .catch(error => {
                         console.error('Error fetching form details:', error);
-                        modalContent.innerHTML = `<p class="text-danger">An error occurred while loading the form details.</p>`;
+                        modalContent.innerHTML = `<p class="text-danger"><?php echo xlt("An error occurred while loading the form details."); ?></p>`;
                     });
             });
         });
