@@ -230,4 +230,68 @@ class PreDischargeChecklistQuery
             'inpatient'
         );
     }
+
+    /**
+     * Get filtered predischarge forms based on patient name and date range
+     * @param string $searchName
+     * @param string $startDate
+     * @param string $endDate
+     * @return array
+     */
+    public function getFilteredForms($searchName, $startDate, $endDate)
+    {
+        $query = "
+            SELECT 
+                fp.id AS form_id,
+                fp.pid AS patient_id,
+                CONCAT(pd.fname, ' ', pd.lname) AS patient_name,
+                fp.created_at AS form_created_at,
+                fp.created_by AS form_created_by
+            FROM 
+                form_predischarge fp
+            LEFT JOIN 
+                patient_data pd ON fp.pid = pd.pid
+            WHERE 1=1
+        ";
+
+        $params = [];
+
+        // Add filters dynamically
+        if (!empty($searchName)) {
+            $query .= " AND CONCAT(pd.fname, ' ', pd.lname) LIKE ?";
+            $params[] = '%' . $searchName . '%';
+        }
+
+        if (!empty($startDate)) {
+            $query .= " AND fp.created_at >= ?";
+            $params[] = $startDate;
+        }
+
+        if (!empty($endDate)) {
+            $query .= " AND fp.created_at <= ?";
+            $params[] = $endDate;
+        }
+
+        $query .= " ORDER BY fp.created_at DESC";
+
+        $results = sqlStatement($query, $params);
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: query filtered form_predischarge",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            $query,
+            1,
+            'open-emr',
+            'inpatient'
+        );
+
+        $data = [];
+        while ($row = sqlFetchArray($results)) {
+            $data[] = $row;
+        }
+
+        return $data;
+    }
 }
