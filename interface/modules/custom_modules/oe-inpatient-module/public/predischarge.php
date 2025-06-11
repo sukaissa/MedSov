@@ -162,51 +162,57 @@ include_once "./components/head.php";
     </div>
 </section>
 
+
+<!-- New Form Modal -->
 <div class="modal fade" id="newPreDischargeFormModal" tabindex="-1" role="dialog" aria-labelledby="newPreDischargeFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content shadow-sm border-0">
             <div class="modal-header">
                 <h5 class="modal-title" id="newPreDischargeFormModalLabel"><?php echo xlt("New Pre-Discharge Form"); ?></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <form method="POST" action="predischarge.php">
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="patient_id" class="form-label"><?php echo xlt("Patient ID"); ?></label>
+                <div class="modal-body p-4">
+                    <div class="form-group mb-4">
+                        <label for="patient_id"><?php echo xlt("Patient ID"); ?></label>
                         <input type="text" name="pid" id="patient_id" class="form-control" placeholder="<?php echo xlt("Enter Patient ID"); ?>" required>
                     </div>
 
-                    <h6 class="fw-bold"><?php echo xlt("Checklist Items"); ?></h6>
-                    <div class="form-checklist container">
+                    <h6 class="font-weight-bold mb-3"><?php echo xlt("Checklist Items"); ?></h6>
+                    <div class="form-checklist container-fluid">
                         <div class="row">
                             <?php if (!empty($checklistItems)) { ?>
                                 <?php foreach ($checklistItems as $item) { ?>
-                                    <div class="form-check mb-2 col-md-6">
-                                        <input class="form-check-input checklist-item" type="checkbox" name="checklist_items[<?php echo htmlspecialchars($item['option_id']); ?>]" id="checklist_<?php echo htmlspecialchars($item['option_id']); ?>" value="1">
-                                        <label class="form-check-label" for="checklist_<?php echo htmlspecialchars($item['option_id']); ?>">
-                                            <?php echo htmlspecialchars($item['title']); ?>
-                                        </label>
-                                        <!-- Hidden notes field -->
-                                        <textarea rows="2" type="text" class="form-control mt-2 checklist-notes d-none" name="checklist_notes[<?php echo htmlspecialchars($item['option_id']); ?>]" placeholder="<?php echo xlt('Enter notes'); ?>"></textarea>
+                                    <div class="form-group col-md-6 checklist-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input checklist-item" type="checkbox" name="checklist_items[<?php echo htmlspecialchars($item['option_id']); ?>]" id="checklist_<?php echo htmlspecialchars($item['option_id']); ?>" value="1">
+                                            <label class="form-check-label" for="checklist_<?php echo htmlspecialchars($item['option_id']); ?>">
+                                                <?php echo htmlspecialchars($item['title']); ?>
+                                            </label>
+                                        </div>
+                                        <textarea rows="2" class="form-control mt-2 checklist-notes d-none" name="checklist_notes[<?php echo htmlspecialchars($item['option_id']); ?>]" placeholder="<?php echo xlt('Enter notes'); ?>"></textarea>
                                     </div>
                                 <?php } ?>
                             <?php } else { ?>
-                                <p><?php echo xlt("No checklist items found."); ?></p>
+                                <div class="col-12">
+                                    <p class="text-muted"><?php echo xlt("No checklist items found."); ?></p>
+                                </div>
                             <?php } ?>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Cancel"); ?></button>
-                    <button type="submit" name="new" class="btn btn-primary"><?php echo xlt("Save"); ?></button>
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><?php echo xlt("Cancel"); ?></button>
+                    <button type="submit" name="new" class="btn btn-success"><?php echo xlt("Save"); ?></button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+<!-- View Form Modal -->
 <div class="modal fade" id="viewPreDischargeFormModal" tabindex="-1" role="dialog" aria-labelledby="viewPreDischargeFormModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
         <div class="modal-content shadow-sm border-0">
@@ -271,7 +277,8 @@ include_once "./components/head.php";
         const checklistItems = document.querySelectorAll('.checklist-item');
         checklistItems.forEach(item => {
             item.addEventListener('change', function() {
-                const notesField = this.closest('div').querySelector('.checklist-notes');
+                const container = this.closest('.checklist-group');
+                const notesField = container.querySelector('.checklist-notes');
                 if (this.checked) {
                     notesField.classList.remove('d-none');
                 } else {
