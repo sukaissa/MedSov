@@ -41,9 +41,10 @@ class PreDischargeChecklistQuery
     public function insertForm($patientId, $checklistItems, $checklistNotes)
     {
         // Insert the new form into form_predischarge
-        $formId = sqlInsert("
+        $formId = sqlInsert(
+            "
             INSERT INTO form_predischarge (pid, created_by) 
-            VALUES (?, ?)", 
+            VALUES (?, ?)",
             [$patientId, $_SESSION['authUser']]
         );
 
@@ -87,9 +88,10 @@ class PreDischargeChecklistQuery
         ");
 
         while ($row = sqlFetchArray($listOptions)) {
-            sqlInsert("
+            sqlInsert(
+                "
                 INSERT INTO form_predischarge_items (form_id, list_option_id, created_by) 
-                VALUES (?, ?, ?)", 
+                VALUES (?, ?, ?)",
                 [$formId, $row['option_id'], $_SESSION['authUser']]
             );
         }
@@ -184,42 +186,47 @@ class PreDischargeChecklistQuery
     }
 
     /**
-     * Update checklist items in a predischarge form based on form_id
-     * @param int $formId
-     * @param array $items Array of checklist items to update (each item contains id, list_option_value, and notes)
+     * Update a checklist item in a predischarge form
+     * @param int $formId The ID of the form
+     * @param array $checklistItems Array of checklist items to update (key: option_id, value: list_option_value)
+     * @param array $checklistNotes Array of notes for checklist items (key: option_id, value: note)
      * @return void
      */
-    public function updateFormItems($formId, $items)
+    public function updateFormItems($formId, $checklistItems, $checklistNotes)
     {
-        foreach ($items as $item) {
+        foreach ($checklistItems as $optionId => $value) {
+            $note = $checklistNotes[$optionId] ?? ''; // Get the note for the checklist item, if any
+
             $sql = "
                 UPDATE form_predischarge_items 
-                SET list_option_value = ?, 
+                SET 
+                    list_option_value = ?, 
                     notes = ?, 
                     created_by = ?, 
                     created_at = NOW()
-                WHERE form_id = ? AND id = ?
+                WHERE form_id = ? AND list_option_id = ?
             ";
 
             sqlStatement($sql, [
-                $item['list_option_value'],
-                $item['notes'],
-                $_SESSION['authUser'],
-                $formId,
-                $item['id']
+                $value,               // Updated value for the checklist item
+                $note,                // Updated note for the checklist item
+                $_SESSION['authUser'], // User making the update
+                $formId,              // ID of the form
+                $optionId             // ID of the checklist option
             ]);
-
-            EventAuditLogger::instance()->newEvent(
-                "inpatient-module: update form_predischarge_items",
-                null, // pid
-                $_SESSION["authUser"], // authUser
-                $_SESSION["authProvider"], // authProvider
-                $sql,
-                1,
-                'open-emr',
-                'inpatient'
-            );
         }
+
+        // Log the update event
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: update form_predischarge_items",
+            null, // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            "UPDATE form_predischarge_items",
+            1,
+            'open-emr',
+            'inpatient'
+        );
     }
 
     /**
@@ -306,5 +313,74 @@ class PreDischargeChecklistQuery
         }
 
         return $data;
+    }
+
+    /**
+     * Fetch a single predischarge form with all related data
+     * @param int $formId The ID of the form to fetch
+     * @return array|null The form details, including patient info and checklist items, or null if not found
+     */
+    public function getPreDischargeFormById($formId)
+    {
+        // Fetch the main form details
+        $formQuery = "
+            SELECT 
+                fp.id AS form_id,
+                fp.pid AS patient_id,
+                CONCAT(pd.fname, ' ', pd.lname) AS patient_name,
+                fp.created_at AS form_created_at,
+                fp.created_by AS form_created_by
+            FROM 
+                form_predischarge fp
+            LEFT JOIN 
+                patient_data pd ON fp.pid = pd.pid
+            WHERE 
+                fp.id = ?
+        ";
+
+        $formDetails = sqlQuery($formQuery, [$formId]);
+
+        if (!$formDetails) {
+            return null; // Return null if the form is not found
+        }
+
+        // Fetch the checklist items for the form
+        $itemsQuery = "
+            SELECT 
+                fpi.list_option_id,
+                lo.title AS item_title,
+                fpi.list_option_value,
+                fpi.notes
+            FROM 
+                form_predischarge_items fpi
+            LEFT JOIN 
+                list_options lo ON fpi.list_option_id = lo.option_id
+            WHERE 
+                fpi.form_id = ?
+        ";
+
+        $itemsResult = sqlStatement($itemsQuery, [$formId]);
+        $checklistItems = [];
+
+        while ($row = sqlFetchArray($itemsResult)) {
+            $checklistItems[] = $row;
+        }
+
+        // Combine the form details and checklist items
+        $formDetails['checklist_items'] = $checklistItems;
+
+        // Log the fetch event
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: fetch form_predischarge with related data",
+            $formDetails['patient_id'], // pid
+            $_SESSION["authUser"], // authUser
+            $_SESSION["authProvider"], // authProvider
+            "SELECT form_predischarge and related data",
+            1,
+            'open-emr',
+            'inpatient'
+        );
+
+        return $formDetails;
     }
 }
