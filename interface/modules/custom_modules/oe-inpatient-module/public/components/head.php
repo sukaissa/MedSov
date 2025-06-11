@@ -62,7 +62,7 @@ $navLinks = [
         'number' => 0
     ],
     [
-        'name' => 'PreDischarge',
+        'name' => 'Pre-Discharge',
         'link' => 'predischarge',
         'icon' => '<i class="bi bi-check-circle-fill"></i>',
         'number' => $pre_discharge_checklist_count
@@ -108,7 +108,7 @@ $navLinks = [
     <div class="d-flex" style="margin: 20px auto;">
         <?php foreach ($navLinks as  $value) {
         ?>
-            <a role="button" href="<?php echo $value['link']; ?>.php" class="main-links btn btn-primary font-weight-bold d-flex justify-content-center align-items-center mx-4">
+            <a role="button" href="<?php echo $value['link']; ?>.php" class="main-links btn btn-primary font-weight-bold d-flex justify-content-center align-items-center mx-3">
                 <?php echo $value['name']; ?>
                 <div class="d-flex flex-column justify-content-center ml-4">
                     <?php echo $value['icon']; ?>

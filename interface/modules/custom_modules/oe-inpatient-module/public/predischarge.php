@@ -90,9 +90,14 @@ include_once "./components/head.php";
 <section class="container-fluid mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold"><?php echo xlt("All Pre-Discharge Forms") ?></h4>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
-            <?php echo xlt("New Form") ?>
-        </button>
+        <div>
+            <button class="btn btn-outline-secondary mr-2" id="printAllToPdfBtn">
+                <?php echo xlt("Print") ?>
+            </button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
+                <?php echo xlt("New Form") ?>
+            </button>
+        </div>
     </div>
 
     <div class="card shadow-sm mb-4">
@@ -111,7 +116,7 @@ include_once "./components/head.php";
                     <input type="date" name="end_date" class="form-control" value="<?php echo htmlspecialchars($endDate); ?>">
                 </div>
                 <div class="col-md-2 d-flex gap-2">
-                    <button type="submit" class="btn btn-success w-100"><?php echo xlt("Filter"); ?></button>
+                    <button type="submit" class="btn btn-success w-100 mr-2"><?php echo xlt("Filter"); ?></button>
                     <a href="predischarge.php" class="btn btn-outline-secondary w-100"><?php echo xlt("Reset"); ?></a>
                 </div>
             </form>
@@ -123,8 +128,7 @@ include_once "./components/head.php";
             <table class="table table-hover">
                 <thead class="table-light">
                     <tr>
-                        <th><?php echo xlt("Form ID") ?></th>
-                        <th><?php echo xlt("Patient Name") ?></th>
+                        <th><?php echo xlt("Patient") ?></th>
                         <th><?php echo xlt("Created At") ?></th>
                         <th><?php echo xlt("Created By") ?></th>
                         <th><?php echo xlt("Actions") ?></th>
@@ -134,7 +138,6 @@ include_once "./components/head.php";
                     <?php if (!empty($records)) { ?>
                         <?php foreach ($records as $record) { ?>
                             <tr>
-                                <td><?php echo $record['form_id']; ?></td>
                                 <td><?php echo $record['patient_name']; ?></td>
                                 <td><?php echo $record['form_created_at']; ?></td>
                                 <td><?php echo $record['form_created_by']; ?></td>
@@ -232,6 +235,8 @@ include_once "./components/head.php";
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
 <script defer>
     window.onload = function() {
         $(".deleteBtn").click(function() {
@@ -245,6 +250,24 @@ include_once "./components/head.php";
     };
 
     document.addEventListener('DOMContentLoaded', function() {
+        const printAllToPdfBtn = document.getElementById('printAllToPdfBtn');
+        printAllToPdfBtn.addEventListener('click', function() {
+            const pdf = new jspdf.jsPDF();
+            const table = document.querySelector('.table'); // Select the table containing the records
+
+            pdf.text("All Pre-Discharge Forms", 10, 10); // Add a title to the PDF
+            pdf.autoTable({
+                html: table, // Use the table's HTML to generate the PDF
+                startY: 20, // Start rendering the table below the title
+                styles: {
+                    fontSize: 10, // Adjust font size for better readability
+                    cellPadding: 2,
+                },
+            });
+
+            pdf.save("pre_discharge_forms.pdf"); // Save the PDF
+        });
+
         const checklistItems = document.querySelectorAll('.checklist-item');
         checklistItems.forEach(item => {
             item.addEventListener('change', function() {
