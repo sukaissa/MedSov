@@ -95,7 +95,8 @@ class InpatientQuery
             ON
                 inp_patient_admission.id = fr.admission_id
             WHERE
-                inp_patient_admission.status != 'In Queue'
+                inp_patient_admission.status != 'In Queue' 
+            AND inp_patient_admission.status != 'Discharged'
             GROUP BY
                 inp_patient_admission.id
             ORDER BY
@@ -144,6 +145,7 @@ class InpatientQuery
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
                     inp_patient_admission.status = 'Admitted' 
+                AND inp_patient_admission.status != 'Discharged'
                 AND inp_patient_admission.ward_id = $data[ward_id] 
                 AND (patient_data.fname LIKE '%$data[word]%' 
                     OR patient_data.lname LIKE '%$data[word]%' 
@@ -169,7 +171,8 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'Admitted'
+                AND inp_patient_admission.status != 'Discharged' 
                 AND inp_patient_admission.ward_id = $data[ward_id]
                 ORDER BY
                     admission_date
@@ -192,7 +195,8 @@ class InpatientQuery
             LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
             WHERE
-                inp_patient_admission.status = 'Admitted' 
+                inp_patient_admission.status = 'Admitted'
+            AND inp_patient_admission.status != 'Discharged'
             AND (patient_data.fname LIKE '%$data[word]%' 
                 OR patient_data.lname LIKE '%$data[word]%' 
                 OR patient_data.mname LIKE '%$data[word]%')

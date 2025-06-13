@@ -94,9 +94,9 @@ include_once "./components/head.php";
             <button class="btn btn-secondary mr-2" id="printAllToPdfBtn">
                 <?php echo xlt("Print") ?>
             </button>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
+            <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#newPreDischargeFormModal">
                 <?php echo xlt("New Form") ?>
-            </button>
+            </button> -->
         </div>
     </div>
 

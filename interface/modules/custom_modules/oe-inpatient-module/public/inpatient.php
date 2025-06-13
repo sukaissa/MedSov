@@ -83,6 +83,7 @@ $procedure = $procedureQuery->getProcedure();
 $theater = $theaterQuery->getTheater();
 $foodItems = $foodQuery->getMenuItems();
 $calenderCat =  $surgeryQuery->getCalendarCat();
+$checklistItems = $listQuery->getListItemsByListId('pre_discharge_items');
 
 $sidebar_status =  'none';
 $current_list = '';
@@ -217,9 +218,15 @@ if (isset($_POST['nurse_note']) && $_SERVER['REQUEST_METHOD'] == "POST") {
         'id' => $_POST['prep_admission_id'],
         'patient_id' => $_POST['prep_patient_id'],
         'encounter_id' => $_POST['prep_encounter_id'],
+        'checklistItems' => $_POST['checklist_items'] ?? [],
+        'checklistNotes' => $_POST['checklist_notes'] ?? [],
     ];
+
+    // Insert the new predischarge form entry
+    $preDischargeChecklist->insertForm($data['id'], $data['checklistItems'], $data['checklistNotes']);
     $inpatientQuery->prepareDischarge($data);
-    // header('location:inpatient.php?status=success&message=Patient discharge preparation successfully');
+
+    header('location:inpatient.php?status=success&message=Patient discharge preparation successfully');
 } elseif (isset($_POST['undo_admission']) && $_SERVER['REQUEST_METHOD'] == "POST") {
     $data = [
         'id' => $_POST['undo_admission_id'],
