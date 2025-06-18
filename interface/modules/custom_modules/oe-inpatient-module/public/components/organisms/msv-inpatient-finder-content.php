@@ -98,17 +98,19 @@ if (isset($_GET['status'])) {
 }
 
 if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
-    $id = $_GET['search_ward'];
-    $word = $_GET['word'];
+    $id = isset($_GET['search_ward']) && trim($_GET['search_ward']) !== '' ? $_GET['search_ward'] : null;
+    $word = isset($_GET['word']) && trim($_GET['word']) !== '' ? $_GET['word'] : null;
     $data = [
         'ward_id' => $id,
-        'word' =>  $word
+        'word' => $word
     ];
     $inpatients = $inpatientQuery->searchInpatients($data);
 } else {
     $inpatients = $inpatientQuery->getInpatients();
 }
 
+$selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
+$searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
@@ -124,15 +126,17 @@ if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
                     <input type="hidden" name="search_by_ward">
                     <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
                         <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward" name="search_ward" id="search_ward">
-                            <option value=""> <?php echo xlt("Select Ward") ?> </option>
+                            <option value=""><?php echo xlt("Select Ward") ?></option>
                             <?php foreach ($wards as $ward) { ?>
-                                <option value="<?php echo $ward['id']; ?>"><?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?></option>
-                            <?php
-                            }  ?>
+                                <option value="<?php echo $ward['id']; ?>" <?php echo ($selectedWard == $ward['id']) ? 'selected' : ''; ?>>
+                                    <?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?>
+                                </option>
+                            <?php } ?>
                         </select>
                         <div class="border h-[30px]"></div>
                         <input name="word" id="word" type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                            placeholder="Enter patient’s name" />
+                            placeholder="Enter patient’s name"
+                            value="<?php echo htmlspecialchars($searchedWord); ?>" />
                     </div>
 
                     <button type="submit" class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
