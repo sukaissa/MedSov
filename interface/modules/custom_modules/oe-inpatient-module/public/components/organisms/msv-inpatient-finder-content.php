@@ -105,6 +105,7 @@ if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
         'word' =>  $word
     ];
     $inpatients = $inpatientQuery->searchInpatients($data);
+    echo "<script>console.log(" . json_encode($inpatients) . ")</script>";
 } else {
     $inpatients = $inpatientQuery->getInpatients();
 }
@@ -284,20 +285,27 @@ if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
 
         <div class="-mt-[150px] w-[1070px] min-h-[493px] bg-white p-[30px]">
 
-            <div class="flex gap-5 align-items-center border-b pb-5 mb-5 ">
-                <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
-                    <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward">
-                        <option value="" class="text-[#8C898A] font-[300]">Select Ward</option>
-                    </select>
-                    <div class="border h-[30px]"></div>
-                    <input type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                        placeholder="Enter patient’s name" />
-                </div>
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
+                <div class="flex gap-5 align-items-center border-b pb-5 mb-5 ">
+                    <input type="hidden" name="search_by_ward">
+                    <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
+                        <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward" name="search_ward" id="search_ward">
+                            <option value=""> <?php echo xlt("Select Ward") ?> </option>
+                            <?php foreach ($wards as $ward) { ?>
+                                <option value="<?php echo $ward['id']; ?>"><?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?></option>
+                            <?php
+                            }  ?>
+                        </select>
+                        <div class="border h-[30px]"></div>
+                        <input name="word" id="word" type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
+                            placeholder="Enter patient’s name" />
+                    </div>
 
-                <button class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
-                    <img src="./assets/img/msv-search-icon.svg" alt="">
-                </button>
-            </div>
+                    <button type="submit" class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
+                        <img src="./assets/img/msv-search-icon.svg" alt="">
+                    </button>
+                </div>
+            </form>
 
 
             <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
