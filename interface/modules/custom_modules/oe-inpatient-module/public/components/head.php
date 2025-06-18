@@ -97,17 +97,17 @@ $navLinks = [
 
 
 <body class="container-fluid d-flex flex-column" style="padding-left: 30px; padding-right: 30px;">
-
     <div class="d-flex" style="margin: 20px auto;">
         <?php foreach ($navLinks as  $value) {
         ?>
-            <a role="button" href="<?php echo $value['link']; ?>.php" class="main-links btn btn-primary font-weight-bold d-flex justify-content-center align-items-center mx-4">
-                <?php echo $value['name']; ?>
-                <div class="d-flex flex-column justify-content-center ml-4">
-                    <?php echo $value['icon']; ?>
-                    <?php echo $value['number']; ?>
-                </div>
-            </a>
+        <a role="button" href="<?php echo $value['link']; ?>.php"
+            class="main-links btn btn-primary font-weight-bold d-flex justify-content-center align-items-center mx-4">
+            <?php echo $value['name']; ?>
+            <div class="d-flex flex-column justify-content-center ml-4">
+                <?php echo $value['icon']; ?>
+                <?php echo $value['number']; ?>
+            </div>
+        </a>
         <?php
         } ?>
     </div>

@@ -110,7 +110,7 @@ if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 
-include_once "./components/head.php";
+// include_once "./components/head.php";
 ?>
 
 <!-- check condition of display message -->
@@ -130,6 +130,7 @@ include_once "./components/head.php";
 <?php } ?>
 
 <section class="main-containerx" style="flex-direction: column;">
+    
     <div class="left-con">
 
         <div class="search_container">
