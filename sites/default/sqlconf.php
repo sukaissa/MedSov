@@ -9,7 +9,7 @@ $host	= 'localhost';
 $port	= '8889';
 $login	= 'root';
 $pass	= 'root';
-$dbase	= 'root';
+$dbase	= 'medsov';
 $db_encoding	= 'utf8mb4';
 
 $sqlconf = array();
