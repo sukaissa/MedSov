@@ -162,7 +162,6 @@ include_once "./components/head.php";
             </tr>
 
             <?php foreach ($admissionsQueue as $value) {
-                echo "<Script>console.log(" . json_encode($value) . ")</script>";
             ?>
                 <tr>
                     <td><?php echo $value['fname']; ?> <?php echo $value['mname']; ?> <?php echo $value['lname']; ?></td>
