@@ -162,6 +162,7 @@ include_once "./components/head.php";
             </tr>
 
             <?php foreach ($admissionsQueue as $value) {
+                echo "<Script>console.log(" . json_encode($value) . ")</script>";
             ?>
                 <tr>
                     <td><?php echo $value['fname']; ?> <?php echo $value['mname']; ?> <?php echo $value['lname']; ?></td>
@@ -175,17 +176,19 @@ include_once "./components/head.php";
                     <td><?php echo $value['bed_number']; ?></td>
                     <td>
                         <div style="display: flex;">
-                            <form method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>" style="margin-right: 8px;">
-                                <input type="hidden" name="change_stat" value="">
-                                <input type="hidden" name="status" value="Admitted">
-                                <input type="hidden" name="bed_id" value="<?php echo $value['bed_id']; ?>">
-                                <input type="hidden" name="ward_id" value="<?php echo $value['ward_id']; ?>">
-                                <input type="hidden" name="inp_id" value="<?php echo $value['id']; ?>">
+                            <?php if (!empty($value['ward_id']) || $value['ward_id'] != "0" || !empty($value['bed_id']) || $value['bed_id'] != "0") : ?>
+                                <form method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>" style="margin-right: 8px;">
+                                    <input type="hidden" name="change_stat" value="">
+                                    <input type="hidden" name="status" value="Admitted">
+                                    <input type="hidden" name="bed_id" value="<?php echo $value['bed_id']; ?>">
+                                    <input type="hidden" name="ward_id" value="<?php echo $value['ward_id']; ?>">
+                                    <input type="hidden" name="inp_id" value="<?php echo $value['id']; ?>">
 
-                                <button type="submit" class="btn-primary btn" data-toggle="modal">
-                                    <?php echo xlt("Accept") ?>
-                                </button>
-                            </form>
+                                    <button type="submit" class="btn-primary btn" data-toggle="modal">
+                                        <?php echo xlt("Accept") ?>
+                                    </button>
+                                </form>
+                            <?php endif; ?>
                             <button type="button" class="btn-primary btn updateBtn" data-toggle="modal" data-target="#updateAdmission" data-id="<?php echo $value['id']; ?>" data-ward="<?php echo $value['ward_id']; ?>" data-bed="<?php echo $value['bed_id']; ?>" data-admission_date="<?php echo $value['admission_date']; ?>" data-provider="<?php echo $value['assigned_provider']; ?>" data-nurse="<?php echo $value['assigned_nurse_id']; ?>" data-opd_case_doctor_id="<?php echo $value['opd_case_doctor_id']; ?>">
                                 <?php echo xlt("Update") ?>
                             </button>
