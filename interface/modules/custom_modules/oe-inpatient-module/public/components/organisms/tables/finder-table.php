@@ -26,23 +26,13 @@
             'title' => 'Days Spent',
             'dataIndex' => 'days_spent'
         ],
-        [
-            'title' => 'Actions',
-            'dataIndex' => 'actions',
-            'render' => function ($record) {
-                $patientId = htmlspecialchars($record['id']);
-                return '<div class="flex space-x-2">
-                                <a role="button" href="dashboard.php?id=' . $patientId . '" class="bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">View</a>
-                                <button class="bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">Delete</button>
-                            </div>';
-            }
-        ],
+
     ];
 
     $dataSource = [];
     // Map $inpatients to $dataSource for the table
     // If $inpatients is an object (e.g., sqlStatement result), fetch rows as arrays
-    
+
     if (is_object($inpatients)) {
         while ($item = sqlFetchArray($inpatients)) {
             $dataSource[] = [

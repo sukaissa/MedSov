@@ -22,10 +22,8 @@ $content = isset($content) ? $content : '';
     tailwind.config = {
         theme: {
             extend: {
-                colors: {
-                    'coral': '#FF6B5B',
-                    'coral-light': '#FF8A7A'
-                }
+                colors: 'coral': '#FF6B5B',
+                'coral-light': '#FF8A7A'
             }
         }
     }
@@ -49,4 +47,5 @@ $content = isset($content) ? $content : '';
 
 
     </div>
+    <script src="./components/organisms/modals/patient_info/index.js"></script>
 </body>

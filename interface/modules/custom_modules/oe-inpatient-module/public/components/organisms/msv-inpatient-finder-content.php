@@ -126,21 +126,24 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
                 <div class="flex gap-5 align-items-center border-b pb-5 mb-5 ">
                     <input type="hidden" name="search_by_ward">
                     <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
-                        <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward" name="search_ward" id="search_ward">
+                        <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward"
+                            name="search_ward" id="search_ward">
                             <option value=""><?php echo xlt("Select Ward") ?></option>
                             <?php foreach ($wards as $ward) { ?>
-                                <option value="<?php echo $ward['id']; ?>" <?php echo ($selectedWard == $ward['id']) ? 'selected' : ''; ?>>
-                                    <?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?>
-                                </option>
+                            <option value="<?php echo $ward['id']; ?>"
+                                <?php echo ($selectedWard == $ward['id']) ? 'selected' : ''; ?>>
+                                <?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?>
+                            </option>
                             <?php } ?>
                         </select>
                         <div class="border h-[30px]"></div>
-                        <input name="word" id="word" type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                            placeholder="Enter patient’s name"
-                            value="<?php echo htmlspecialchars($searchedWord); ?>" />
+                        <input name="word" id="word" type="text"
+                            class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
+                            placeholder="Enter patient’s name" value="<?php echo htmlspecialchars($searchedWord); ?>" />
                     </div>
 
-                    <button type="submit" class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
+                    <button type="submit"
+                        class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
                         <img src="./assets/img/msv-search-icon.svg" alt="">
                     </button>
                 </div>
@@ -151,42 +154,5 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 
 
         </div>
-        <div class="w-[1100px] mx-10 flex px-4 items-center h-[60px] bg-white rounded-md justify-between">
-            <div>Lily Cho • 123456789</div>
 
-
-            <div class="flex gap-4 items-center">
-                <button class="flex gap-2 items-center">
-                    <img src="./assets/img/msv-treatment-icon.svg" alt="treatment">
-                    <p class="text-[14px] text-[#282224]">Treatments</p>
-                </button>
-                <div class="border border-[#E7E7E7] h-[30px]"> </div>
-                <button class="flex gap-2 items-center">
-                    <img src="./assets/img/msv-surgery-icon.svg" alt="treatment">
-                    <p class="text-[14px] text-[#282224]">Surgeries</p>
-                </button>
-                <div class="border border-[#E7E7E7] h-[30px]"> </div>
-                <button class="flex gap-2 items-center">
-                    <img src="./assets/img/msv-meals-icon.svg" alt="treatment">
-                    <p class="text-[14px] text-[#282224]">Meals</p>
-                </button>
-                <div class="border border-[#E7E7E7] h-[30px]"> </div>
-                <button class="flex gap-2 items-center">
-                    <img src="./assets/img/msv-vitals-icon.svg" alt="treatment">
-                    <p class="text-[14px] text-[#282224]">Vitals</p>
-                </button>
-                <div class="border border-[#E7E7E7] h-[30px]"> </div>
-                <button class="flex gap-2 items-center">
-                    <img src="./assets/img/msv-note-icon.svg" alt="treatment">
-                    <p class="text-[14px] text-[#282224]">Notes</p>
-                </button>
-                <div class="border border-[#E7E7E7] h-[30px]"> </div>
-                <button class="flex gap-2">
-                    <button class="flex gap-2">
-                        <img src="./assets/img/msv-menu-icon.svg" alt="treatment">
-                    </button>
-                </button>
-            </div>
-
-        </div>
 </main>
