@@ -1,15 +1,12 @@
 <?php
 ob_start();
 
-
 ?>
 
 <div>
     <?php
-    include_once __DIR__ . "/../organisms/msv-inpatient-finder-content.php";
-    require_once __DIR__ . "/../organisms/modals/patient_info/index.php";
+    include_once __DIR__ . "/../organisms/msv-beds-content.php";
     ?>
-
 </div>
 
 <?php
