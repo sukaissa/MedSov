@@ -9,7 +9,6 @@
  * @copyright Copyright (c) 2025 Medsov <info@medsov.com> Omega Systems
  */
 require_once(__DIR__ . "/../../../src/Common/Forms/CoreFormToPortalUtility.php");
-require_once(__DIR__ . "/../../globals.php");
 require_once __DIR__ . '/components/baby_info.php';
 require_once __DIR__ . '/components/person_filling.php';
 require_once __DIR__ . '/components/program_info.php';
@@ -19,11 +18,8 @@ require_once __DIR__ . '/components/fine_motor.php';
 require_once __DIR__ . '/components/problem_solving.php';
 require_once __DIR__ . '/components/personal_social.php';
 require_once __DIR__ . '/components/overall_section.php';
-require_once("$srcdir/api.inc.php");
 
 use OpenEMR\Common\Forms\CoreFormToPortalUtility;
-use OpenEMR\Common\Csrf\CsrfUtils;
-use OpenEMR\Core\Header;
 
 $patientPortalSession = CoreFormToPortalUtility::isPatientPortalSession($_GET);
 if ($patientPortalSession) {
@@ -31,6 +27,11 @@ if ($patientPortalSession) {
 }
 $patientPortalOther = CoreFormToPortalUtility::isPatientPortalOther($_GET);
 
+require_once(__DIR__ . "/../../globals.php");
+require_once("$srcdir/api.inc.php");
+
+use OpenEMR\Common\Csrf\CsrfUtils;
+use OpenEMR\Core\Header;
 
 if (!empty($_GET['id'])) {
     $obj = formFetch("form_two_month_asq", $_GET["id"]);
@@ -74,17 +75,16 @@ $form_name = "two_month_asq";
                 <?php render_problem_solving($obj ?? []); ?>
                 <?php render_personal_social($obj ?? []); ?>
                 <?php render_overall_section($obj ?? []); ?>
-                <div class="text-right">
-                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal" id="previewButton">Preview &amp; Submit</button> -->
-                    <input type="button" class="btn btn-success ms-2 save" value="Save">
-                    <input type="button" class="btn btn-warning ms-2 dontsave" value="Cancel" onclick="parent.closeTab(window.name, false)" />
-                </div>
+                <?php if (!$patientPortalSession && !$patientPortalOther) { ?>
+                    <div class="text-right">
+                        <input type="button" class="btn btn-success ms-2 save" value="Save">
+                        <input type="button" class="btn btn-warning ms-2 dontsave" value="Cancel" onclick="parent.closeTab(window.name, false)" />
+                    </div>
+                <?php } ?>
                 </form>
     </div>
-    <!-- Preview Modal -->
-    <?php include __DIR__ . '/components/preview_modal.php'; ?>
 
-    <!-- Bootstrap 5 JS (local) -->
+    <!-- Bootstrap (local) -->
     <script src="<?php echo $web_root; ?>/public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         // document.getElementById('previewButton').addEventListener('click', function() {

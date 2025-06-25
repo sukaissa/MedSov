@@ -1,15 +1,12 @@
 <?php
 
 /**
- * sdoh form
+ * ASQ-3: 2-Month Questionnaire form.
  *
- * @package   OpenEMR
- * @link      https://www.open-emr.org
- * @author    Char Miller <charjmiller@gmail.com>
- * @author    Brady Miller <brady.g.miller@gmail.com>
- * @copyright Copyright (c) 2022 Char Miller <charjmiller@gmail.com>
- * @copyright Copyright (c) 2022 Brady Miller <brady.g.miller@gmail.com>
- * @license   https://github.com/openemr/openemr/blob/master/LICENSE GNU General Public License 3
+ * @package   MedSov EMR
+ * @link      https://www.medsov.com
+ * @author    Mark Amoah <mcprah@gmail.com>
+ * @copyright Copyright (c) 2025 Medsov <info@medsov.com> Omega Systems
  */
 
 require_once(__DIR__ . "/../../globals.php");

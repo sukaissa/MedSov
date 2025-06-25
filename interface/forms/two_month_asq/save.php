@@ -145,7 +145,7 @@ if ($_GET["mode"] == "new" || empty($id)) {
     $newid = sqlInsert($sql, $params);
     addForm($encounter, "ASQ-3 2-Month Questionnaire", $newid, "two_month_asq", $pid, $userauthorized);
     $formid = $newid;
-} else {
+} elseif ($_GET["mode"] == "update")  {
     // if running from patient portal, then below will ensure patient can only see their forms
     CoreFormToPortalUtility::confirmFormBootstrapPatient($patientPortalSession, $_GET['id'], 'two_month_asq', $_SESSION['pid']);
     $formid = $id;
