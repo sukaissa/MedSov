@@ -2,7 +2,7 @@
 // Baby’s Information Section
 ?>
 <fieldset class="border p-4 mb-5">
-    <legend class="float-none w-auto px-2 fw-bold text-center w-100">Baby’s information</legend>
+    <legend class="float-none w-auto px-2 font-weight-medium text-center w-100">Baby’s information</legend>
     <div class="row g-3 mb-3">
         <!-- Name -->
         <div class="col-md-4">

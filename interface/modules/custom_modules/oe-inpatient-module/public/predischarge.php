@@ -89,7 +89,7 @@ include_once "./components/head.php";
 
 <section class="container-fluid mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h4 class="fw-bold"><?php echo xlt("All Pre-Discharge Forms") ?></h4>
+        <h4 class="font-weight-medium"><?php echo xlt("All Pre-Discharge Forms") ?></h4>
         <div>
             <button class="btn btn-secondary mr-2" id="printAllToPdfBtn">
                 <?php echo xlt("Print") ?>

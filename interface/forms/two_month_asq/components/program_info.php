@@ -2,7 +2,7 @@
 // Program Information Section
 ?>
 <fieldset class="border p-4 mb-5">
-    <legend class="float-none w-auto px-2 fw-bold text-center w-100">Program Information</legend>
+    <legend class="float-none w-auto px-2 font-weight-medium text-center w-100">Program Information</legend>
     <div class="row mb-3">
         <div class="col-md-6">
             <label class="form-label" for="baby-id">Baby ID #</label>

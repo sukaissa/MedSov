@@ -2,7 +2,7 @@
 // Problem Solving Section
 ?>
 <fieldset class="border p-3 mb-4">
-    <legend class="float-none w-auto px-2 fw-bold text-center w-100">Problem Solving</legend>
+    <legend class="float-none w-auto px-2 font-weight-medium text-center w-100">Problem Solving</legend>
     <div class="table-responsive">
         <table class="table align-middle mb-0">
             <thead>
@@ -105,7 +105,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="5" class="text-end fw-bold" style="font-size:1.1rem;">PROBLEM SOLVING TOTAL</td>
+                    <td colspan="5" class="text-right font-weight-medium" style="font-size:1.1rem;">PROBLEM SOLVING TOTAL</td>
                     <td>
                         <input type="text" class="form-control form-control-sm text-center" name="ps-total" id="ps-total" style="width:5em;" readonly>
                     </td>
