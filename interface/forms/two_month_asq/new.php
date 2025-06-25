@@ -8,21 +8,47 @@
  * @author    Mark Amoah <mcprah@gmail.com>
  * @copyright Copyright (c) 2025 Medsov <info@medsov.com> Omega Systems
  */
-
+require_once(__DIR__ . "/../../../src/Common/Forms/CoreFormToPortalUtility.php");
 require_once(__DIR__ . "/../../globals.php");
+require_once __DIR__ . '/components/baby_info.php';
+require_once __DIR__ . '/components/person_filling.php';
+require_once __DIR__ . '/components/program_info.php';
+require_once __DIR__ . '/components/communication.php';
+require_once __DIR__ . '/components/gross_motor.php';
+require_once __DIR__ . '/components/fine_motor.php';
+require_once __DIR__ . '/components/problem_solving.php';
+require_once __DIR__ . '/components/personal_social.php';
+require_once __DIR__ . '/components/overall_section.php';
 require_once("$srcdir/api.inc.php");
 
-formHeader("2-Month ASQ Questionnaire");
-
+use OpenEMR\Common\Forms\CoreFormToPortalUtility;
 use OpenEMR\Common\Csrf\CsrfUtils;
+use OpenEMR\Core\Header;
 
+$patientPortalSession = CoreFormToPortalUtility::isPatientPortalSession($_GET);
+if ($patientPortalSession) {
+    $ignoreAuth_onsite_portal = true;
+}
+$patientPortalOther = CoreFormToPortalUtility::isPatientPortalOther($_GET);
+
+
+if (!empty($_GET['id'])) {
+    $obj = formFetch("form_two_month_asq", $_GET["id"]);
+    $mode = 'update';
+    CoreFormToPortalUtility::confirmFormBootstrapPatient($patientPortalSession, $_GET['id'], 'two_month_asq', $_SESSION['pid']);
+} else {
+    $mode = 'new';
+}
+
+formHeader("2-Month ASQ Questionnaire");
 $form_name = "two_month_asq";
-
 ?>
 <html>
 
 <head>
-    <!-- Bootstrap 5 CSS (local) -->
+    <title><?php echo xlt("Ages & Stages Questionnaires® (ASQ®): 2-Month Questionnaire"); ?></title>
+    <?php Header::setupHeader(); ?>
+    <!-- Bootstrap CSS (local) -->
     <link href="<?php echo $web_root; ?>/public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -33,24 +59,27 @@ $form_name = "two_month_asq";
         <h2 class="mt-4">General Instructions</h2>
         <p>Please read each question carefully and select the option that best describes your child’s ability. Answer based on what your child is doing now. If your child has a medical condition, please explain at the end of the questionnaire.</p>
 
-
-        <form action="<?php echo $rootdir . "/forms/" . $form_name . "/save.php?id="; ?>" method="post" id="asqForm">
-            <input type="hidden" name="csrf_token_form" value="<?php echo attr(CsrfUtils::collectCsrfToken()); ?>" />
-            <?php include __DIR__ . '/components/baby_info.php'; ?>
-            <?php include __DIR__ . '/components/person_filling.php'; ?>
-            <?php include __DIR__ . '/components/program_info.php'; ?>
-            <?php include __DIR__ . '/components/communication.php'; ?>
-            <?php include __DIR__ . '/components/gross_motor.php'; ?>
-            <?php include __DIR__ . '/components/fine_motor.php'; ?>
-            <?php include __DIR__ . '/components/problem_solving.php'; ?>
-            <?php include __DIR__ . '/components/personal_social.php'; ?>
-            <?php include __DIR__ . '/components/overall_section.php'; ?>
-            <div class="text-right">
-                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal" id="previewButton">Preview &amp; Submit</button> -->
-                <input type="button" class="btn btn-success ms-2 save" value="Save">
-                <input type="button" class="btn btn-warning ms-2 dontsave" value="Cancel" onclick="parent.closeTab(window.name, false)" />
-            </div>
-        </form>
+        <?php if ($mode == "new") { ?>
+            <form action="<?php echo $rootdir; ?>/forms/<?php echo $form_name; ?>/save.php?mode=new<?php echo ($patientPortalSession) ? '&isPortal=1' : '' ?>" method="post" id="asqForm">
+            <?php } else { ?>
+                <form action="<?php echo $rootdir; ?>/forms/<?php echo $form_name; ?>/save.php?mode=update&id=<?php echo attr_url($_GET["id"]); ?><?php echo ($patientPortalSession) ? '&isPortal=1' : '' ?><?php echo ($patientPortalOther) ? '&formOrigin=' . attr_url($_GET['formOrigin']) : '' ?>" method="post" id="asqForm">
+                <?php } ?>
+                <input type="hidden" name="csrf_token_form" value="<?php echo attr(CsrfUtils::collectCsrfToken()); ?>" />
+                <?php render_baby_info($obj ?? []); ?>
+                <?php render_person_filling($obj ?? []); ?>
+                <?php render_program_info($obj ?? []); ?>
+                <?php render_communication($obj ?? []); ?>
+                <?php render_gross_motor($obj ?? []); ?>
+                <?php render_fine_motor($obj ?? []); ?>
+                <?php render_problem_solving($obj ?? []); ?>
+                <?php render_personal_social($obj ?? []); ?>
+                <?php render_overall_section($obj ?? []); ?>
+                <div class="text-right">
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal" id="previewButton">Preview &amp; Submit</button> -->
+                    <input type="button" class="btn btn-success ms-2 save" value="Save">
+                    <input type="button" class="btn btn-warning ms-2 dontsave" value="Cancel" onclick="parent.closeTab(window.name, false)" />
+                </div>
+                </form>
     </div>
     <!-- Preview Modal -->
     <?php include __DIR__ . '/components/preview_modal.php'; ?>
@@ -70,7 +99,7 @@ $form_name = "two_month_asq";
 
         document.addEventListener('DOMContentLoaded', function() {
             // Save button
-            document.querySelectorAll('.save').forEach(function(btn) {                
+            document.querySelectorAll('.save').forEach(function(btn) {
                 btn.addEventListener('click', function() {
                     if (typeof top.restoreSession === 'function') top.restoreSession();
                     document.getElementById('asqForm').submit();
@@ -85,6 +114,7 @@ $form_name = "two_month_asq";
                 });
             });
         });
+        <?php echo CoreFormToPortalUtility::javascriptSupportPortal($patientPortalSession, $patientPortalOther, $mode, $_GET['id'] ?? null); ?>
     </script>
 </body>
 

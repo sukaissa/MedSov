@@ -5,6 +5,16 @@
  *
  * @package   MedSov EMR
  */
+// block of code to securely support use by the patient portal
+require_once(__DIR__ . "/../../../src/Common/Forms/CoreFormToPortalUtility.php");
+
+use OpenEMR\Common\Forms\CoreFormToPortalUtility;
+
+$patientPortalSession = CoreFormToPortalUtility::isPatientPortalSession($_GET);
+if ($patientPortalSession) {
+    $ignoreAuth_onsite_portal = true;
+}
+$patientPortalOther = CoreFormToPortalUtility::isPatientPortalOther($_GET);
 
 require_once(__DIR__ . "/../../globals.php");
 require_once("$srcdir/api.inc.php");
@@ -16,9 +26,13 @@ if (!CsrfUtils::verifyCsrfToken($_POST["csrf_token_form"])) {
     CsrfUtils::csrfNotVerified();
 }
 
-$id = (int) (isset($_GET['id']) ? $_GET['id'] : '');
+if ($encounter == "") {
+    $encounter = date("Ymd");
+}
 
-// Build the field list and values for insert/update
+$id = (int) ($_GET['id'] ?? '');
+
+// List of all fields in the form
 $fields = [
     // Baby’s Information
     'baby_first_name',
@@ -112,26 +126,46 @@ $fields = [
     'caregiver_date_completed'
 ];
 
-$sets = implode(", ", array_map(function ($f) {
-    return "$f = ?";
-}, $fields));
+// Build the value array
 $values = array_map(function ($f) {
-    return isset($_POST[$f]) ? $_POST[$f] : null;
+    return $_POST[$f] ?? null;
 }, $fields);
 
-if (empty($id)) {
-    $newid = sqlInsert(
-        "INSERT INTO form_2_month_asq SET $sets",
-        $values
-    );
+if ($_GET["mode"] == "new" || empty($id)) {
+    // Insert
+    $placeholders = implode(", ", array_fill(0, count($fields), '?'));
+    $fieldList = implode(", ", $fields);
+    $sql = "INSERT INTO form_two_month_asq (pid, groupname, user, authorized, activity, date, $fieldList) VALUES (?, ?, ?, ?, 1, NOW(), $placeholders)";
+    $params = array_merge([
+        $_SESSION["pid"],
+        $_SESSION["authProvider"] ?? null,
+        $_SESSION["authUser"],
+        $userauthorized
+    ], $values);
+    $newid = sqlInsert($sql, $params);
     addForm($encounter, "ASQ-3 2-Month Questionnaire", $newid, "two_month_asq", $pid, $userauthorized);
+    $formid = $newid;
 } else {
-    sqlStatement(
-        "UPDATE form_2_month_asq SET $sets WHERE id = ?",
-        array_merge($values, [$id])
-    );
+    // if running from patient portal, then below will ensure patient can only see their forms
+    CoreFormToPortalUtility::confirmFormBootstrapPatient($patientPortalSession, $_GET['id'], 'two_month_asq', $_SESSION['pid']);
+    $formid = $id;
+    $setList = implode(", ", array_map(function ($f) {
+        return "$f = ?";
+    }, $fields));
+    $sql = "UPDATE form_two_month_asq SET pid=?, groupname=?, user=?, authorized=?, activity=1, date=NOW(), $setList WHERE id=?";
+    $params = array_merge([
+        $_SESSION["pid"],
+        $_SESSION["authProvider"] ?? null,
+        $_SESSION["authUser"],
+        $userauthorized
+    ], $values, [$id]);
+    sqlStatement($sql, $params);
 }
 
-formHeader("Redirecting....");
-formJump();
-formFooter();
+if ($patientPortalSession || $patientPortalOther) {
+    echo CoreFormToPortalUtility::formPatientPortalPostSave($formid);
+} else {
+    formHeader("Redirecting....");
+    formJump();
+    formFooter();
+}
