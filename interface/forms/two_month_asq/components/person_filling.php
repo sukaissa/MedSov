@@ -57,52 +57,55 @@
         </div>
     </div>
     <!-- Relationship -->
-    <div class="mb-3">
-        <label class="form-label d-block">Relationship to baby</label>
-        <div class="row gx-2 gy-1">
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-parent" value="Parent">
-                <label class="form-check-label" for="rel-parent">Parent</label>
-            </div>
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-grandparent" value="Grandparent or other relative">
-                <label class="form-check-label" for="rel-grandparent">Grandparent or other relative</label>
-            </div>
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-guardian" value="Guardian">
-                <label class="form-check-label" for="rel-guardian">Guardian</label>
-            </div>
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-foster" value="Foster parent">
-                <label class="form-check-label" for="rel-foster">Foster parent</label>
-            </div>
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-teacher" value="Teacher">
-                <label class="form-check-label" for="rel-teacher">Teacher</label>
-            </div>
-            <div class="col-md-4 form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-provider" value="Child care provider">
-                <label class="form-check-label" for="rel-provider">Child care provider</label>
-            </div>
-            <div class="col-md-4 d-flex align-items-center form-check">
-                <input class="form-check-input" type="radio" name="relationship" id="rel-other" value="Other">
-                <label class="form-check-label ms-1 me-2" for="rel-other">Other</label>
-                <input type="text" class="form-control form-control-sm" id="relationship-other-text" name="relationship-other-text" placeholder="Specify">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <label class="form-label d-block">Relationship to baby</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-parent" value="Parent">
+                    <label class="form-control-label" for="rel-parent">Parent</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-grandparent" value="Grandparent or other relative">
+                    <label class="form-control-label" for="rel-grandparent">Grandparent or other relative</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-guardian" value="Guardian">
+                    <label class="form-control-label" for="rel-guardian">Guardian</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-foster" value="Foster parent">
+                    <label class="form-control-label" for="rel-foster">Foster parent</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-teacher" value="Teacher">
+                    <label class="form-control-label" for="rel-teacher">Teacher</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-provider" value="Child care provider">
+                    <label class="form-control-label" for="rel-provider">Child care provider</label>
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel-other" value="Other">
+                    <label class="form-control-label mr-2" for="rel-other">Other</label>
+                    <input type="text" class="form-control form-control-sm" id="relationship-other-text" name="relationship-other-text" placeholder="Specify">
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Assisting names -->
     <div class="row mb-3">
         <div class="col-md-12">
             <label class="form-label" for="assisting-name-1">Names assisting with completion</label>
         </div>
-        <div class="row g-3 mt-0">
-            <div class="col-md-6 mt-md-0">
-                <input type="text" class="form-control mb-1" id="assisting-name-1" name="assisting-name-1" placeholder="Name 1">
-            </div>
-            <div class="col-md-6 mt-md-0">
-                <input type="text" class="form-control" id="assisting-name-2" name="assisting-name-2" placeholder="Name 2">
-            </div>
+
+        <div class="col-md-6 mt-md-0">
+            <input type="text" class="form-control mb-1" id="assisting-name-1" name="assisting-name-1" placeholder="Name 1">
         </div>
+        <div class="col-md-6 mt-md-0">
+            <input type="text" class="form-control" id="assisting-name-2" name="assisting-name-2" placeholder="Name 2">
+        </div>
+
     </div>
 </fieldset>

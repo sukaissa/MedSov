@@ -34,13 +34,13 @@
         <!-- Gender -->
         <div class="col-md-4">
             <label class="form-label d-block">Gender</label>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="baby-gender" id="gender-male" value="Male">
-                <label class="form-check-label" for="gender-male">Male</label>
+            <div class="form-control form-control-inline">
+                <input class="form-control-input" type="radio" name="baby-gender" id="gender-male" value="Male">
+                <label class="form-control-label" for="gender-male">Male</label>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="baby-gender" id="gender-female" value="Female">
-                <label class="form-check-label" for="gender-female">Female</label>
+            <div class="form-control form-control-inline">
+                <input class="form-control-input" type="radio" name="baby-gender" id="gender-female" value="Female">
+                <label class="form-control-label" for="gender-female">Female</label>
             </div>
         </div>
     </div>

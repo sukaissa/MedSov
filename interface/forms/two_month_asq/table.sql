@@ -1,5 +1,5 @@
 -- Table for storing ASQ-3: 2-Month Questionnaire responses
-CREATE TABLE IF NOT EXISTS `form_asq_2_month` (
+CREATE TABLE IF NOT EXISTS `form_2_month_asq` (
     id INT AUTO_INCREMENT PRIMARY KEY,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     -- Baby’s Information

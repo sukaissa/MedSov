@@ -16,49 +16,49 @@
                 <tr>
                     <td>1.</td>
                     <td>Does your baby sometimes try to suck, even when she’s not feeding?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-1" id="psoc-1-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-1" id="psoc-1-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-1" id="psoc-1-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-1" id="psoc-1-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-1" id="psoc-1-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-1" id="psoc-1-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>2.</td>
                     <td>Does your baby cry when he is hungry, wet, tired, or wants to be held?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-2" id="psoc-2-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-2" id="psoc-2-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-2" id="psoc-2-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-2" id="psoc-2-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-2" id="psoc-2-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-2" id="psoc-2-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>3.</td>
                     <td>Does your baby smile at you?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-3" id="psoc-3-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-3" id="psoc-3-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-3" id="psoc-3-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-3" id="psoc-3-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-3" id="psoc-3-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-3" id="psoc-3-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>4.</td>
                     <td>When you smile at your baby, does she smile back?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-4" id="psoc-4-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-4" id="psoc-4-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-4" id="psoc-4-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-4" id="psoc-4-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-4" id="psoc-4-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-4" id="psoc-4-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>5.</td>
                     <td>Does your baby watch his hands?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-5" id="psoc-5-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-5" id="psoc-5-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-5" id="psoc-5-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-5" id="psoc-5-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-5" id="psoc-5-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-5" id="psoc-5-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>6.</td>
                     <td>When your baby sees the breast or bottle, does she seem to know she is about to be fed?</td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-6" id="psoc-6-yes" value="yes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-6" id="psoc-6-sometimes" value="sometimes"></td>
-                    <td class="text-center"><input class="form-check-input" type="radio" name="psoc-6" id="psoc-6-not-yet" value="not-yet"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-6" id="psoc-6-yes" value="yes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-6" id="psoc-6-sometimes" value="sometimes"></td>
+                    <td class="text-center"><input class="form-control-input" type="radio" name="psoc-6" id="psoc-6-not-yet" value="not-yet"></td>
                     <td></td>
                 </tr>
             </tbody>

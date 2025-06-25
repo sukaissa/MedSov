@@ -121,13 +121,13 @@ $values = array_map(function ($f) {
 
 if (empty($id)) {
     $newid = sqlInsert(
-        "INSERT INTO form_asq_2_month SET $sets",
+        "INSERT INTO form_2_month_asq SET $sets",
         $values
     );
     addForm($encounter, "ASQ-3 2-Month Questionnaire", $newid, "two_month_asq", $pid, $userauthorized);
 } else {
     sqlStatement(
-        "UPDATE form_asq_2_month SET $sets WHERE id = ?",
+        "UPDATE form_2_month_asq SET $sets WHERE id = ?",
         array_merge($values, [$id])
     );
 }

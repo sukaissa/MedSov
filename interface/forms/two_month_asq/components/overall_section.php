@@ -7,13 +7,13 @@
                 <label class="form-label mb-0">1. Did your baby pass the newborn hearing screening test? If no, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-1" id="overall-1-yes" value="yes">
-                    <label class="form-check-label" for="overall-1-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-1" id="overall-1-yes" value="yes">
+                    <label class="form-control-label" for="overall-1-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-1" id="overall-1-no" value="no">
-                    <label class="form-check-label" for="overall-1-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-1" id="overall-1-no" value="no">
+                    <label class="form-control-label" for="overall-1-no">No</label>
                 </div>
             </div>
         </div>
@@ -25,13 +25,13 @@
                 <label class="form-label mb-0">2. Does your baby move both hands and both legs equally well? If no, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-2" id="overall-2-yes" value="yes">
-                    <label class="form-check-label" for="overall-2-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-2" id="overall-2-yes" value="yes">
+                    <label class="form-control-label" for="overall-2-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-2" id="overall-2-no" value="no">
-                    <label class="form-check-label" for="overall-2-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-2" id="overall-2-no" value="no">
+                    <label class="form-control-label" for="overall-2-no">No</label>
                 </div>
             </div>
         </div>
@@ -43,13 +43,13 @@
                 <label class="form-label mb-0">3. Does either parent have a family history of childhood deafness, hearing impairment, or vision problems? If yes, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-3" id="overall-3-yes" value="yes">
-                    <label class="form-check-label" for="overall-3-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-3" id="overall-3-yes" value="yes">
+                    <label class="form-control-label" for="overall-3-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-3" id="overall-3-no" value="no">
-                    <label class="form-check-label" for="overall-3-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-3" id="overall-3-no" value="no">
+                    <label class="form-control-label" for="overall-3-no">No</label>
                 </div>
             </div>
         </div>
@@ -61,13 +61,13 @@
                 <label class="form-label mb-0">4. Has your baby had any medical problems? If yes, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-4" id="overall-4-yes" value="yes">
-                    <label class="form-check-label" for="overall-4-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-4" id="overall-4-yes" value="yes">
+                    <label class="form-control-label" for="overall-4-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-4" id="overall-4-no" value="no">
-                    <label class="form-check-label" for="overall-4-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-4" id="overall-4-no" value="no">
+                    <label class="form-control-label" for="overall-4-no">No</label>
                 </div>
             </div>
         </div>
@@ -79,13 +79,13 @@
                 <label class="form-label mb-0">5. Do you have concerns about your baby’s behavior (for example, eating, sleeping)? If yes, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-5" id="overall-5-yes" value="yes">
-                    <label class="form-check-label" for="overall-5-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-5" id="overall-5-yes" value="yes">
+                    <label class="form-control-label" for="overall-5-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-5" id="overall-5-no" value="no">
-                    <label class="form-check-label" for="overall-5-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-5" id="overall-5-no" value="no">
+                    <label class="form-control-label" for="overall-5-no">No</label>
                 </div>
             </div>
         </div>
@@ -97,13 +97,13 @@
                 <label class="form-label mb-0">6. Does anything about your baby worry you? If yes, explain:</label>
             </div>
             <div class="col-md-4 text-right">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-6" id="overall-6-yes" value="yes">
-                    <label class="form-check-label" for="overall-6-yes">Yes</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-6" id="overall-6-yes" value="yes">
+                    <label class="form-control-label" for="overall-6-yes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="overall-6" id="overall-6-no" value="no">
-                    <label class="form-check-label" for="overall-6-no">No</label>
+                <div class="form-control form-control-inline">
+                    <input class="form-control-input" type="radio" name="overall-6" id="overall-6-no" value="no">
+                    <label class="form-control-label" for="overall-6-no">No</label>
                 </div>
             </div>
         </div>
