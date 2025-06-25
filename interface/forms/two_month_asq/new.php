@@ -39,30 +39,13 @@ formHeader("2-Month ASQ Questionnaire");
             <?php include __DIR__ . '/components/problem_solving.php'; ?>
             <?php include __DIR__ . '/components/personal_social.php'; ?>
             <?php include __DIR__ . '/components/overall_section.php'; ?>
-            <?php include __DIR__ . '/components/parent_caregiver_info.php'; ?>
             <div class="text-end">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal" id="previewButton">Preview &amp; Submit</button>
             </div>
         </form>
     </div>
-
-
     <!-- Preview Modal -->
-    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="previewModalLabel">Preview Your Responses</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="previewBody"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
-                    <button type="button" class="btn btn-primary" id="modalSubmit">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include __DIR__ . '/components/preview_modal.php'; ?>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -75,9 +58,6 @@ formHeader("2-Month ASQ Questionnaire");
                 html += `<p><strong>${key.replace(/\-/g, ' ')}:</strong> ${value}</p>`;
             });
             document.getElementById('previewBody').innerHTML = html;
-        });
-        document.getElementById('modalSubmit').addEventListener('click', function() {
-            document.getElementById('asqForm').submit();
         });
     </script>
 </body>
