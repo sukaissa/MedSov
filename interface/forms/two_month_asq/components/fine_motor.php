@@ -23,13 +23,13 @@
                         <span class="fst-italic small">(If your baby used to do this but no longer does, mark “yes.”)</span>
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-1" id="fine-1-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_1" id="fine_1_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-1" id="fine-1-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_1" id="fine_1_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-1" id="fine-1-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_1" id="fine_1_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -39,13 +39,13 @@
                         Does your baby grasp your finger if you touch the palm of her hand?
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-2" id="fine-2-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_2" id="fine_2_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-2" id="fine-2-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_2" id="fine_2_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-2" id="fine-2-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_2" id="fine_2_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -55,13 +55,13 @@
                         When you put a toy in his hand, does your baby hold it in his hand briefly?
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-3" id="fine-3-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_3" id="fine_3_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-3" id="fine-3-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_3" id="fine_3_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-3" id="fine-3-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_3" id="fine_3_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -69,13 +69,13 @@
                     <td>4.</td>
                     <td>Does your baby touch her face with her hands?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-4" id="fine-4-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_4" id="fine_4_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-4" id="fine-4-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_4" id="fine_4_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-4" id="fine-4-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_4" id="fine_4_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -85,13 +85,13 @@
                         Does your baby hold his hands open or partly open when he is awake (rather than in fists, as they were when he was a newborn)?
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-5" id="fine-5-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_5" id="fine_5_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-5" id="fine-5-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_5" id="fine_5_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-5" id="fine-5-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_5" id="fine_5_not_yet" value="not-yet">
                     </td>
                     <td class="text-center align-middle" style="font-size:1.2em;">*</td>
                 </tr>
@@ -99,13 +99,13 @@
                     <td>6.</td>
                     <td>Does your baby grab or scratch at her clothes?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-6" id="fine-6-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="fine_6" id="fine_6_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-6" id="fine-6-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="fine_6" id="fine_6_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="fine-6" id="fine-6-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="fine_6" id="fine_6_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -114,7 +114,7 @@
                 <tr>
                     <td colspan="5" class="text-right font-weight-medium" style="font-size:1.1rem;">FINE MOTOR TOTAL</td>
                     <td>
-                        <input type="text" class="form-control form-control-sm text-center" name="fine-total" id="fine-total" style="width:5em;" readonly>
+                        <input type="text" class="form-control form-control-sm text-center" name="fine_total" id="fine_total" style="width:5em;" readonly>
                     </td>
                 </tr>
             </tfoot>

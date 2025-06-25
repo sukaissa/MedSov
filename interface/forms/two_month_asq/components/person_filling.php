@@ -86,9 +86,9 @@
                     <label class="form-control-label" for="rel-provider">Child care provider</label>
                 </div>
                 <div class="col-md-4 d-flex align-items-center">
-                    <input class="form-control-input" type="radio" name="relationship" id="rel-other" value="Other">
-                    <label class="form-control-label mr-2" for="rel-other">Other</label>
-                    <input type="text" class="form-control form-control-sm" id="relationship-other-text" name="relationship-other-text" placeholder="Specify">
+                    <input class="form-control-input" type="radio" name="relationship" id="rel_other" value="Other">
+                    <label class="form-control-label mr-2" for="rel_other">Other</label>
+                    <input type="text" class="form-control form-control-sm" id="relationship_other_text" name="relationship_other_text" placeholder="Specify">
                 </div>
             </div>
         </div>
@@ -101,10 +101,10 @@
         </div>
 
         <div class="col-md-6 mt-md-0">
-            <input type="text" class="form-control mb-1" id="assisting-name-1" name="assisting-name-1" placeholder="Name 1">
+            <input type="text" class="form-control mb-1" id="assisting_name_1" name="assisting_name_1" placeholder="Name 1">
         </div>
         <div class="col-md-6 mt-md-0">
-            <input type="text" class="form-control" id="assisting-name-2" name="assisting-name-2" placeholder="Name 2">
+            <input type="text" class="form-control" id="assisting_name_2" name="assisting_name_2" placeholder="Name 2">
         </div>
 
     </div>

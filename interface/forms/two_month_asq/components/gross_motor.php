@@ -20,13 +20,13 @@
                     <td>1.</td>
                     <td>While your baby is on his back, does he wave his arms and legs, wiggle, and squirm?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-1" id="gross-1-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_1" id="gross_1_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-1" id="gross-1-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_1" id="gross_1_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-1" id="gross-1-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_1" id="gross_1_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -34,13 +34,13 @@
                     <td>2.</td>
                     <td>When your baby is on her tummy, does she turn her head to the side?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-2" id="gross-2-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_2" id="gross_2_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-2" id="gross-2-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_2" id="gross_2_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-2" id="gross-2-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_2" id="gross_2_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -48,13 +48,13 @@
                     <td>3.</td>
                     <td>When your baby is on his tummy, does he hold his head up longer than a few seconds?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-3" id="gross-3-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_3" id="gross_3_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-3" id="gross-3-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_3" id="gross_3_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-3" id="gross-3-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_3" id="gross_3_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -62,13 +62,13 @@
                     <td>4.</td>
                     <td>When your baby is on her back, does she kick her legs?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-4" id="gross-4-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_4" id="gross_4_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-4" id="gross-4-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_4" id="gross_4_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-4" id="gross-4-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_4" id="gross_4_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -76,13 +76,13 @@
                     <td>5.</td>
                     <td>While your baby is on his back, does he move his head from side to side?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-5" id="gross-5-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_5" id="gross_5_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-5" id="gross-5-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_5" id="gross_5_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-5" id="gross-5-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_5" id="gross_5_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -90,13 +90,13 @@
                     <td>6.</td>
                     <td>After holding her head up while on her tummy, does your baby lay her head back down on the floor, rather than let it drop or fall forward?</td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-6" id="gross-6-yes" value="yes">
+                        <input class="form-control-input" type="radio" name="gross_6" id="gross_6_yes" value="yes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-6" id="gross-6-sometimes" value="sometimes">
+                        <input class="form-control-input" type="radio" name="gross_6" id="gross_6_sometimes" value="sometimes">
                     </td>
                     <td class="text-center">
-                        <input class="form-control-input" type="radio" name="gross-6" id="gross-6-not-yet" value="not-yet">
+                        <input class="form-control-input" type="radio" name="gross_6" id="gross_6_not_yet" value="not-yet">
                     </td>
                     <td></td>
                 </tr>
@@ -105,7 +105,7 @@
                 <tr>
                     <td colspan="5" class="text-right font-weight-medium" style="font-size:1.1rem;">GROSS MOTOR TOTAL</td>
                     <td>
-                        <input type="text" class="form-control form-control-sm text-center" name="gross-total" id="gross-total" style="width:5em;" readonly>
+                        <input type="text" class="form-control form-control-sm text-center" name="gross_total" id="gross_total" style="width:5em;" readonly>
                     </td>
                 </tr>
             </tfoot>
