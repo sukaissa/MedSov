@@ -21,3 +21,42 @@ function closePatientDetailsModal() {
         currentModalOverlayClickHandler = null; // Clear the reference
     }
 }
+
+// eslint-disable-next-line
+function showModalContent(contentId) {
+    const modalContentArea = document.getElementById(
+        "patientModalDynamicContentArea"
+    );
+    if (!modalContentArea) {
+        console.error("Error: Modal dynamic content area not found.");
+        return;
+    }
+
+    // Get all direct children of the dynamic content area (which are your content sections)
+    const allContentSections = modalContentArea.children;
+
+    // Iterate through all sections and hide them
+    for (let i = 0; i < allContentSections.length; i++) {
+        allContentSections[i].classList.add("hidden");
+    }
+
+    // Show the requested content section
+    const targetContent = document.getElementById(
+        "patientModal" +
+            contentId.charAt(0).toUpperCase() +
+            contentId.slice(1) +
+            "Content"
+    );
+    // Using `patientModal` + Capitalized `contentId` + `Content` to match the IDs in PHP generated HTML
+    // Example: 'printWristband' -> 'patientModalPrintWristbandContent'
+
+    if (targetContent) {
+        targetContent.classList.remove("hidden");
+    } else {
+        console.warn(
+            `Warning: Content section with ID 'patientModal${contentId
+                .charAt(0)
+                .toUpperCase()}${contentId.slice(1)}Content' not found.`
+        );
+    }
+}
