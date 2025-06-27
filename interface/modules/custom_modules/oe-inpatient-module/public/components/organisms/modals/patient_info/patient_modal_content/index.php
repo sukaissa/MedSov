@@ -23,17 +23,33 @@ ob_start();
 include $contentPartsPath . '/treatment/add_treatment.php';
 $printAddTreatmentContent = ob_get_clean();
 
-function getPatientModalContent()
+function getPatientModalContent($inpatientData = null, $pid = null)
+{
+    // If no inpatient data is provided, return an empty array
+    if (!$inpatientData) {
+        return [];
+    }
+
+    // Ensure the PID is set in the inpatient data
+    if (!isset($inpatientData['pid']) || $inpatientData['pid'] !== $pid) {
+        $inpatientData['pid'] = $pid;
+    }
+
+    // Return the structured patient modal content
+    return buildPatientModalContent($inpatientData);
+}
+
+function buildPatientModalContent($inpatientData)
 {
     // Explicitly bring global variables into the function's scope
     global $mainContent, $printWristbandContent, $reprintWristbandContent, $printTreatmentContent, $printAddTreatmentContent;
 
     return  [
-        'patientName' => 'Lily Cho',
-        'patientPID' => 'MSV987654',
-        'dateTime' => 'June 24, 2025 • 10:30AM',
-        'patientDepartment' => 'Woman’s Medical',
-        'patientRoom' => 'A-205',
+        'patientName' => $inpatientData['fname'] . ' ' . $inpatientData['mname'] . ' ' . $inpatientData['lname'],
+        'patientPID' => $inpatientData['pid'],
+        'dateTime' => date('F j, Y • g:ia', strtotime($inpatientData['admission_date'])),
+        'patientDepartment' => $inpatientData['ward_name'],
+        'patientRoom' => $inpatientData['bed_number'],
         'modalContents' => [
             'main' => $mainContent,
             'printWristband' => $printWristbandContent,

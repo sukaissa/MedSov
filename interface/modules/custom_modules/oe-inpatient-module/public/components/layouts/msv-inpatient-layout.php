@@ -19,14 +19,16 @@ $content = isset($content) ? $content : '';
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: 'coral': '#FF6B5B',
-                'coral-light': '#FF8A7A'
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coral': '#FF6B5B',
+                        'coral-light': '#FF8A7A'
+                    }
+                }
             }
         }
-    }
     </script>
 
 </head>

@@ -8,7 +8,7 @@
 //     ['title' => 'Name', 'dataIndex' => 'name'],
 //     ['title' => 'Age', 'dataIndex' => 'age'],
 //     ['title' => 'Actions', 'dataIndex' => 'actions', 'render' => function($record) {
-//         return '<button class="bg-blue-500 text-white px-2 py-1 rounded">View ' . htmlspecialchars($record['name']) . '</button>';
+//         return '<button class="bg-blue-500 text-white px-2 py-1 rounded">View ' . xlt($record['name']) . '</button>';
 //     }]
 //   ]
 // $dataSource: array of associative arrays, e.g.,
@@ -32,7 +32,7 @@ $responsive = isset($responsive) ? (bool)$responsive : false;
             <tr class="h-10">
                 <?php foreach ($columns as $column): ?>
                     <th class="text-left px-4 text-gray-600 text-sm font-normal">
-                        <?php echo htmlspecialchars($column['title']); ?>
+                        <?php echo xlt($column['title']); ?>
                     </th>
                 <?php endforeach; ?>
             </tr>
@@ -51,7 +51,7 @@ $responsive = isset($responsive) ? (bool)$responsive : false;
             <tr class="h-[50px] border-b-[6px]">
                 <?php foreach ($columns as $column): ?>
                     <th class="text-left px-4 text-[#282224] bg-white text-sm font-[500]">
-                        <?php echo htmlspecialchars($column['title']); ?>
+                        <?php echo xlt($column['title']); ?>
                     </th>
                 <?php endforeach; ?>
             </tr>
@@ -61,7 +61,8 @@ $responsive = isset($responsive) ? (bool)$responsive : false;
             <tbody>
                 <?php foreach ($dataSource as $index => $record): ?>
                     <tr class="border-b h-[60px] border-b-[#E7E7E7] hover:bg-[#ED2024] font-[300] text-[#282224] hover:text-white transition-all duration-200 ease-in-out cursor:pointer"
-                        onclick="showPatientDetailsModal()">
+                        onclick="showPatientDetailsModal('<?php echo xlt(isset($record['pid']) ? $record['pid'] : ''); ?>')"
+                        data-pid="<?php echo xlt(isset($record['pid']) ? $record['pid'] : ''); ?>">
                         <?php foreach ($columns as $column): ?>
                             <td class="px-3 py-2 text-sm font-[300]">
                                 <?php
@@ -71,7 +72,7 @@ $responsive = isset($responsive) ? (bool)$responsive : false;
                                     echo call_user_func($column['render'], $record);
                                 } else {
                                     // Otherwise, display the data directly from dataIndex
-                                    echo htmlspecialchars(isset($record[$column['dataIndex']]) ? $record[$column['dataIndex']] : '');
+                                    echo xlt(isset($record[$column['dataIndex']]) ? $record[$column['dataIndex']] : '');
                                 }
                                 ?>
                             </td>

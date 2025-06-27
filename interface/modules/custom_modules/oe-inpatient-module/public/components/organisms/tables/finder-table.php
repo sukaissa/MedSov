@@ -4,7 +4,7 @@
     $columns = [
         [
             'title' => 'Patient ID',
-            'dataIndex' => 'id'
+            'dataIndex' => 'pid'
         ],
         [
             'title' => 'Full Name',
@@ -26,38 +26,28 @@
             'title' => 'Days Spent',
             'dataIndex' => 'days_spent'
         ],
-
-    ];
-
-    $dataSource = [];
-    // Map $inpatients to $dataSource for the table
-    // If $inpatients is an object (e.g., sqlStatement result), fetch rows as arrays
-
-    if (is_object($inpatients)) {
-        while ($item = sqlFetchArray($inpatients)) {
-            $dataSource[] = [
-                'id' => $item['patient_id'] ?? $item['id'] ?? '',
-                'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
-                'ward' => $item['ward_name'] ?? '',
-                'bed' => $item['bed_number'] ?? '',
-                'addmitted' => $item['admission_date'] ?? '',
-                'days_spent' => (isset($item['admission_date']) && $item['admission_date'])
-                    ? (
-                        isset($item['discharge_date']) && $item['discharge_date']
-                        ? max(1, (int) ceil((strtotime($item['discharge_date']) - strtotime($item['admission_date'])) / 86400))
-                        : max(1, (int) ceil((time() - strtotime($item['admission_date'])) / 86400))
-                    )
-                    : ''
-            ];
-        }
-    } elseif (is_array($inpatients)) {
-        foreach ($inpatients as $item) {
-            if (is_object($item)) {
-                $item = (array)$item;
+        [
+            'title' => 'Actions',
+            'dataIndex' => 'actions',
+            'render' => function ($record) {
+                $patientId = htmlspecialchars($record['pid']);
+                return '<div class="flex space-x-2">
+                                <a role="button" href="dashboard.php?id=' . $patientId . '" class="bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">View</a>
+                                <button class="bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">Delete</button>
+                            </div>';
             }
+        ],
+    ];
+    $inpatientsArray = iterator_to_array($inpatients);
+
+    // Map $inpatientsArray to $dataSource for the table using array_map
+    $dataSource = [];
+    if ($inpatientsArray) {
+        $dataSource = array_map(function ($item) {
             if (is_array($item)) {
-                $dataSource[] = [
-                    'id' => $item['patient_id'] ?? $item['id'] ?? '',
+                return [
+                    'id' => $item['id'] ?? '',
+                    'pid' => $item['patient_id'] ?? '',
                     'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
                     'ward' => $item['ward_name'] ?? '',
                     'bed' => $item['bed_number'] ?? '',
@@ -71,8 +61,12 @@
                         : ''
                 ];
             }
-        }
+            return null;
+        }, $inpatientsArray);
+        // Remove nulls if any
+        $dataSource = array_filter($dataSource);
     }
+
 
     $isLoading = false;
     $responsive = true;

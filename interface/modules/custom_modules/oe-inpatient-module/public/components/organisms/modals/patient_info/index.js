@@ -2,11 +2,9 @@
 let currentModalOverlayClickHandler = null; // To store the reference for removeEventListener
 
 // eslint-disable-next-line
-function showPatientDetailsModal(patientData) {
-    const modal = document.getElementById("patientDetailsModal");
-
-    // Show the modal by removing the 'hidden' class
-    if (modal) modal.classList.remove("hidden");
+function showPatientDetailsModal(pid) {
+    document.getElementById("patientDetailsPid").value = pid;
+    document.getElementById("patientDetailsForm").submit();
 }
 
 // Function to close the modal
@@ -60,3 +58,4 @@ function showModalContent(contentId) {
         );
     }
 }
+
