@@ -68,10 +68,10 @@ include_once "./components/head.php";
 
 <!-- check condition of display message -->
 <?php if ($display_mesasge == 'block') { ?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
-        <strong><?php echo xlt('Success'); ?>! </strong> <?php echo xlt($message); ?>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
-    </div>
+<div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
+    <strong><?php echo xlt('Success'); ?>! </strong> <?php echo xlt($message); ?>
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+</div>
 <?php } ?>
 
 <section class="main-containerx">
@@ -79,7 +79,8 @@ include_once "./components/head.php";
         <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
             <h4 class="section-head"><?php echo xlt("Wards") ?></h4>
 
-            <button type="button" class="btn " style="background-color: #40E0D0;" data-toggle="modal" data-target="#newWardModal">
+            <button type="button" class="btn " style="background-color: #40E0D0;" data-toggle="modal"
+                data-target="#newWardModal">
                 <?php echo xlt("New Ward") ?>
             </button>
         </div>
@@ -93,19 +94,22 @@ include_once "./components/head.php";
 
             <?php foreach ($wards as $ward) {
             ?>
-                <tr>
-                    <td><?php echo $ward['name']; ?></td>
-                    <td><?php echo $ward['short_name']; ?></td>
-                    <td>
-                        <button type="button" class="btn btn-primary updateBtn" style="margin-right: 8px;" data-toggle="modal" data-target="#updateWardModal" data-id="<?php echo $ward['id']; ?>" data-name="<?php echo $ward['name']; ?>" data-short_name="<?php echo $ward['short_name']; ?>">
-                            <?php echo xlt("Update") ?>
-                        </button>
-                        <button type="button" class="btn btn-danger deleteBtn" style="" data-toggle="modal" data-target="#deleteWardModal" data-id="<?php echo $ward['id']; ?>">
-                            <?php echo xlt("Delete") ?>
-                        </button>
+            <tr>
+                <td><?php echo $ward['name']; ?></td>
+                <td><?php echo $ward['short_name']; ?></td>
+                <td>
+                    <button type="button" class="btn btn-primary updateBtn" style="margin-right: 8px;"
+                        data-toggle="modal" data-target="#updateWardModal" data-id="<?php echo $ward['id']; ?>"
+                        data-name="<?php echo $ward['name']; ?>" data-short_name="<?php echo $ward['short_name']; ?>">
+                        <?php echo xlt("Update") ?>
+                    </button>
+                    <button type="button" class="btn btn-danger deleteBtn" style="" data-toggle="modal"
+                        data-target="#deleteWardModal" data-id="<?php echo $ward['id']; ?>">
+                        <?php echo xlt("Delete") ?>
+                    </button>
 
-                    </td>
-                </tr>
+                </td>
+            </tr>
             <?php
             } ?>
         </table>
@@ -140,7 +144,8 @@ include_once "./components/head.php";
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Close") ?></button>
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal"><?php echo xlt("Close") ?></button>
                         <button type="submit" class="btn btn-primary"><?php echo xlt("Save") ?></button>
                     </div>
                 </form>
@@ -174,7 +179,8 @@ include_once "./components/head.php";
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Close") ?></button>
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal"><?php echo xlt("Close") ?></button>
                         <button type="submit" class="btn btn-primary"><?php echo xlt("Save") ?></button>
                     </div>
                 </form>
@@ -200,7 +206,8 @@ include_once "./components/head.php";
                     <input type="hidden" name="deleteId" id="deleteId" value="">
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo xlt("Close") ?></button>
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal"><?php echo xlt("Close") ?></button>
                         <button type="submit" class="btn btn-danger"><?php echo xlt("Delete") ?></button>
                     </div>
                 </form>
@@ -211,34 +218,34 @@ include_once "./components/head.php";
 </div>
 
 <script defer>
-    window.onload = function() {
-        $(".updateBtn").click(function() {
-            var id = $(this).data('id');
-            var name = $(this).data('name');
-            var short_name = $(this).data('short_name');
+window.onload = function() {
+    $(".updateBtn").click(function() {
+        var id = $(this).data('id');
+        var name = $(this).data('name');
+        var short_name = $(this).data('short_name');
 
-            var data = {
-                id,
-                name,
-                short_name
-            }
+        var data = {
+            id,
+            name,
+            short_name
+        }
 
-            $('#id').val(id);
-            $('#name').val(name);
-            $('#short_name').val(short_name);
-        });
+        $('#id').val(id);
+        $('#name').val(name);
+        $('#short_name').val(short_name);
+    });
 
-        $(".deleteBtn").click(function() {
-            var id = $(this).data('id');
-            $('#deleteId').val(id);
-        });
+    $(".deleteBtn").click(function() {
+        var id = $(this).data('id');
+        $('#deleteId').val(id);
+    });
 
 
-        // hide alert
-        setTimeout(function() {
-            $('#alert').hide();
-        }, 3000);
-    };
+    // hide alert
+    setTimeout(function() {
+        $('#alert').hide();
+    }, 3000);
+};
 </script>
 
 <?php include_once "./components/footer.php"; ?>
