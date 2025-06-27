@@ -38,35 +38,14 @@
             }
         ],
     ];
+    $inpatientsArray = iterator_to_array($inpatients);
 
+    // Map $inpatientsArray to $dataSource for the table using array_map
     $dataSource = [];
-    // Map $inpatients to $dataSource for the table
-    // If $inpatients is an object (e.g., sqlStatement result), fetch rows as arrays
-    
-    if (is_object($inpatients)) {
-        while ($item = sqlFetchArray($inpatients)) {
-            $dataSource[] = [
-                'id' => $item['patient_id'] ?? $item['id'] ?? '',
-                'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
-                'ward' => $item['ward_name'] ?? '',
-                'bed' => $item['bed_number'] ?? '',
-                'addmitted' => $item['admission_date'] ?? '',
-                'days_spent' => (isset($item['admission_date']) && $item['admission_date'])
-                    ? (
-                        isset($item['discharge_date']) && $item['discharge_date']
-                        ? max(1, (int) ceil((strtotime($item['discharge_date']) - strtotime($item['admission_date'])) / 86400))
-                        : max(1, (int) ceil((time() - strtotime($item['admission_date'])) / 86400))
-                    )
-                    : ''
-            ];
-        }
-    } elseif (is_array($inpatients)) {
-        foreach ($inpatients as $item) {
-            if (is_object($item)) {
-                $item = (array)$item;
-            }
+    if ($inpatientsArray) {
+        $dataSource = array_map(function ($item) {
             if (is_array($item)) {
-                $dataSource[] = [
+                return [
                     'id' => $item['patient_id'] ?? $item['id'] ?? '',
                     'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
                     'ward' => $item['ward_name'] ?? '',
@@ -81,8 +60,12 @@
                         : ''
                 ];
             }
-        }
+            return null;
+        }, $inpatientsArray);
+        // Remove nulls if any
+        $dataSource = array_filter($dataSource);
     }
+
 
     $isLoading = false;
     $responsive = true;
