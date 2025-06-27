@@ -1,3 +1,15 @@
+<?php
+
+use OpenEMR\Modules\InpatientModule\WardQuery;
+
+require_once __DIR__ . "/../../../../../../globals.php";
+require_once __DIR__ . "/../sql/WardQuery.php";
+
+$wardQuery = new WardQuery();
+$wards = $wardQuery->getWards();
+$wardsArray = iterator_to_array($wards);
+
+?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
         <p class="text-[32px] font-[500] text-white ml-12">Wards</p>
@@ -24,6 +36,7 @@
 
 
             <?php include_once __DIR__ . '/tables/ward-table.php'; ?>
+            
 
         </div>
 

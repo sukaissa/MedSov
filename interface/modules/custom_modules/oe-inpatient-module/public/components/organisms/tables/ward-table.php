@@ -2,30 +2,15 @@
 
 
     <?php
+    echo "<script>console.log(" . json_encode($wardsArray) . ");</script>";
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'name' => 'Pediatrics Ward',
-            'short_name' => 'PW',
-        ],
-        [
-            'id' => 'S002',
-            'name' => 'Pediatrics Ward',
-            'short_name' => 'PW',
-        ],
-        [
-            'id' => 'S003',
-            'name' => 'Pediatrics Ward',
-            'short_name' => 'PW',
-        ],
-    ];
-
+    // Map $wards to the required $dataSource structure (robust: handles objects and arrays)
+    $dataSource = $wardsArray ?? [];
 
     $columns = [
         ['title' => 'Name', 'dataIndex' => 'name'],
         ['title' => 'Short Name', 'dataIndex' => 'short_name'],
-
+        ['title' => 'Available Beds', 'dataIndex' => 'available_beds'],
     ];
     $isLoading = false;
     $responsive = true;
