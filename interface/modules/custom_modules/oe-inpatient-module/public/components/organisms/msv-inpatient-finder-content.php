@@ -97,14 +97,20 @@ if (isset($_GET['status'])) {
     $display_mesasge = 'block';
 }
 
-if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
+
+if (
+    ($_SERVER['REQUEST_METHOD'] == "GET") &&
+    (isset($_GET['search_by_ward']) || isset($_GET['search_ward']) || isset($_GET['word']))
+) {
     $id = isset($_GET['search_ward']) && trim($_GET['search_ward']) !== '' ? $_GET['search_ward'] : null;
     $word = isset($_GET['word']) && trim($_GET['word']) !== '' ? $_GET['word'] : null;
     $data = [
         'ward_id' => $id,
         'word' => $word
     ];
-    $inpatients = $inpatientQuery->searchInpatients($data);
+    $searchResult = $inpatientQuery->searchInpatients($data);
+    $inpatients = $searchResult['results'];
+    echo "<script>console.log('Search Results: " . json_encode($inpatients) . "');</script>";
 } else {
     $inpatients = $inpatientQuery->getInpatients();
 }
@@ -112,6 +118,9 @@ if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
 $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
 $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 
+echo '<pre>';
+print_r($_GET);
+echo '</pre>';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
@@ -124,16 +133,16 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
                 <div class="flex gap-5 align-items-center border-b pb-5 mb-5 ">
-                    <input type="hidden" name="search_by_ward">
+                    <input type="hidden" name="search_by_ward" value="1">
                     <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
                         <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward"
                             name="search_ward" id="search_ward">
                             <option value=""><?php echo xlt("Select Ward") ?></option>
                             <?php foreach ($wards as $ward) { ?>
-                            <option value="<?php echo $ward['id']; ?>"
-                                <?php echo ($selectedWard == $ward['id']) ? 'selected' : ''; ?>>
-                                <?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?>
-                            </option>
+                                <option value="<?php echo $ward['id']; ?>"
+                                    <?php echo ($selectedWard == $ward['id']) ? 'selected' : ''; ?>>
+                                    <?php echo $ward['short_name']; ?> | <?php echo $ward['name']; ?>
+                                </option>
                             <?php } ?>
                         </select>
                         <div class="border h-[30px]"></div>
@@ -149,10 +158,11 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
                 </div>
             </form>
 
+            <form id="patientDetailsForm" method="GET" action="">
+                <input type="hidden" name="pid" id="patientDetailsPid" value="">
 
-            <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
-
-
+                <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
+            </form>
         </div>
 
 </main>
