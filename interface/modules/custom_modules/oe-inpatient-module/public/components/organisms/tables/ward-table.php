@@ -2,7 +2,7 @@
 
 
     <?php
-    echo "<script>console.log(" . json_encode($wardsArray) . ");</script>";
+    $wardsArray = iterator_to_array($wards);
 
     // Map $wards to the required $dataSource structure (robust: handles objects and arrays)
     $dataSource = $wardsArray ?? [];

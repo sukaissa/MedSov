@@ -7,7 +7,6 @@ require_once __DIR__ . "/../sql/WardQuery.php";
 
 $wardQuery = new WardQuery();
 $wards = $wardQuery->getWards();
-$wardsArray = iterator_to_array($wards);
 
 ?>
 <main class="flex-1">
