@@ -2,50 +2,15 @@
 
 
     <?php
-
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'bed_number' => 1,
-            'type' => 'Private',
-            'price' => '20',
-            'availability' => 'Available',
-            'ward' => 'Male Ward',
-        ],
-        [
-            'id' => 'S001',
-            'bed_number' => 2,
-            'type' => 'Private',
-            'price' => '20',
-            'availability' => 'Available',
-            'ward' => 'Male Ward',
-        ],
-        [
-            'id' => 'S001',
-            'bed_number' => 3,
-            'type' => 'Private',
-            'price' => '20',
-            'availability' => 'Available',
-            'ward' => 'Male Ward',
-        ],
-        [
-            'id' => 'S001',
-            'bed_number' => 4,
-            'type' => 'Private',
-            'price' => '20',
-            'availability' => 'Available',
-            'ward' => 'Male Ward',
-        ],
-    
-    ];
-
+    $bedsArray = iterator_to_array($beds);
+    $dataSource = $bedsArray ?? [];
 
     $columns = [
-        ['title' => 'Bed number', 'dataIndex' => 'bed_number'],
-        ['title' => 'Type', 'dataIndex' => 'type'],
-        ['title' => 'Price per day', 'dataIndex' => 'price'],
+        ['title' => 'Bed number', 'dataIndex' => 'number'],
+        ['title' => 'Type', 'dataIndex' => 'bed_type'],
+        ['title' => 'Price per day', 'dataIndex' => 'price_per_day'],
         ['title' => 'Availability', 'dataIndex' => 'availability'],
-        ['title' => 'Ward', 'dataIndex' => 'ward'],
+        ['title' => 'Ward', 'dataIndex' => 'ward_name'],
     ];
     $isLoading = false;
     $responsive = true;
