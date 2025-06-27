@@ -210,4 +210,50 @@ class BedQuery
         sqlStatement($sql, intval($id));
         // return true;
     }
+
+    /**
+     * Filter beds by ward, type, and availability
+     * @param int|null $ward_id
+     * @param string|null $bed_type
+     * @param string|null $availability
+     * @return array|object
+     */
+    function filterBeds($ward_id = null, $bed_type = null, $availability = null)
+    {
+        $query = "SELECT
+                inp_beds.*,
+                inp_ward.name AS ward_name,
+                inp_ward.short_name AS ward_short_name
+            FROM
+                inp_beds
+            LEFT JOIN inp_ward ON inp_beds.ward_id = inp_ward.id
+            WHERE 1=1";
+        $params = [];
+
+        if ($ward_id !== null) {
+            $query .= " AND inp_beds.ward_id = ?";
+            $params[] = $ward_id;
+        }
+        if ($bed_type !== null) {
+            $query .= " AND inp_beds.bed_type LIKE ?";
+            $params[] = '%' . $bed_type . '%';
+        }
+        if ($availability !== null) {
+            $query .= " AND inp_beds.availability LIKE ?";
+            $params[] = '%' . $availability . '%';
+        }
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: filter beds",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        return sqlStatement($query, $params);
+    }
 }

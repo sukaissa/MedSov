@@ -142,4 +142,48 @@ class WardQuery
         );
         sqlStatement($sql, intval($id));
     }
+
+    /**
+     * Search wards by name (case-insensitive, partial match)
+     * @param string $word
+     * @return array
+     */
+    function searchWardsByName($searchTerm)
+    {
+        $word = trim($searchTerm);
+        if ($word === '') {
+            return []; // Return empty array if no search term is provided
+        }
+
+    
+        $query = "SELECT
+                w.id,
+                w.short_name,
+                w.name,
+                COUNT(b.id) AS available_beds
+            FROM
+                inp_ward w
+            LEFT JOIN
+                inp_beds b ON w.id = b.ward_id AND b.availability = 'Available'
+            WHERE
+                w.name LIKE ?
+            GROUP BY
+                w.id
+        ";
+
+        $likeWord = '%' . $searchTerm . '%';
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: search inp_ward",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+        $results = sqlStatement($query, array($likeWord));
+        return $results;
+    }
 }

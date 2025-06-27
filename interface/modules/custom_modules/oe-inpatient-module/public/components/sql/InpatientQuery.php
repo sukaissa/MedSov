@@ -1105,4 +1105,38 @@ class InpatientQuery
         );
         sqlInsert("INSERT INTO inp_inpatient_nurses_note SET $sets", $bindArray);
     }
+
+    /**
+     * Fetch inpatient admission data by patient pid
+     * @param int $pid
+     * @return array|null
+     */
+    function getInpatientByPid($pid)
+    {
+        $query = "SELECT
+                inp_patient_admission.*,
+                patient_data.title,
+                patient_data.fname,
+                patient_data.mname,
+                patient_data.lname,
+                patient_data.sex,
+                patient_data.dob,
+                inp_ward.name AS ward_name,
+                inp_ward.short_name AS ward_short_name,
+                inp_beds.number AS bed_number,
+                inp_beds.price_per_day
+            FROM
+                inp_patient_admission
+            LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
+            LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
+            LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+            WHERE
+                patient_data.pid = ?
+            ORDER BY
+                admission_date DESC
+            LIMIT 1";
+
+        $result = sqlQuery($query, array($pid));
+        return $result ? $result : null;
+    }
 }
