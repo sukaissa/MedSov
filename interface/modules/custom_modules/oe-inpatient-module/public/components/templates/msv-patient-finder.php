@@ -1,16 +1,12 @@
 <?php
 ob_start();
+
 use OpenEMR\Modules\InpatientModule\InpatientQuery;
 
 require_once __DIR__ . "/../../../../../../globals.php";
 require_once __DIR__ . "/../sql/InpatientQuery.php";
 require_once __DIR__ . "/../organisms/modals/patient_info/patient_modal_content/index.php";
 
-// If POST, redirect to GET
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pid'])) {
-    header('Location: ' . $_SERVER['PHP_SELF'] . '?pid=' . urlencode($_POST['pid']));
-    exit;
-}
 
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
 $showModal = $pid ? true : false;
@@ -23,14 +19,13 @@ $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
 ?>
 
 <div>
-    <form id="patientDetailsForm" method="POST" action="">
-        <input type="hidden" name="pid" id="patientDetailsPid" value="">
-        <?php
-        include_once __DIR__ . "/../organisms/msv-inpatient-finder-content.php";
-        require_once __DIR__ . "/../organisms/modals/patient_info/index.php";
-        renderPatientDetailsModal($patientDetails);
-        ?>
-    </form>
+
+    <?php
+    include_once __DIR__ . "/../organisms/msv-inpatient-finder-content.php";
+    require_once __DIR__ . "/../organisms/modals/patient_info/index.php";
+    renderPatientDetailsModal($patientDetails);
+    ?>
+
 </div>
 
 <?php if ($showModal): ?>
