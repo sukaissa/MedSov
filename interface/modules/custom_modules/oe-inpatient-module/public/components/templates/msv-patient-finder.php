@@ -16,6 +16,9 @@ $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
 
 $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
 
+// // Get specific patient data from the mocks array
+// $patientDetails = getPatientModalContent();
+
 ?>
 
 <div>

@@ -6,7 +6,7 @@
  * @package     OpenEMR Inpatient Module
  * @link        https://lifemesh.ai/telehealth/
  *
- * @author      Kenneth <kenneth@example.com>
+ * @author      Kenneth Nnopu <kennynnopu@gmail.com>
  * @author      Mark Amoah <mcprah@gmail.com>
  * @copyright   Copyright (c) 2022 MedSov <info@medsov.com>
  * @license     GNU General Public License 3
