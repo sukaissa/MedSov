@@ -118,6 +118,7 @@ if (
 $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
 $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 
+
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
