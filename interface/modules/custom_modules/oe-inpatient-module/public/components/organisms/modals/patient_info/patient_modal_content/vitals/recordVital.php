@@ -76,11 +76,11 @@ $vitalSigns = [
             // Dropdown
             const selectId = `vitalSignSelect_${idx}`;
             let selectHtml = `
-            <label class=\"block font-semibold text-[20px] mb-2\" for=\"${selectId}\">
+            <label class=\"block font-semibold text-[14px] mb-2\" for=\"${selectId}\">
                 Vital Sign<span class=\"text-[#ED2024]\">*</span>
             </label>
             <div class=\"relative mb-6\">
-                <select id=\"${selectId}\" name=\"vitalSign[]\" class=\"w-full border rounded-md px-4 py-3 text-[20px] text-[#282224] focus:outline-none appearance-none pr-10\"
+                <select id=\"${selectId}\" name=\"vitalSign[]\" class=\"w-full border rounded-md px-4 py-3 text-[14px] font-[300] text-[#282224] focus:outline-none appearance-none pr-10\"
                     onchange=\"onVitalChange(${idx}, this.value)\">
                     ${vitalSigns.map((v, i) =>
                         `<option value=\"${i}\" ${i == form.vitalIndex ? 'selected' : ''}>${v.label}</option>`
@@ -109,7 +109,7 @@ $vitalSigns = [
                     <input
                         type=\"number\"
                         name=\"${field.name}[]\"
-                        class=\"w-full border rounded-md px-4 py-4 text-[20px] text-[#C6C6C6] focus:outline-none\"
+                        class=\"w-full border rounded-md px-4 py-4 text-[14px] font-[300] text-[#C6C6C6] focus:outline-none\"
                         placeholder=\"${field.placeholder}\"
                         min=\"0\"
                         value=\"${value}\"
@@ -147,20 +147,15 @@ $vitalSigns = [
     <div class="flex items-center justify-between">
         <button class="flex gap-4 items-center" onclick="showModalContent('vitals')">
             <img src="./assets/img/msv-back-icon.svg" alt="back" />
-            <p class="font-medium">Back</p>
+            <p class="font-medium">Record Vitals</p>
         </button>
-        <div class="flex items-center gap-3">
-            <p class="text-sm font-medium text-[#282224]">Last Update: <span class="font-[400]">May 1, 2025 • 15:48</span></p>
-            <button onclick="showModalContent('vitalsSettings')" class="w-[36px] h-[36px] rounded-md border bg-[#FAFAFA] flex items-center justify-center">
-                <img src="./assets/img/msv-settings-icon.svg" alt="settings" class="w-4 h-4">
-            </button>
-        </div>
+
     </div>
 
-    <form class="my-10">
+    <form class="my-8 max-h-[400px] overflow-auto">
         <div id="vitalFormsContainer"></div>
         <!-- Add Button -->
-        <button type="button" onclick="addVitalForm()" class="w-full border rounded-md py-6 flex items-center justify-center text-[40px] text-[#C6C6C6] bg-white">
+        <button type="button" onclick="addVitalForm()" class="w-full h-[50px] border rounded-md py-6 flex items-center justify-center text-[24px] border-[#8C898A] text-[#C6C6C6] bg-white">
             +
         </button>
         <button

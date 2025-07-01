@@ -3,7 +3,7 @@
         <img src="./assets/img/msv-back-icon.svg" alt="back" />
         <p class="font-semibold">Reprint Wristband</p>
     </button>
-    <div class="flex w-full items-center justify-center py-8">
+    <div class="flex w-full items-center justify-center py-8 max-h-[300px] overflow-auto">
         <div class="flex flex-col gap-4">
             <div
                 class="w-full h-[56px] text-sm rounded-md bg-[#FFF9F9] border border-[#ED2024] text-[#282224] font-[300] px-8 flex items-center">

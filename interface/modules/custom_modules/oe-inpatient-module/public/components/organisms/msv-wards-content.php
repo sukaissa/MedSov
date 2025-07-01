@@ -18,7 +18,7 @@ if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") 
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-12">Wards</p>
+        <p class="text-[32px] font-[500] text-white ml-16">Wards</p>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">

@@ -4,7 +4,7 @@
         <p class="font-semibold">Add Treatment</p>
     </button>
     <div class="flex w-full items-center justify-center py-8">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4  max-h-[300px] overflow-auto">
 
             <div>
                 <label class="font-medium" for="">Plan<span class="text-[#ED2024]">*</span></label>
