@@ -29,3 +29,5 @@ ccdaservice/node_modules
 coverage/js-unit
 
 /sites/default/sqlconf.php
+/sites/default/documents/logs_and_misc/methods/sixa
+/sites/default/documents/logs_and_misc/methods/sixb
