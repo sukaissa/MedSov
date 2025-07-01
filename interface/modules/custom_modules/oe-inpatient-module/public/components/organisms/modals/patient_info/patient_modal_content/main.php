@@ -16,26 +16,31 @@
                 <span class="text-sm font-medium">Treatments</span>
             </button>
             <button
+                onclick="showModalContent('surgeries')"
                 class="flex flex-col items-center justify-center bg-[#FAFAFA] h-[122px] w-[134px] border-[#E7E7E7] rounded-md border hover:bg-gray-200 transition-colors">
                 <img src="./assets/img/msv-surgery-icon.svg" alt="Surgeries Icon" class="mb-2 w-8 h-8 object-fit">
                 <span class="text-sm font-medium">Surgeries</span>
             </button>
             <button
+                onclick="showModalContent('meals')"
                 class="flex flex-col items-center justify-center bg-[#FAFAFA] h-[122px] w-[134px] border-[#E7E7E7] rounded-md border hover:bg-gray-200 transition-colors">
                 <img src="./assets/img/msv-meals-icon.svg" alt="Meals Icon" class="mb-2 w-8 h-8 object-fit">
                 <span class="text-sm font-medium">Meals</span>
             </button>
             <button
+                onclick="showModalContent('vitals')"
                 class="flex flex-col items-center justify-center bg-[#FAFAFA] h-[122px] w-[134px] border-[#E7E7E7] rounded-md border hover:bg-gray-200 transition-colors">
                 <img src="./assets/img/msv-vitals-icon.svg" alt="v Icon" class="mb-2 w-8 h-8 object-fit">
                 <span class="text-sm font-medium">Vitals</span>
             </button>
             <button
+                onclick="showModalContent('notes')"
                 class="flex flex-col items-center justify-center bg-[#FAFAFA] h-[122px] w-[134px] border-[#E7E7E7] rounded-md border hover:bg-gray-200 transition-colors">
                 <img src="./assets/img/msv-notes-icon.svg" alt="Notes Icon" class="mb-2 w-8 h-8 object-fit">
                 <span class="text-sm font-medium">Notes</span>
             </button>
             <button
+                onclick="showModalContent('transfer')"
                 class="flex flex-col items-center justify-center bg-[#FAFAFA] h-[122px] w-[134px] border-[#E7E7E7] rounded-md border hover:bg-gray-200 transition-colors">
                 <img src="./assets/img/msv-treatment-icon.svg" alt="Transfer Icon"
                     class="mb-2 w-8 h-8 object-fit border">
