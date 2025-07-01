@@ -27,7 +27,7 @@ $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-12">Beds</p>
+        <p class="text-[32px] font-[500] text-white ml-16">Beds</p>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">
