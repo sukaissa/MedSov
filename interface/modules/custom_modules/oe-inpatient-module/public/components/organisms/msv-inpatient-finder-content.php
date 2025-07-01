@@ -121,7 +121,7 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-12">Patient Finder</p>
+        <p class="text-[32px] font-[500] text-white ml-16">Patient Finder</p>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">

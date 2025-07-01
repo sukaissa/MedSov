@@ -19,6 +19,8 @@
 // $isLoading: boolean, true to show loading state
 // $responsive: boolean, true for 'table-auto', false for 'table-fixed'
 
+// include_once __DIR__ . '/../../../../../library/translation.inc.php';
+
 $columns = isset($columns) && is_array($columns) ? $columns : [];
 $dataSource = isset($dataSource) && is_array($dataSource) ? $dataSource : [];
 $isLoading = isset($isLoading) ? (bool)$isLoading : false;
@@ -29,9 +31,9 @@ $responsive = isset($responsive) ? (bool)$responsive : false;
 <?php if ($isLoading): ?>
     <table class="table-fixed w-full">
         <thead>
-            <tr class="h-10">
+            <tr class="h-[50px] border-b-[6px]">
                 <?php foreach ($columns as $column): ?>
-                    <th class="text-left px-4 text-gray-600 text-sm font-normal">
+                    <th class="text-left px-4 text-[#282224] bg-white text-sm font-[500]">
                         <?php echo xlt($column['title']); ?>
                     </th>
                 <?php endforeach; ?>
