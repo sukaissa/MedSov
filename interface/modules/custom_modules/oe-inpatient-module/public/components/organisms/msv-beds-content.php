@@ -36,11 +36,6 @@ $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
             </button>
         </div>
     </div>
-
-
-
-
-
     <div class="flex w-full items-center flex-col justify-center">
 
         <div class="-mt-[150px] w-[1070px] min-h-[493px] bg-white p-[30px]">

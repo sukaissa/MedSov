@@ -8,7 +8,19 @@ require_once __DIR__ . "/../sql/WardQuery.php";
 $wardQuery = new WardQuery();
 
 $searchTerm = '';
-if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") {
+
+if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'name' => trim($_POST['name']),
+        'short_name' => trim($_POST['short_name']),
+    ];
+    try {
+        $result = $wardQuery->insertWard($data);
+        header('location:wards.php?status=success&message=Ward added successfully');
+    } catch (Exception $e) {
+        $error = "An error occurred while creating the ward.";
+    }
+} else if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") {
     $searchTerm = isset($_GET['search_term']) && trim($_GET['search_term']) !== '' ? $_GET['search_term'] : '';
     $wards = $wardQuery->searchWardsByName($searchTerm);
 } else {
@@ -34,7 +46,6 @@ if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") 
                 <input type="hidden" name="search_by_ward_name">
                 <div class="flex gap-5 align-items-center border-b pb-5 mb-5">
                     <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
-                        <div class="border h-[30px]"></div>
                         <input
                             type="text"
                             class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
