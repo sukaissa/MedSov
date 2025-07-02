@@ -11,13 +11,12 @@ require_once __DIR__ . "/../organisms/modals/patient_info/patient_modal_content/
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
 $showModal = $pid ? true : false;
 
+
 $inpatientQuery = new InpatientQuery();
 $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
 
 $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
 
-// // Get specific patient data from the mocks array
-// $patientDetails = getPatientModalContent();
 
 ?>
 

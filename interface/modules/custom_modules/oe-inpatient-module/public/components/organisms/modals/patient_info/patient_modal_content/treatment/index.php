@@ -5,7 +5,7 @@
             <p class="font-medium">Treatments</p>
         </button>
 
-        <button class="flex text-[30px] rounded-md items-center bg-[#ED2024] w-[36px] h-[36px] text-white justify-center" onclick="showModalContent('addTreatment')">
+        <button class="flex text-[25px] rounded-md items-center bg-[#ED2024] w-[36px] h-[36px] text-white justify-center" onclick="showModalContent('addTreatment')">
             +
         </button>
     </div>
@@ -107,7 +107,7 @@
             <table class="<?php echo $responsive ? 'table-auto' : 'table-fixed'; ?> w-full border-collapse">
                 <thead class=" min-w-full  sticky top-0">
                     <tr class="h-[50px] border-b-[6px]">
-                        <?php foreach ($columns as $column): ?> 
+                        <?php foreach ($columns as $column): ?>
                             <th class="text-left px-4 text-[#282224] bg-white text-sm font-[500]">
                                 <?php echo htmlspecialchars($column['title']); ?>
                             </th>

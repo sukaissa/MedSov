@@ -47,6 +47,11 @@ include $contentPartsPath . '/meals/index.php';
 $printMealsContent = ob_get_clean();
 
 
+ob_start();
+include $contentPartsPath . '/meals/add_meal.php';
+$printAddMealContent = ob_get_clean();
+
+
 
 ob_start();
 include $contentPartsPath . '/notes/index.php';
@@ -83,7 +88,7 @@ function getPatientModalContent($inpatientData = null, $pid = null)
 function buildPatientModalContent($inpatientData)
 {
     // Explicitly bring global variables into the function's scope
-    global $mainContent, $printWristbandContent, $reprintWristbandContent, $printTreatmentContent, $printAddTreatmentContent, $printTreatmentEmptyStateContent, $printVitalsContent, $printMealsContent, $printTransferContent, $printNotesContent, $printSurgeriesContent, $printVitalsSettingsContent, $printRecordVitalsContent;
+    global $mainContent, $printWristbandContent, $reprintWristbandContent, $printTreatmentContent, $printAddTreatmentContent, $printTreatmentEmptyStateContent, $printVitalsContent, $printMealsContent, $printTransferContent, $printNotesContent, $printSurgeriesContent, $printVitalsSettingsContent, $printRecordVitalsContent, $printAddMealContent;
 
     $treatmentPlan = [1];
 
@@ -106,6 +111,7 @@ function buildPatientModalContent($inpatientData)
             'notes' => $printNotesContent,
             'vitalsSettings' => $printVitalsSettingsContent,
             'recordVitals' => $printRecordVitalsContent,
+            'addMeals' => $printAddMealContent,
         ]
     ];
 }

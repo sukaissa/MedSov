@@ -11,7 +11,12 @@ function showPatientDetailsModal(pid) {
 // eslint-disable-next-line
 function closePatientDetailsModal() {
     const modal = document.getElementById("patientDetailsModal");
-    if (modal) modal.classList.add("hidden");
+    if (modal) {
+        const url = new URL(window.location.href);
+        modal.classList.add("hidden");
+        url.searchParams.delete("pid"); // Remove the specified parameter
+        window.history.pushState({}, "", url);
+    }
 
     // Remove the specific event listener to prevent memory leaks and multiple bindings
     if (modal && currentModalOverlayClickHandler) {
@@ -59,3 +64,50 @@ function showModalContent(contentId) {
     }
 }
 
+// eslint-disable-next-line
+function showFormsModal(contentId) {
+    const modal = document.getElementById("formsModal");
+    if (modal) {
+        modal.classList.remove("hidden");
+    }
+
+    const modalContentArea = document.getElementById("formsDynamicContentArea");
+    if (!modalContentArea) {
+        return;
+    }
+
+    // Get all direct children of the dynamic content area (which are your content sections)
+    const allContentSections = modalContentArea.children;
+
+    // Iterate through all sections and hide them
+    for (let i = 0; i < allContentSections.length; i++) {
+        allContentSections[i].classList.add("hidden");
+    }
+
+    // Show the requested content section
+    const targetContent = document.getElementById(contentId);
+
+    if (targetContent) {
+        targetContent.classList.remove("hidden");
+    } else {
+        console.warn(
+            `Warning: Content section with ID 'patientModal${contentId
+                .charAt(0)
+                .toUpperCase()}${contentId.slice(1)}Content' not found.`
+        );
+    }
+}
+
+// eslint-disable-next-line
+function closeformsModal() {
+    const modal = document.getElementById("formsModal");
+    if (modal) {
+        modal.classList.add("hidden");
+    }
+
+    // Remove the specific event listener to prevent memory leaks and multiple bindings
+    if (modal && currentModalOverlayClickHandler) {
+        modal.removeEventListener("click", currentModalOverlayClickHandler);
+        currentModalOverlayClickHandler = null; // Clear the reference
+    }
+}

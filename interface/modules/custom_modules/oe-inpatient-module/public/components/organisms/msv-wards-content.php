@@ -18,7 +18,13 @@ if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") 
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-16">Wards</p>
+        <div class="flex justify-between items-center">
+            <p class="text-[32px] font-[500] text-white ml-16">Wards</p>
+
+            <button class="flex mr-16 rounded-md items-center w-[36px] h-[36px] bg-white justify-center" onclick="showFormsModal('wardsForm')">
+                +
+            </button>
+        </div>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">
@@ -34,8 +40,7 @@ if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") 
                             class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
                             name="search_term"
                             placeholder="Enter name of ward"
-                            value="<?php echo xlt($searchTerm); ?>"
-                        />
+                            value="<?php echo xlt($searchTerm); ?>" />
                     </div>
 
                     <button type="submit" class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
@@ -44,10 +49,10 @@ if (isset($_GET['search_by_ward_name']) && $_SERVER['REQUEST_METHOD'] == "GET") 
 
                     <?php if ($searchTerm !== ''): ?>
                         <a href="<?php echo $_SERVER['PHP_SELF']; ?>"
-                           class="flex items-center justify-center w-[50px] h-[50px] bg-[#FFA97F] rounded-lg transition hover:bg-[#ED2024] group"
-                           title="Clear search">
+                            class="flex items-center justify-center w-[50px] h-[50px] bg-[#FFA97F] rounded-lg transition hover:bg-[#ED2024] group"
+                            title="Clear search">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </a>
                     <?php endif; ?>

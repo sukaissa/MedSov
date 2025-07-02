@@ -1,5 +1,7 @@
 <?php
 $content = isset($content) ? $content : '';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +41,13 @@ $content = isset($content) ? $content : '';
 
         <?php include_once __DIR__ . '/../molecules/msv-sidenav.php'; ?>
 
-
+        <?php
+        require_once __DIR__ . "/../organisms/modals/forms/index.php";
+        require_once __DIR__ . "/../organisms/modals/forms/forms.php";
+     
+        $formContent =  getFormsModalContent();
+        renderformsModal($formContent);
+        ?>
         <!-- Main Content Area -->
         <main class="flex-1 overflow-auto">
             <?php
@@ -49,5 +57,5 @@ $content = isset($content) ? $content : '';
 
 
     </div>
-    <script src="./components/organisms/modals/patient_info/index.js"></script>
+    <script src="./components/organisms/modals/index.js"></script>
 </body>

@@ -26,9 +26,20 @@ $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
 
 ?>
 <main class="flex-1">
+
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-16">Beds</p>
+        <div class="flex justify-between items-center">
+            <p class="text-[32px] font-[500] text-white ml-16">Beds</p>
+
+            <button class="flex mr-16 rounded-md items-center w-[36px] h-[36px] bg-white justify-center" onclick="showFormsModal('bedsForm')">
+                +
+            </button>
+        </div>
     </div>
+
+
+
+
 
     <div class="flex w-full items-center flex-col justify-center">
 
@@ -48,7 +59,7 @@ $selectedWard = isset($_GET['search_ward']) ? $_GET['search_ward'] : '';
                         </select>
                         <div class="border h-[30px]"></div>
                         <input name="word" id="word" type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                            placeholder="Enter patient’s name" />
+                            placeholder="Enter patient's name" />
                     </div>
 
                     <button class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
