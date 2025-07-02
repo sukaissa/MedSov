@@ -14,7 +14,7 @@
 - forms.php
   -- `interface/patient_file/encounter/forms.php`
   ``A button was introduced on the OpenEMR encounter page to admit patients during an encounter. The button references or calls another JS method called queuePatient () which calls a php file called admit_patient.php.
-  The php file (admit_patient.php) adds the patient to admission_queue table and set the status to “In Queue”.
+  The php file (admit_patient.php) adds the patient to admission_queue table and set the status to “in-queue”.
 
 Fields include
 Patient_id

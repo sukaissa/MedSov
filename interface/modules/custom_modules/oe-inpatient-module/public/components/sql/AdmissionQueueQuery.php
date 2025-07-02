@@ -22,7 +22,7 @@ class AdmissionQueueQuery
      */
     function countAdmissions()
     {
-        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='In Queue'");
+        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='in-queue'");
 
         $total = 0;
         foreach ($results as $value) {
@@ -33,7 +33,7 @@ class AdmissionQueueQuery
             null, //pid
             $_SESSION["authUser"], //authUser
             $_SESSION["authProvider"], //authProvider
-            "SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='In Queue'",
+            "SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='in-queue'",
             1,
             'open-emr',
             'dashboard'
@@ -41,6 +41,45 @@ class AdmissionQueueQuery
         return $total;
     }
 
+
+    /**
+     * @return array
+     * @property inpatient array
+     */
+    function getAllAdmissions()
+    {
+        $query = "SELECT
+                inp_patient_admission.*,
+                patient_data.title,
+                patient_data.fname,
+                patient_data.mname,
+                patient_data.lname,
+                patient_data.sex,
+                patient_data.dob,
+                inp_ward.name AS ward_name,
+                inp_ward.short_name AS ward_short_name,
+                inp_beds.number AS bed_number
+            FROM
+                inp_patient_admission
+            Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
+            Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
+            left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+        ";
+
+
+        $results = sqlStatement($query);
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: query inp_patient_admission",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+        return $results;
+    }
 
     /**
      * @return array
@@ -64,7 +103,7 @@ class AdmissionQueueQuery
             Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE inp_patient_admission.status='In Queue'
+            WHERE inp_patient_admission.status='in-queue'
         ";
 
 
@@ -144,7 +183,7 @@ class AdmissionQueueQuery
             Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE inp_patient_admission.status='In Queue' 
+            WHERE inp_patient_admission.status='in-queue' 
             AND (patient_data.fname LIKE '%$search%' OR patient_data.lname LIKE '%$search%' OR patient_data.mname LIKE '%$search%')
         ";
 

@@ -376,7 +376,7 @@ include_once "./components/head.php";
 
                     <?php
 
-                    if ($value['status'] == 'Admitted') {  ?>
+                    if ($value['status'] == 'admitted') {  ?>
                         <button type="button" style="margin-left: 10px; margin-top: 5px;" class="btn-md btn btn-success prepdischBtn" data-toggle="modal" data-target="#prepdischargePatient" data-id="<?php echo $value['id']; ?>" data-patient_id="<?php echo $value['patient_id']; ?>" data-encounter_id="<?php echo $value['encounter_id']; ?>">
                             <?php echo xlt("Prepare for Discharge") ?>
                         </button>

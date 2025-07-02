@@ -86,9 +86,9 @@ if (isset($_GET['filters']) && $_SERVER['REQUEST_METHOD'] == "GET") {
                 <label for="category" style="margin-right: 5px;"> <?php echo xlt('Meal Types') ?> </label>
                 <select class="form-control" id="category" name="category">
                     <option value=""> <?php echo xlt('Select category') ?> </option>
-                    <option value="Admitted"> <?php echo xlt('Admitted') ?> </option>
-                    <option value="In Queue"> <?php echo xlt('In Queue') ?> </option>
-                    <option value="Discharged"> <?php echo xlt('Discahrged') ?> </option>
+                    <option value="admitted"> <?php echo xlt('Admitted') ?> </option>
+                    <option value="in-queue"> <?php echo xlt('In Queue') ?> </option>
+                    <option value="discharged"> <?php echo xlt('Discharged') ?> </option>
                 </select>
             </div>
             <div class="form-group" style="margin-right: 5px;">

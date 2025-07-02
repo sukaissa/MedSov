@@ -1,10 +1,17 @@
 <?php
-
+use OpenEMR\Modules\InpatientModule\AdmissionQueueQuery;
+use OpenEMR\Modules\InpatientModule\WardQuery;
 
 require_once __DIR__ . "/../../../../../../globals.php";
+require_once __DIR__ . "/../sql/AdmissionQueueQuery.php";
+require_once __DIR__ . "/../sql/WardQuery.php";
 
+$admissionQueueQuery = new AdmissionQueueQuery();
+$wardQuery = new WardQuery();
 
-
+$wards = iterator_to_array($wardQuery->getWards());
+$allAdmissions = iterator_to_array($admissionQueueQuery->getAllAdmissions());
+echo "<script>console.log(" . json_encode($allAdmissions) . ");</script>";
 ?>
 
 <main class="flex-1">

@@ -22,7 +22,7 @@ class InpatientQuery
      */
     function countInpatients()
     {
-        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='Admitted'");
+        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='admitted'");
         $total = 0;
         foreach ($results as $value) {
             $total = $total + 1;
@@ -95,7 +95,7 @@ class InpatientQuery
             ON
                 inp_patient_admission.id = fr.admission_id
             WHERE
-                inp_patient_admission.status != 'In Queue'
+                inp_patient_admission.status != 'in-queue'
             GROUP BY
                 inp_patient_admission.id
             ORDER BY
@@ -143,7 +143,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.ward_id = $data[ward_id] 
                 AND (patient_data.fname LIKE '%$data[word]%' 
                     OR patient_data.lname LIKE '%$data[word]%' 
@@ -169,7 +169,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.ward_id = $data[ward_id]
                 ORDER BY
                     admission_date
@@ -192,7 +192,7 @@ class InpatientQuery
             LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
             WHERE
-                inp_patient_admission.status = 'Admitted' 
+                inp_patient_admission.status = 'admitted' 
             AND (patient_data.fname LIKE '%$data[word]%' 
                 OR patient_data.lname LIKE '%$data[word]%' 
                 OR patient_data.mname LIKE '%$data[word]%')
@@ -240,7 +240,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
                 AND inp_patient_admission.ward_id = $data[ward]
@@ -267,7 +267,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.ward_id = $data[ward]
                 AND patient_data.sex = '$data[gender]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
@@ -292,7 +292,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.assigned_provider = $data[provider] 
                 -- AND inp_patient_admission.ward_id = $data[ward]
@@ -318,7 +318,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.assigned_provider = $data[provider] 
                 AND inp_patient_admission.ward_id = $data[ward]
@@ -344,7 +344,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
                 -- AND inp_patient_admission.ward_id = $data[ward]
@@ -370,7 +370,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.ward_id = $data[ward]
                 -- AND patient_data.sex = '$data[gender]'
@@ -395,7 +395,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.ward_id = $data[ward]
                 AND patient_data.sex = '$data[gender]'
                 ORDER BY
@@ -419,7 +419,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND patient_data.sex = '$data[gender]'
                 ORDER BY
                     admission_date
@@ -442,7 +442,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Admitted' 
+                    inp_patient_admission.status = 'admitted' 
                 AND inp_patient_admission.ward_id = $data[ward]
                 ORDER BY
                     admission_date
@@ -516,7 +516,7 @@ class InpatientQuery
     }
 
 
-    function filterDischargedPatients($data)
+    function filterdischargedPatients($data)
     {
         $query = "";
         // AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
@@ -539,7 +539,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
                 AND inp_patient_admission.ward_id = $data[ward]
@@ -566,7 +566,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.ward_id = $data[ward]
                 AND patient_data.sex = '$data[gender]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
@@ -591,7 +591,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.assigned_provider = $data[provider] 
                 -- AND inp_patient_admission.ward_id = $data[ward]
@@ -617,7 +617,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.assigned_provider = $data[provider] 
                 AND inp_patient_admission.ward_id = $data[ward]
@@ -643,7 +643,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 AND inp_patient_admission.assigned_provider = $data[provider] 
                 -- AND inp_patient_admission.ward_id = $data[ward]
@@ -669,7 +669,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.created_at BETWEEN '$data[start_date]' AND '$data[end_date]'
                 -- AND inp_patient_admission.ward_id = $data[ward]
                 -- AND patient_data.sex = '$data[gender]'
@@ -694,7 +694,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND inp_patient_admission.ward_id = $data[ward]
                 AND patient_data.sex = '$data[gender]'
                 ORDER BY
@@ -718,7 +718,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND patient_data.sex = '$data[gender]'
                 ORDER BY
                     admission_date
@@ -741,7 +741,7 @@ class InpatientQuery
                 LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
                 LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
                 WHERE
-                    inp_patient_admission.status = 'Discharged' 
+                    inp_patient_admission.status = 'discharged' 
                 AND 
                     inp_patient_admission.ward_id = $data[ward]
                 ORDER BY
@@ -765,7 +765,7 @@ class InpatientQuery
             LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
             WHERE
-                inp_patient_admission.status = 'Discharged'
+                inp_patient_admission.status = 'discharged'
             AND
                 inp_patient_admission.assigned_provider = $data[provider] 
             ORDER BY
@@ -789,7 +789,7 @@ class InpatientQuery
             LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
             WHERE
-                    inp_patient_admission.status = 'Discharged'
+                    inp_patient_admission.status = 'discharged'
             ORDER BY
                 admission_date
             DESC";
@@ -900,7 +900,7 @@ class InpatientQuery
         discharge_date = ?
         ";
         $bindArray = array(
-            'Discharged',
+            'discharged',
             $data['discharge_date'] ? $data['discharge_date']  : date('Y-m-d H:i:s'),
             $data['id'],
         );
@@ -1020,7 +1020,7 @@ class InpatientQuery
     {
         $sets = "status = ?";
         $bindArray = array(
-            'In Queue',
+            'in-queue',
             $data['id'],
         );
         $sql = "UPDATE inp_patient_admission SET $sets WHERE id = ?;";
