@@ -157,9 +157,10 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 
             <form id="patientDetailsForm" method="GET" action="">
                 <input type="hidden" name="pid" id="patientDetailsPid" value="">
-
                 <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
             </form>
+
+
         </div>
 
 </main>

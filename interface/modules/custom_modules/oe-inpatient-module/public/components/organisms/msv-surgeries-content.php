@@ -8,8 +8,14 @@ require_once __DIR__ . "/../../../../../../globals.php";
 ?>
 
 <main class="flex-1">
-    <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
+
+
+    <div class="flex justify-between items-center">
         <p class="text-[32px] font-[500] text-white ml-16">Scheduled Surgeries</p>
+
+        <button class="flex mr-16 rounded-md items-center w-[36px] h-[36px] bg-white justify-center" onclick="showFormsModal('surgeries')">
+            +
+        </button>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">

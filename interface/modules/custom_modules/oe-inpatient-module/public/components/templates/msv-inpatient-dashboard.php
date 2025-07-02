@@ -1,9 +1,5 @@
 <?php
 ob_start();
-$pid = isset($_GET['id']) ? $_GET['id'] : '';
-// $patientDetails = getPatientData($pid);
-
-echo '<script>console.log("Patient ID: ' . htmlspecialchars($patientId) . '");</script>';
 
 ?>
 
