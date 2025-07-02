@@ -49,21 +49,22 @@ class AdmissionQueueQuery
     function getAllAdmissions()
     {
         $query = "SELECT
-                inp_patient_admission.*,
-                patient_data.title,
-                patient_data.fname,
-                patient_data.mname,
-                patient_data.lname,
-                patient_data.sex,
-                patient_data.dob,
-                inp_ward.name AS ward_name,
-                inp_ward.short_name AS ward_short_name,
-                inp_beds.number AS bed_number
+            inp_patient_admission.*,
+            patient_data.title,
+            patient_data.fname,
+            patient_data.mname,
+            patient_data.lname,
+            patient_data.sex,
+            patient_data.dob,
+            inp_ward.name AS ward_name,
+            inp_ward.short_name AS ward_short_name,
+            inp_beds.number AS bed_number
             FROM
-                inp_patient_admission
+            inp_patient_admission
             Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+            ORDER BY inp_patient_admission.admission_date
         ";
 
 
@@ -165,29 +166,55 @@ class AdmissionQueueQuery
     /**
      * @return array
      */
-    function searchAdmissionQueue($search)
+    function searchAdmissionQueue($params = [])
     {
-        $query = "SELECT
-                inp_patient_admission.*,
-                patient_data.title,
-                patient_data.fname,
-                patient_data.mname,
-                patient_data.lname,
-                patient_data.sex,
-                patient_data.dob,
-                inp_ward.name AS ward_name,
-                inp_ward.short_name AS ward_short_name,
-                inp_beds.number AS bed_number
-            FROM
-                inp_patient_admission
-            Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
-            Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
-            left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE inp_patient_admission.status='in-queue' 
-            AND (patient_data.fname LIKE '%$search%' OR patient_data.lname LIKE '%$search%' OR patient_data.mname LIKE '%$search%')
-        ";
+        $where = [];
+        $binds = [];
 
-        $results = sqlStatement($query);
+        // Only show in-queue by default
+        if (!empty($params['status'])) {
+            $where[] = "inp_patient_admission.status = ?";
+            $binds[] = $params['status'];
+        }
+
+        // Search by ward
+        if (!empty($params['ward_id'])) {
+            $where[] = "inp_patient_admission.ward_id = ?";
+            $binds[] = $params['ward_id'];
+        }
+
+        // Search by patient name (word)
+        if (!empty($params['word'])) {
+            $where[] = "(patient_data.fname LIKE ? OR patient_data.lname LIKE ? OR patient_data.mname LIKE ?)";
+            $wordLike = '%' . $params['word'] . '%';
+            $binds[] = $wordLike;
+            $binds[] = $wordLike;
+            $binds[] = $wordLike;
+        }
+
+        $whereClause = $where ? 'WHERE ' . implode(' AND ', $where) : '';
+
+        $query = "SELECT
+            inp_patient_admission.*,
+            patient_data.title,
+            patient_data.fname,
+            patient_data.mname,
+            patient_data.lname,
+            patient_data.sex,
+            patient_data.dob,
+            inp_ward.name AS ward_name,
+            inp_ward.short_name AS ward_short_name,
+            inp_beds.number AS bed_number
+        FROM
+            inp_patient_admission
+        LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
+        LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
+        LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+        $whereClause
+        ORDER BY inp_patient_admission.admission_date DESC";
+
+        $results = sqlStatement($query, $binds);
+
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: query inp_patient_admission",
             null, //pid

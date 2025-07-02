@@ -981,19 +981,18 @@ class InpatientQuery
     }
 
 
-    function undoAdmission($data)
+      function undoAdmission($data)
     {
-        $sets = "status = ?";
+        $sets = "status = ?, admission_date = ?";
         $bindArray = array(
             'in-queue',
+            date('Y-m-d H:i:s'),
             $data['id'],
         );
         $sql = "UPDATE inp_patient_admission SET $sets WHERE id = ?;";
         sqlStatement($sql, $bindArray);
 
-
-        $bedsets = "availability = ?
-        ";
+        $bedsets = "availability = ?";
         $bedArray = array(
             'Available',
             $data['bed_id'],

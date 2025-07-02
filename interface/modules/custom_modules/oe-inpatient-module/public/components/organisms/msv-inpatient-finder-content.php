@@ -145,7 +145,7 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
                         <div class="border h-[30px]"></div>
                         <input name="word" id="word" type="text"
                             class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                            placeholder="Enter patient’s name" value="<?php echo htmlspecialchars($searchedWord); ?>" />
+                            placeholder="Enter patient's name" value="<?php echo htmlspecialchars($searchedWord); ?>" />
                     </div>
 
                     <button type="submit"
