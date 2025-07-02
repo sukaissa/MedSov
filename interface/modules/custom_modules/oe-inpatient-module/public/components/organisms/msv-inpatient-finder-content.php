@@ -96,7 +96,22 @@ if (isset($_GET['status'])) {
     $message = $_GET['message'];
     $display_mesasge = 'block';
 }
+$pid = isset($_GET['pid']) ? $_GET['pid'] : null;
 
+if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
+
+    $data = [
+        'patient' => $pid,
+        'food' => $_POST['food'],
+        'staff' => $_POST['staff'],
+        'requested_date' => $_POST['requested_date'],
+        'admission_id' => $inpatientData['id'] ?? 0,
+    ];
+    $foodQuery->insertFoodRequest($data);
+
+    // echo "<script>console.log(" . json_encode($_POST) . ");</script>";
+}
 
 if (
     ($_SERVER['REQUEST_METHOD'] == "GET") &&
@@ -110,7 +125,6 @@ if (
     ];
     $searchResult = $inpatientQuery->searchInpatients($data);
     $inpatients = $searchResult['results'];
-    echo "<script>console.log('Search Results: " . json_encode($inpatients) . "');</script>";
 } else {
     $inpatients = $inpatientQuery->getInpatients();
 }
@@ -121,7 +135,7 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-16">Patient Finder</p>
+        <p class="text-[32px] font-[500] text-white ml-16">In-Patient Finder</p>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">
