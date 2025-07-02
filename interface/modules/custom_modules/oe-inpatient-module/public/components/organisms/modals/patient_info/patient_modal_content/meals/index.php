@@ -1,6 +1,6 @@
 <div id="patientModalMealsContent" class="hidden mt-5">
     <div class="flex justify-between items-center mb-6">
-        <button class="flex gap-4 items-center" onclick="showModalContent('main')">
+        <button class="flex gap-4 items-center" onclick="showModalContent('main', true, ['meals']);">
             <img src="./assets/img/msv-back-icon.svg" alt="back" />
             <p class="font-medium">Meals</p>
         </button>

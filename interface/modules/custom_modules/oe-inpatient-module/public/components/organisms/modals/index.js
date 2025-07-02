@@ -7,15 +7,27 @@ function showPatientDetailsModal(pid) {
     document.getElementById("patientDetailsForm").submit();
 }
 
+function removeUrlParams(param) {
+    const url = new URL(window.location);
+
+    // Check if param is an array or a single string
+    if (Array.isArray(param)) {
+        // Remove multiple parameters
+        param.forEach((p) => url.searchParams.delete(p));
+    } else {
+        // Remove single parameter
+        url.searchParams.delete(param);
+    }
+
+    window.history.replaceState({}, "", url);
+}
 // Function to close the modal
 // eslint-disable-next-line
 function closePatientDetailsModal() {
     const modal = document.getElementById("patientDetailsModal");
     if (modal) {
-        const url = new URL(window.location.href);
         modal.classList.add("hidden");
-        url.searchParams.delete("pid"); // Remove the specified parameter
-        window.history.pushState({}, "", url);
+        removeUrlParam(["pid", "meals"]);
     }
 
     // Remove the specific event listener to prevent memory leaks and multiple bindings
@@ -26,7 +38,11 @@ function closePatientDetailsModal() {
 }
 
 // eslint-disable-next-line
-function showModalContent(contentId) {
+function showModalContent(
+    contentId,
+    isBackButton = false,
+    urlParamsToRemove = ""
+) {
     const modalContentArea = document.getElementById(
         "patientModalDynamicContentArea"
     );
@@ -54,6 +70,9 @@ function showModalContent(contentId) {
     // Example: 'printWristband' -> 'patientModalPrintWristbandContent'
 
     if (targetContent) {
+        if (isBackButton) {
+            removeUrlParams(urlParamsToRemove);
+        }
         targetContent.classList.remove("hidden");
     } else {
         console.warn(

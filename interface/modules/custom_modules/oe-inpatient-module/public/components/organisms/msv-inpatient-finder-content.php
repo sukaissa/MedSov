@@ -110,7 +110,6 @@ if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
     ];
     $foodQuery->insertFoodRequest($data);
 
-    // echo "<script>console.log(" . json_encode($_POST) . ");</script>";
 }
 
 if (
@@ -173,8 +172,6 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
                 <input type="hidden" name="pid" id="patientDetailsPid" value="">
                 <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
             </form>
-
-
         </div>
 
 </main>

@@ -9,7 +9,10 @@ require_once __DIR__ . "/../organisms/modals/patient_info/patient_modal_content/
 
 
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
+$meal = isset($_GET['meals']) ? $_GET['meals'] : null;
 $showModal = $pid ? true : false;
+$showMealModal = $meal ? true : false;
+
 
 
 $inpatientQuery = new InpatientQuery();
@@ -35,6 +38,11 @@ $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("patientDetailsModal");
             if (modal) modal.classList.remove("hidden");
+            
+            <?php if ($showMealModal): ?>
+                // Show the meals modal content
+                showModalContent('meals');
+            <?php endif; ?>
         });
     </script>
 <?php endif; ?>
