@@ -13,7 +13,18 @@ $bedQuery = new BedQuery();
 
 $wards = $wardQuery->getWards();
 
-if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
+if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'bed_type' => trim($_POST['bed_type']),
+        'price_per_day' => trim($_POST['price_per_day']),
+        'number' => trim($_POST['number']),
+        'ward_id' => trim($_POST['ward_id']),
+        'availability' => trim($_POST['availability']),
+    ];
+    $bedQuery->insertBed($data);
+    header('location:beds.php?status=success&message=Bed added successfully');
+    // header('Refresh:0');
+} else if (isset($_GET['search_by_ward']) && $_SERVER['REQUEST_METHOD'] == "GET") {
     $ward_id = isset($_GET['search_ward']) && trim($_GET['search_ward']) !== '' ? $_GET['search_ward'] : null;
     $beds = $bedQuery->filterBeds($ward_id);
     // $inpatients = $inpatientQuery->searchInpatients($data);
