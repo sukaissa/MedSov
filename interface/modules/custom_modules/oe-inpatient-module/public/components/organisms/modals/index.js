@@ -27,7 +27,7 @@ function closePatientDetailsModal() {
     const modal = document.getElementById("patientDetailsModal");
     if (modal) {
         modal.classList.add("hidden");
-        removeUrlParam(["pid", "meals"]);
+        removeUrlParams(["pid", "meals"]);
     }
 
     // Remove the specific event listener to prevent memory leaks and multiple bindings
