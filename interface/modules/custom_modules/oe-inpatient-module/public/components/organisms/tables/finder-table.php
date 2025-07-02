@@ -4,7 +4,7 @@
     $columns = [
         [
             'title' => 'Patient ID',
-            'dataIndex' => 'id'
+            'dataIndex' => 'pid'
         ],
         [
             'title' => 'Full Name',
@@ -26,17 +26,17 @@
             'title' => 'Days Spent',
             'dataIndex' => 'days_spent'
         ],
-        [
-            'title' => 'Actions',
-            'dataIndex' => 'actions',
-            'render' => function ($record) {
-                $patientId = htmlspecialchars($record['id']);
-                return '<div class="flex space-x-2">
-                                <a role="button" href="dashboard.php?id=' . $patientId . '" class="bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">View</a>
-                                <button class="bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">Delete</button>
-                            </div>';
-            }
-        ],
+        // [
+        //     'title' => 'Actions',
+        //     'dataIndex' => 'actions',
+        //     'render' => function ($record) {
+        //         $patientId = htmlspecialchars($record['pid']);
+        //         return '<div class="flex space-x-2">
+        //                         <a role="button" href="dashboard.php?id=' . $patientId . '" class="bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">View</a>
+        //                         <button class="bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded-md shadow-sm transition duration-200">Delete</button>
+        //                     </div>';
+        //     }
+        // ],
     ];
     $inpatientsArray = iterator_to_array($inpatients);
 
@@ -46,7 +46,8 @@
         $dataSource = array_map(function ($item) {
             if (is_array($item)) {
                 return [
-                    'id' => $item['patient_id'] ?? $item['id'] ?? '',
+                    'id' => $item['id'] ?? '',
+                    'pid' => $item['patient_id'] ?? '',
                     'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
                     'ward' => $item['ward_name'] ?? '',
                     'bed' => $item['bed_number'] ?? '',

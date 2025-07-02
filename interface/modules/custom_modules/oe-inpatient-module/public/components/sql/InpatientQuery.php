@@ -123,97 +123,54 @@ class InpatientQuery
      */
     function searchInpatients($data)
     {
-        $query = "";
+        $params = [];
+        $where = ["inp_patient_admission.status = 'Admitted'"];
 
-        if ($data['ward_id'] != null && $data['word'] != null) {
-            $query =  "SELECT
-                inp_patient_admission.*,
-                patient_data.title,
-                patient_data.fname,
-                patient_data.mname,
-                patient_data.lname,
-                patient_data.sex,
-                patient_data.dob,
-                inp_ward.name AS ward_name,
-                inp_ward.short_name AS ward_short_name,
-                inp_beds.number AS bed_number
-                FROM
-                    inp_patient_admission
-                LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
-                LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
-                LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-                WHERE
-                    inp_patient_admission.status = 'Admitted' 
-                AND inp_patient_admission.ward_id = $data[ward_id] 
-                AND (patient_data.fname LIKE '%$data[word]%' 
-                    OR patient_data.lname LIKE '%$data[word]%' 
-                    OR patient_data.mname LIKE '%$data[word]%')
-                ORDER BY
-                    admission_date
-                DESC";
-        } elseif ($data['ward_id'] != null && $data['word'] == null) {
-            $query =  "SELECT
-                inp_patient_admission.*,
-                patient_data.title,
-                patient_data.fname,
-                patient_data.mname,
-                patient_data.lname,
-                patient_data.sex,
-                patient_data.dob,
-                inp_ward.name AS ward_name,
-                inp_ward.short_name AS ward_short_name,
-                inp_beds.number AS bed_number
-                FROM
-                    inp_patient_admission
-                LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
-                LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
-                LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-                WHERE
-                    inp_patient_admission.status = 'Admitted' 
-                AND inp_patient_admission.ward_id = $data[ward_id]
-                ORDER BY
-                    admission_date
-                DESC";
-        } elseif ($data['word'] != null && $data['ward_id'] == null) {
-            $query =  "SELECT
-            inp_patient_admission.*,
-            patient_data.title,
-            patient_data.fname,
-            patient_data.mname,
-            patient_data.lname,
-            patient_data.sex,
-            patient_data.dob,
-            inp_ward.name AS ward_name,
-            inp_ward.short_name AS ward_short_name,
-            inp_beds.number AS bed_number
-            FROM
-                inp_patient_admission
-            LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
-            LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
-            LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE
-                inp_patient_admission.status = 'Admitted' 
-            AND (patient_data.fname LIKE '%$data[word]%' 
-                OR patient_data.lname LIKE '%$data[word]%' 
-                OR patient_data.mname LIKE '%$data[word]%')
-            ORDER BY
-                admission_date
-            DESC";
+        if ($data['ward_id']) {
+            $where[] = "inp_patient_admission.ward_id = ?";
+            $params[] = $data['ward_id'];
         }
 
+        if ($data['word']) {
+            $where[] = "(patient_data.fname LIKE ? OR patient_data.lname LIKE ? OR patient_data.mname LIKE ?)";
+            $wordLike = '%' . $data['word'] . '%';
+            $params[] = $wordLike;
+            $params[] = $wordLike;
+            $params[] = $wordLike;
+        }
 
-        $results = sqlStatement($query);
-        EventAuditLogger::instance()->newEvent(
-            "inpatient-module: inp_patient_admission",
-            null, //pid
-            $_SESSION["authUser"], //authUser
-            $_SESSION["authProvider"], //authProvider
-            $query,
-            1,
-            'open-emr',
-            'dashboard'
-        );
-        return $results;
+        $whereClause = $where ? 'WHERE ' . implode(' AND ', $where) : '';
+
+        $query = "SELECT
+        inp_patient_admission.*,
+        patient_data.title,
+        patient_data.fname,
+        patient_data.mname,
+        patient_data.lname,
+        patient_data.sex,
+        patient_data.dob,
+        inp_ward.name AS ward_name,
+        inp_ward.short_name AS ward_short_name,
+        inp_beds.number AS bed_number
+        FROM
+            inp_patient_admission
+        LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
+        LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
+        LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+        $whereClause
+        ORDER BY admission_date DESC";
+
+        $results = sqlStatement($query, $params);
+
+        $total = 0;
+        foreach ($results as $value) {
+            $total++;
+        }
+
+        return [
+            'results' => $results,
+            'total' => $total
+        ];
     }
 
 
@@ -1104,5 +1061,39 @@ class InpatientQuery
             'dashboard'
         );
         sqlInsert("INSERT INTO inp_inpatient_nurses_note SET $sets", $bindArray);
+    }
+
+    /**
+     * Fetch inpatient admission data by patient pid
+     * @param int $pid
+     * @return array|null
+     */
+    function getInpatientByPid($pid)
+    {
+        $query = "SELECT
+                inp_patient_admission.*,
+                patient_data.title,
+                patient_data.fname,
+                patient_data.mname,
+                patient_data.lname,
+                patient_data.sex,
+                patient_data.dob,
+                inp_ward.name AS ward_name,
+                inp_ward.short_name AS ward_short_name,
+                inp_beds.number AS bed_number,
+                inp_beds.price_per_day
+            FROM
+                inp_patient_admission
+            LEFT JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
+            LEFT JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
+            LEFT JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
+            WHERE
+                patient_data.pid = ?
+            ORDER BY
+                admission_date DESC
+            LIMIT 1";
+
+        $result = sqlQuery($query, array($pid));
+        return $result ? $result : null;
     }
 }
