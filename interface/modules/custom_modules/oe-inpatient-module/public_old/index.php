@@ -172,7 +172,7 @@ include_once "./components/head.php";
                         <div style="display: flex;">
                             <form method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>" style="margin-right: 8px;">
                                 <input type="hidden" name="change_stat" value="">
-                                <input type="hidden" name="status" value="Admitted">
+                                <input type="hidden" name="status" value="admitted">
                                 <input type="hidden" name="bed_id" value="<?php echo $value['bed_id']; ?>">
                                 <input type="hidden" name="ward_id" value="<?php echo $value['ward_id']; ?>">
                                 <input type="hidden" name="inp_id" value="<?php echo $value['id']; ?>">

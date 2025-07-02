@@ -22,7 +22,7 @@ class AdmissionQueueQuery
      */
     function countAdmissions()
     {
-        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='In Queue'");
+        $results = sqlStatement("SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='in-queue'");
 
         $total = 0;
         foreach ($results as $value) {
@@ -33,7 +33,7 @@ class AdmissionQueueQuery
             null, //pid
             $_SESSION["authUser"], //authUser
             $_SESSION["authProvider"], //authProvider
-            "SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='In Queue'",
+            "SELECT * FROM inp_patient_admission WHERE inp_patient_admission.status='in-queue'",
             1,
             'open-emr',
             'dashboard'
@@ -64,7 +64,7 @@ class AdmissionQueueQuery
             Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE inp_patient_admission.status='In Queue'
+            WHERE inp_patient_admission.status='in-queue'
         ";
 
 
@@ -144,7 +144,7 @@ class AdmissionQueueQuery
             Left JOIN patient_data ON inp_patient_admission.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
-            WHERE inp_patient_admission.status='In Queue' 
+            WHERE inp_patient_admission.status='in-queue' 
             AND (patient_data.fname LIKE '%$search%' OR patient_data.lname LIKE '%$search%' OR patient_data.mname LIKE '%$search%')
         ";
 

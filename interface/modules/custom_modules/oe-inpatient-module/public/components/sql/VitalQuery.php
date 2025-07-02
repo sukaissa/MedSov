@@ -42,7 +42,7 @@ class VitalQuery
             Left JOIN patient_data ON inp_inpatient_vitals.patient_id = patient_data.pid
             Left JOIN inp_ward ON inp_inpatient_vitals.ward_id = inp_ward.id
             left JOIN inp_beds ON inp_inpatient_vitals.bed_id = inp_beds.id
-            WHERE inp_inpatient_vitals.status='In Queue'
+            WHERE inp_inpatient_vitals.status='in-queue'
         ";
 
         EventAuditLogger::instance()->newEvent(

@@ -523,7 +523,7 @@ function addmission_queue_add()
         $_SESSION["authUser"],
         $_SESSION["authUser"],
         $_SESSION["authUser"],
-        "In Queue",
+        "in-queue",
     );
 
     sqlInsert("INSERT INTO inp_patient_admission SET $sets", $bindArray);

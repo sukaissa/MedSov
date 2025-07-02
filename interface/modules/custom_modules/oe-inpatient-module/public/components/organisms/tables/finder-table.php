@@ -20,7 +20,7 @@
         ],
         [
             'title' => 'Admitted',
-            'dataIndex' => 'addmitted'
+            'dataIndex' => 'admitted'
         ],
         [
             'title' => 'Days Spent',
