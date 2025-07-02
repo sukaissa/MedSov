@@ -11,7 +11,7 @@
             <div class="modal-body">
                 <form method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="hidden" name="new" value="new">
-                    <input type="hidden" name="status" value="In Queue">
+                    <input type="hidden" name="status" value="in-queue">
 
                     <div class="form-group">
                         <label for="ward">Ward</label>

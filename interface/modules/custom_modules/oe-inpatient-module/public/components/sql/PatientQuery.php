@@ -253,7 +253,7 @@ class PatientQuery
             JOIN inp_patient_admission ON inp_visits.patient_id = inp_patient_admission.patient_id
             JOIN inp_beds ON inp_patient_admission.bed_id = inp_beds.id
             JOIN inp_ward ON inp_patient_admission.ward_id = inp_ward.id
-            WHERE inp_visits.visitor_name LIKE '%$visitor%' AND inp_patient_admission.status='Admitted'";
+            WHERE inp_visits.visitor_name LIKE '%$visitor%' AND inp_patient_admission.status='admitted'";
         $visitors =    sqlStatement($query);
 
         EventAuditLogger::instance()->newEvent(
