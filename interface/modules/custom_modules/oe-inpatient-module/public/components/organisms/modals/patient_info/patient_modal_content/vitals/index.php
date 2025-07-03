@@ -88,7 +88,6 @@ $latestVital = null;
 if ($inpatientData && isset($inpatientData['id'])) {
     $latestVital = $vitalQuery->getLatestAdmissionVital($inpatientData['id']);
 }
-
 ?>
 <div id="patientModalVitalsContent" class="hidden mt-5">
     <div class="flex items-center justify-between">
