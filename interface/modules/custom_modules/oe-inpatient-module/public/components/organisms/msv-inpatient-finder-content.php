@@ -74,8 +74,6 @@ $surgeryQuery = new SurgeryQuery();
 $foodQuery = new FoodQuery();
 // $preDischargeChecklist = new PreDischargeChecklistQuery();
 
-
-
 $wards = $wardQuery->getWards();
 $issueList = $actionPlanQuery->getIssueList();
 $users = $authQuery->getUsers();
@@ -97,7 +95,6 @@ if (isset($_GET['status'])) {
     $display_mesasge = 'block';
 }
 
-
 if (
     ($_SERVER['REQUEST_METHOD'] == "GET") &&
     (isset($_GET['search_by_ward']) || isset($_GET['search_ward']) || isset($_GET['word']))
@@ -110,7 +107,6 @@ if (
     ];
     $searchResult = $inpatientQuery->searchInpatients($data);
     $inpatients = $searchResult['results'];
-    echo "<script>console.log('Search Results: " . json_encode($inpatients) . "');</script>";
 } else {
     $inpatients = $inpatientQuery->getInpatients();
 }
@@ -121,7 +117,7 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
 ?>
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
-        <p class="text-[32px] font-[500] text-white ml-16">Patient Finder</p>
+        <p class="text-[32px] font-[500] text-white ml-16">In-Patient Finder</p>
     </div>
 
     <div class="flex w-full items-center flex-col justify-center">
@@ -159,8 +155,6 @@ $searchedWord = isset($_GET['word']) ? $_GET['word'] : '';
                 <input type="hidden" name="pid" id="patientDetailsPid" value="">
                 <?php include_once __DIR__ . '/tables/finder-table.php'; ?>
             </form>
-
-
         </div>
 
 </main>

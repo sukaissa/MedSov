@@ -1,6 +1,56 @@
+<?php
+
+use OpenEMR\Modules\InpatientModule\AuthQuery;
+use OpenEMR\Modules\InpatientModule\FoodQuery;
+use OpenEMR\Modules\InpatientModule\InpatientQuery;
+
+require_once __DIR__ . "/../../../../../../../../../../globals.php";
+require_once __DIR__ . "/../../../../../sql/AuthQuery.php";
+require_once __DIR__ . "/../../../../../sql/FoodQuery.php";
+require_once __DIR__ . "/../../../../../sql/InpatientQuery.php";
+
+$authQuery = new AuthQuery();
+$foodQuery = new FoodQuery();
+$inpatientQuery = new InpatientQuery();
+
+$pid = isset($_GET['pid']) ? $_GET['pid'] : null;
+$inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
+$mealRequests = $pid ? $foodQuery->getPatientFoodRequests($inpatientData['id'], $pid) : null;
+
+$patientsMealRequests = isset($mealRequests) ? iterator_to_array($mealRequests) : [];
+echo "<script>console.log(" . json_encode($patientsMealRequests) . ");</script>";
+
+// Map the actual data instead of using hardcoded values
+$dataSource = array_map(function($request) {
+    return [
+        'id' => $request['id'],
+        'type' => ($request['category'] ?? ''),
+        'meal' => ($request['food_name'] ?? ''),
+        'status' => ($request['status'] ?? ''),
+        'staff' => $request['username'] ?? 'N/A',
+        'date' => $request['requested_date'] ?? $request['created_at'] ?? 'N/A',
+    ];
+}, $patientsMealRequests);
+// Fallback to empty array if no data
+if (empty($dataSource)) {
+    $dataSource = [];
+}
+
+$columns = [
+    ['title' => 'Type', 'dataIndex' => 'type'],
+    ['title' => 'Meal', 'dataIndex' => 'meal'],
+    ['title' => 'Status', 'dataIndex' => 'status'],
+    ['title' => 'Staff', 'dataIndex' => 'staff'],
+    ['title' => 'Request Date', 'dataIndex' => 'date']
+];
+$isLoading = false;
+$responsive = true;
+
+?>
+
 <div id="patientModalMealsContent" class="hidden mt-5">
     <div class="flex justify-between items-center mb-6">
-        <button class="flex gap-4 items-center" onclick="showModalContent('main')">
+        <button class="flex gap-4 items-center" onclick="showModalContent('main', true, ['meals']);">
             <img src="./assets/img/msv-back-icon.svg" alt="back" />
             <p class="font-medium">Meals</p>
         </button>
@@ -10,48 +60,6 @@
         </button>
     </div>
 
-    <?php
-
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'meal' => 'Breakfast',
-            'staff' => 'Jane Doe, RN, NP',
-            'date' => '2021-01-01',
-        ],
-        [
-            'id' => 'S001',
-            'meal' => 'Breakfast',
-            'staff' => 'Jane Doe, RN, NP',
-            'date' => '2021-01-01',
-        ],
-        [
-            'id' => 'S001',
-            'meal' => 'Breakfast',
-            'staff' => 'Jane Doe, RN, NP',
-            'date' => '2021-01-01',
-        ],
-        [
-            'id' => 'S001',
-            'meal' => 'Breakfast',
-            'staff' => 'Jane Doe, RN, NP',
-            'date' => '2021-01-01',
-        ],
-
-    ];
-
-
-    $columns = [
-        ['title' => 'Meal', 'dataIndex' => 'meal'],
-        ['title' => 'Staff', 'dataIndex' => 'staff'],
-        ['title' => 'Request Date', 'dataIndex' => 'date']
-    ];
-    $isLoading = false;
-    $responsive = true;
-
-
-    ?>
-
     <div class="max-h-[400px] overflow-auto">
         <?php if ($isLoading): ?>
             <table class="table-fixed w-full">
@@ -59,7 +67,7 @@
                     <tr class="h-10">
                         <?php foreach ($columns as $column): ?>
                             <th class="text-left px-4 text-gray-600 text-sm font-normal">
-                                <?php echo htmlspecialchars($column['title']); ?>
+                                <?php echo xlt($column['title']); ?>
                             </th>
                         <?php endforeach; ?>
                     </tr>
@@ -78,7 +86,7 @@
                     <tr class="h-[50px] border-b-[6px]">
                         <?php foreach ($columns as $column): ?>
                             <th class="text-left px-4 text-[#282224] bg-white text-sm font-[500]">
-                                <?php echo htmlspecialchars($column['title']); ?>
+                                <?php echo xlt($column['title']); ?>
                             </th>
                         <?php endforeach; ?>
                     </tr>
@@ -90,24 +98,13 @@
                             <tr class="border-b h-[60px] border-b-[#E7E7E7] hover:bg-[#ED2024] font-[300] text-[#282224] hover:text-white transition-all duration-200 ease-in-out cursor:pointer"
                                 onclick="showPatientDetailsModal()">
 
-
-                                <td class="px-3 py-2 text-sm font-[300]">
-                                    <p class="font-medium text-sm">
-                                        <?php echo $record['meal'] ?>
-                                    </p>
-
-                                </td>
-                                <td class="px-3 py-2 text-sm font-[300]">
-                                    <p class="font-medium text-sm">
-                                        <?php echo $record['staff'] ?>
-                                    </p>
-                                </td>
-                                <td class="px-3 py-2 text-sm font-[300]">
-                                    <p class="font-medium text-sm">
-                                        <?php echo $record['date'] ?>
-                                    </p>
-
-                                </td>
+                                <?php foreach ($columns as $column): ?>
+                                    <td class="px-3 py-2 text-sm font-[300]">
+                                        <p class="font-medium text-sm">
+                                            <?php echo xlt($record[$column['dataIndex']] ?? 'N/A'); ?>
+                                        </p>
+                                    </td>
+                                <?php endforeach; ?>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
