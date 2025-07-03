@@ -61,7 +61,7 @@ class VitalQuery
 
     function getAdmissionVitals($admissionId)
     {
-        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id=$admissionId";
+        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id=$admissionId ORDER BY time_taken DESC";
 
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: inp_inpatient_vitals",
@@ -76,6 +76,28 @@ class VitalQuery
         $results = sqlStatement($query);
         return $results;
     }
+
+    function getLatestAdmissionVital($admissionId)
+    {
+        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id = ? ORDER BY time_taken DESC LIMIT 1";
+
+        $bindArray = array($admissionId);
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: inp_inpatient_vitals",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        $result = sqlQuery($query, $bindArray);
+        return $result;
+    }
+
     /**
      * @param $number
      * @param $ward_id
@@ -85,18 +107,19 @@ class VitalQuery
     function insertVital($data)
     {
         $sets = "admission_id = ?, 
-            patient_id = ?,
-            blood_pressure = ?,
-            pulse = ?,
-            temperature = ?,
-            respiratory_rate = ?,
-            spo_2 = ?,
-            height = ?,
-            weight = ?,
-            fluid_input = ?,
-            fluid_output = ?,
-            time_taken = ?
-            ";
+        patient_id = ?,
+        blood_pressure = ?,
+        pulse = ?,
+        temperature = ?,
+        respiratory_rate = ?,
+        spo_2 = ?,
+        pain_score = ?,
+        height = ?,
+        weight = ?,
+        fluid_input = ?,
+        fluid_output = ?,
+        time_taken = ?
+        ";
 
         $bindArray = array(
             $data['admission_id'],
@@ -106,6 +129,7 @@ class VitalQuery
             $data['temperature'],
             $data['respiratory_rate'],
             $data['spo_2'],
+            $data['pain_score'],
             $data['height'],
             $data['weight'],
             $data['fluid_input'],

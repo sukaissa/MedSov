@@ -73,6 +73,7 @@ CREATE TABLE IF NOT EXISTS `inp_inpatient_vitals` (
   `temperature` varchar(100) NOT NULL,
   `respiratory_rate` varchar(100) NOT NULL,
   `spo_2` varchar(100) NOT NULL,
+  `pain_score` varchar(100) NOT NULL,
   `height` varchar(100) NOT NULL,
   `weight` varchar(100) NOT NULL,
   `fluid_input` varchar(100) NOT NULL,
