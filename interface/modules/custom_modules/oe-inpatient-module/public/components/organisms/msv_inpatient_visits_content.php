@@ -10,13 +10,13 @@ require_once __DIR__ . "/../../../../../../globals.php";
 <main class="flex-1">
 
 
-<div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
+    <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
         <div class="flex justify-between items-center">
-            <p class="text-[32px] font-[500] text-white ml-16">Scheduled Surgeries</p>
+            <p class="text-[32px] font-[500] text-white ml-16">Visitors Registry</p>
 
-            <!-- <button class="flex mr-16 rounded-md items-center w-[36px] h-[36px] bg-white justify-center" onclick="showFormsModal('wardsForm')">
+            <button class="flex mr-16 rounded-md items-center w-[36px] h-[36px] bg-white justify-center" onclick="showFormsModal('visitorsRegistryForm')">
                 +
-            </button> -->
+            </button>
         </div>
     </div>
 
@@ -26,12 +26,9 @@ require_once __DIR__ . "/../../../../../../globals.php";
 
             <div class="flex gap-5 align-items-center border-b pb-5 mb-5 ">
                 <div class="h-[50px] w-full rounded-lg border border-[#8C898A] flex items-center gap-3 px-2">
-                    <select class="flex-1 h-full focus:ring-0 focus:outline-none" placeholder="Select Ward">
-                        <option value="" class="text-[#8C898A] font-[300]">Select Ward</option>
-                    </select>
-                    <div class="border h-[30px]"></div>
+
                     <input type="text" class="px-5 focus:ring-0 focus:outline-none flex-1 h-full"
-                        placeholder="Enter patient’s name" />
+                        placeholder="Enter service name" />
                 </div>
 
                 <button class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
@@ -40,7 +37,7 @@ require_once __DIR__ . "/../../../../../../globals.php";
             </div>
 
 
-            <?php include_once __DIR__ . '/tables/surgeries-table.php'; ?>
+            <?php include_once __DIR__ . '/tables/visitors_registry_table.php'; ?>
 
 
         </div>
