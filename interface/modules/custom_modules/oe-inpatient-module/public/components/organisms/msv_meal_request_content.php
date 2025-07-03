@@ -21,7 +21,7 @@ if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
         'food' => $_POST['food'],
         'staff' => $_POST['staff'],
         'requested_date' => $_POST['requested_date'],
-        'admission_id' => 0,
+        'admission_id' => $_POST['admission_id'] ?? 0,
     ];
     echo '<script>console.log(' . json_encode($data) . ');</script>';
     $foodQuery->insertFoodRequest($data);
