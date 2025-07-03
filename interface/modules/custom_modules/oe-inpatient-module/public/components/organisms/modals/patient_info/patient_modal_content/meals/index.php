@@ -29,19 +29,18 @@ if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
     $foodQuery->insertFoodRequest($data);
 }
 
-$mealRequests = $pid ? $foodQuery->getPatientFoodRequests($inpatientData['id'], $pid) : null;
+$mealRequests = $pid ? $foodQuery->getPatientFoodRequests(0, $pid) : null;
 $patientsMealRequests = isset($mealRequests) ? iterator_to_array($mealRequests) : [];
-echo "<script>console.log(" . json_encode($patientsMealRequests) . ");</script>";
-
+echo '<script>console.log(' . json_encode($patientsMealRequests) . ');</script>';
 // Map the actual data instead of using hardcoded values
-$dataSource = array_map(function($request) {
+$dataSource = array_map(function ($mealRequest) {
     return [
-        'id' => $request['id'],
-        'type' => ($request['category'] ?? ''),
-        'meal' => ($request['food_name'] ?? ''),
-        'status' => ($request['status'] ?? ''),
-        'staff' => $request['username'] ?? 'N/A',
-        'date' => $request['requested_date'] ?? $request['created_at'] ?? 'N/A',
+        'id' => $mealRequest['id'],
+        'type' => isset($mealRequest['category']) ? ucfirst(strtolower($mealRequest['category'])) : 'N/A',
+        'meal' => ($mealRequest['food_name'] ?? ''),
+        'status' => ($mealRequest['status'] ?? ''),
+        'staff' => $mealRequest['username'] ?? 'N/A',
+        'date' => $mealRequest['requested_date'] ?? $mealRequest['created_at'] ?? 'N/A',
     ];
 }, $patientsMealRequests);
 // Fallback to empty array if no data
