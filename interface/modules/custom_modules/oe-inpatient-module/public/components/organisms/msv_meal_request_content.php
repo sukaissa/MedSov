@@ -23,6 +23,7 @@ if (isset($_POST['new']) && $_SERVER['REQUEST_METHOD'] == "POST") {
         'requested_date' => $_POST['requested_date'],
         'admission_id' => 0,
     ];
+    echo '<script>console.log(' . json_encode($data) . ');</script>';
     $foodQuery->insertFoodRequest($data);
     header('Refresh:0');
 } elseif (isset($_POST['id']) && $_SERVER['REQUEST_METHOD'] == "POST") {

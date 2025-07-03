@@ -13,7 +13,7 @@
             'id' => $mealRequest['id'] ?? 'N/A',
             'patient_name' => $patientName,
             'meal_name' => $mealRequest['food_name'] ?? 'N/A',
-            'meal_type' => $mealRequest['category'] ?? 'N/A',
+            'meal_type' => isset($mealRequest['category']) ? ucfirst(strtolower($mealRequest['category'])) : 'N/A',
             'staff_name' => $mealRequest['username'] ?? 'N/A',
             'request_date' => isset($mealRequest['requested_date']) ?
                 date('Y-m-d', strtotime($mealRequest['requested_date'])) : (isset($mealRequest['created_at']) ? date('Y-m-d', strtotime($mealRequest['created_at'])) : 'N/A'),
