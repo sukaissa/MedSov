@@ -1,6 +1,6 @@
 <div id="mealMenuForm" class="hidden pb-4">
-    <form action="" method="POST">
-        <input type="hidden" name="new" value="1">
+    <form action="" method="POST" id="newMealMenuItem">
+        <input type="hidden" name="new_meal_menu" value="1">
         <div class="mt-6 flex justify-between items-center">
             <p class="text-[#282224] text-2xl font-semibold">New Meal Menu</p>
         </div>
@@ -15,6 +15,9 @@
                 <label class="font-medium" for="">Meal Types<span class="text-[#ED2024]">*</span></label>
                 <select name="meal_type" id="meal_type" class="w-full h-[56px] px-5 rounded-md text-sm border border-[#8C898A] text-[#282224]">
                     <option value="">Select Meal Type</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="supper">Supper</option>
                 </select>
             </div>
 

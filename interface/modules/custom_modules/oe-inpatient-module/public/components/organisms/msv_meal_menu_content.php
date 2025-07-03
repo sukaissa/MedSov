@@ -1,9 +1,40 @@
 <?php
 
+use OpenEMR\Modules\InpatientModule\FoodQuery;
 
 require_once __DIR__ . "/../../../../../../globals.php";
+require_once __DIR__ . "/../sql/FoodQuery.php";
 
+$foodQuery = new FoodQuery();
 
+if (isset($_POST['new_meal_menu']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'name' => $_POST['name'],
+        'category' => $_POST['meal_type'],
+        'price' => $_POST['price'],
+    ];
+    $foodQuery->insertFoodItem($data);
+    header('Refresh:0');
+} elseif (isset($_POST['id']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'id' => $_POST['id'],
+        'name' => $_POST['name'],
+        'category' => $_POST['meal_type'],
+        'price' => $_POST['price'],
+        'availability' => $_POST['availability'],
+    ];
+    $foodQuery->updateFoodItem($data);
+    header('Refresh:0');
+} elseif (isset($_POST['deleteId']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $foodQuery->destroyFoodItem($_POST['deleteId']);
+    header('Refresh:0');
+} elseif (isset($_POST['search']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $search = $_POST['search'];
+    $admissionsQueue = $admissionQueuQuery->searchAdmissionQueue($search);
+    header('Refresh:0');
+}
+
+$menuItems = $foodQuery->getMenuItems();
 
 ?>
 
@@ -33,7 +64,7 @@ require_once __DIR__ . "/../../../../../../globals.php";
 
                 <button class="flex items-center justify-center w-[50px] h-[50px] bg-[#ED2024] rounded-lg">
                     <img src="./assets/img/msv-search-icon.svg" alt="">
-                </button>   
+                </button>
             </div>
 
 
