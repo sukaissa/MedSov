@@ -107,18 +107,19 @@ class VitalQuery
     function insertVital($data)
     {
         $sets = "admission_id = ?, 
-            patient_id = ?,
-            blood_pressure = ?,
-            pulse = ?,
-            temperature = ?,
-            respiratory_rate = ?,
-            spo_2 = ?,
-            height = ?,
-            weight = ?,
-            fluid_input = ?,
-            fluid_output = ?,
-            time_taken = ?
-            ";
+        patient_id = ?,
+        blood_pressure = ?,
+        pulse = ?,
+        temperature = ?,
+        respiratory_rate = ?,
+        spo_2 = ?,
+        pain_score = ?,
+        height = ?,
+        weight = ?,
+        fluid_input = ?,
+        fluid_output = ?,
+        time_taken = ?
+        ";
 
         $bindArray = array(
             $data['admission_id'],
@@ -128,6 +129,7 @@ class VitalQuery
             $data['temperature'],
             $data['respiratory_rate'],
             $data['spo_2'],
+            $data['pain_score'],
             $data['height'],
             $data['weight'],
             $data['fluid_input'],
