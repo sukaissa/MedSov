@@ -34,6 +34,4 @@
     include_once __DIR__ . '/data-table.php';
     ?>
 
-
-
 </div>
