@@ -25,7 +25,7 @@ $surgeryQuery = new SurgeryQuery();
 $authQuery = new AuthQuery();
 $externalTeamMemebersQuery = new ExternalTeamMembersQuery();
 
-$surgery = $surgeryQuery->getSurgery();
+$surgery = $surgeryQuery->getSurgeries();
 $providers = $authQuery->getProviders();
 $external = $externalTeamMemebersQuery->getExternalTeamMembers();
 

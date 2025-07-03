@@ -176,13 +176,13 @@ class SurgeryQuery
     /**
      * @return array
      */
-    /* function getSurgery()
+    /* function getSurgeries()
     {
         $query = "SELECT * FROM inp_surgery";
         $results = sqlStatement($query);
         return $results;
     }*/
-    function getSurgery()
+    function getSurgeries()
     {
         $query = "SELECT
                 inp_surgery.*,
