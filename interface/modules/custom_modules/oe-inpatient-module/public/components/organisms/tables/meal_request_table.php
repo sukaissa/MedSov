@@ -1,29 +1,24 @@
 <div>
-
-
     <?php
+    $mealRequestsArray = iterator_to_array($mealRequests) ?? [];
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'patient_name' => 'John Doe',
-            'meal_name' => 'Chicken',
-            'meal_type' => 'Breakfast',
-            'staff_name' => 'John Doe',
-            'request_date' => '2021-01-01',
+    $dataSource = array_map(function ($mealRequest) {
+        // Construct full patient name
+        $patientName = trim(($mealRequest['fname'] ?? '') . ' ' . ($mealRequest['mname'] ?? '') . ' ' . ($mealRequest['lname'] ?? ''));
+        if (empty($patientName)) {
+            $patientName = 'Unknown Patient';
+        }
 
-        ],
-        [
-            'id' => 'S002',
-            'patient_name' => 'Jane Doe',
-            'meal_name' => 'Beef',
-            'meal_type' => 'Lunch',
-            'staff_name' => 'Jane Doe',
-            'request_date' => '2021-01-01',
-        ],
-
-    ];
-
+        return [
+            'id' => $mealRequest['id'] ?? 'N/A',
+            'patient_name' => $patientName,
+            'meal_name' => $mealRequest['food_name'] ?? 'N/A',
+            'meal_type' => $mealRequest['category'] ?? 'N/A',
+            'staff_name' => $mealRequest['username'] ?? 'N/A',
+            'request_date' => isset($mealRequest['requested_date']) ?
+                date('Y-m-d', strtotime($mealRequest['requested_date'])) : (isset($mealRequest['created_at']) ? date('Y-m-d', strtotime($mealRequest['created_at'])) : 'N/A'),
+        ];
+    }, $mealRequestsArray);
 
     $columns = [
         ['title' => 'No', 'dataIndex' => 'id'],
@@ -32,7 +27,6 @@
         ['title' => 'Meal Type', 'dataIndex' => 'meal_type'],
         ['title' => 'Staff Name', 'dataIndex' => 'staff_name'],
         ['title' => 'Request Date', 'dataIndex' => 'request_date'],
-
     ];
     $isLoading = false;
     $responsive = true;

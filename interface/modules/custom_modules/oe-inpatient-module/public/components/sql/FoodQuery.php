@@ -168,12 +168,12 @@ class FoodQuery
     {
         $whereClause = "WHERE inp_food_request.patient_id = ?";
         $bindArray = array($patient_id);
-        
+
         if ($admission_id !== null && $admission_id !== 0) {
             $whereClause .= " AND inp_food_request.admission_id = ?";
             $bindArray[] = $admission_id;
         }
-        
+
         $query = "SELECT inp_food_request.*,
                 patient_data.title,
                 patient_data.fname,
@@ -190,9 +190,9 @@ class FoodQuery
             JOIN patient_data ON inp_food_request.patient_id = patient_data.pid
             $whereClause
             ORDER BY created_at DESC";
-    
+
         $results = sqlStatement($query, $bindArray);
-    
+
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: inp_food_request",
             $patient_id, //pid
@@ -464,5 +464,203 @@ class FoodQuery
             'dashboard'
         );
         sqlStatement($sql, intval($id));
+    }
+
+    /**
+     * Search food requests by patient name, food name, category, or staff name
+     * @param string $searchTerm The search term to look for
+     * @return array
+     */
+    function searchFoodRequests($searchTerm)
+    {
+        $query = "SELECT inp_food_request.*,
+            patient_data.title,
+            patient_data.fname,
+            patient_data.mname,
+            patient_data.lname,
+            patient_data.sex,
+            patient_data.dob,
+            users.username,
+            inp_food_item.name as food_name,
+            inp_food_item.category as category
+        FROM inp_food_request 
+        JOIN users ON inp_food_request.staff_id = users.id
+        JOIN inp_food_item ON inp_food_request.food_id = inp_food_item.id
+        JOIN patient_data ON inp_food_request.patient_id = patient_data.pid
+        WHERE (
+            -- Search in patient name (first, middle, last, or full name)
+            patient_data.fname LIKE ? OR 
+            patient_data.mname LIKE ? OR 
+            patient_data.lname LIKE ? OR 
+            CONCAT(patient_data.fname, ' ', patient_data.lname) LIKE ? OR
+            CONCAT(patient_data.fname, ' ', patient_data.mname, ' ', patient_data.lname) LIKE ? OR
+            
+            -- Search in food name
+            inp_food_item.name LIKE ? OR
+            
+            -- Search in category
+            inp_food_item.category LIKE ? OR
+            
+            -- Search in staff name
+            users.username LIKE ? OR
+            
+            -- Search in status
+            inp_food_request.status LIKE ?
+        )
+        ORDER BY inp_food_request.created_at DESC";
+
+        $searchPattern = '%' . $searchTerm . '%';
+        $bindArray = array(
+            $searchPattern, // patient fname
+            $searchPattern, // patient mname
+            $searchPattern, // patient lname
+            $searchPattern, // patient fname + lname
+            $searchPattern, // patient full name
+            $searchPattern, // food name
+            $searchPattern, // category
+            $searchPattern, // staff username
+            $searchPattern  // status
+        );
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: search inp_food_request",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        $results = sqlStatement($query, $bindArray);
+
+        $total = 0;
+        foreach ($results as $value) {
+            $total++;
+        }
+
+        return $results;
+        // return [
+        //     'results' => $results,
+        //     'total' => $total
+        // ];
+    }
+
+    /**
+     * Advanced search with multiple criteria
+     * @param array $criteria Search criteria
+     * @return array
+     */
+    function advancedSearchFoodRequests($criteria)
+    {
+        $baseQuery = "SELECT inp_food_request.*,
+            patient_data.title,
+            patient_data.fname,
+            patient_data.mname,
+            patient_data.lname,
+            patient_data.sex,
+            patient_data.dob,
+            users.username,
+            inp_food_item.name as food_name,
+            inp_food_item.category as category
+        FROM inp_food_request 
+        JOIN users ON inp_food_request.staff_id = users.id
+        JOIN inp_food_item ON inp_food_request.food_id = inp_food_item.id
+        JOIN patient_data ON inp_food_request.patient_id = patient_data.pid";
+
+        $conditions = [];
+        $bindArray = [];
+
+        // Search term (searches across all fields)
+        if (!empty($criteria['search'])) {
+            $searchPattern = '%' . $criteria['search'] . '%';
+            $conditions[] = "(
+                patient_data.fname LIKE ? OR 
+                patient_data.mname LIKE ? OR 
+                patient_data.lname LIKE ? OR 
+                CONCAT(patient_data.fname, ' ', patient_data.lname) LIKE ? OR
+                CONCAT(patient_data.fname, ' ', patient_data.mname, ' ', patient_data.lname) LIKE ? OR
+                inp_food_item.name LIKE ? OR
+                inp_food_item.category LIKE ? OR
+                users.username LIKE ? OR
+                inp_food_request.status LIKE ?
+            )";
+            $bindArray = array_merge($bindArray, array_fill(0, 9, $searchPattern));
+        }
+
+        // Specific patient name search
+        if (!empty($criteria['patient_name'])) {
+            $patientPattern = '%' . $criteria['patient_name'] . '%';
+            $conditions[] = "(
+                patient_data.fname LIKE ? OR 
+                patient_data.mname LIKE ? OR 
+                patient_data.lname LIKE ? OR 
+                CONCAT(patient_data.fname, ' ', patient_data.lname) LIKE ?
+            )";
+            $bindArray = array_merge($bindArray, array_fill(0, 4, $patientPattern));
+        }
+
+        // Specific food name search
+        if (!empty($criteria['food_name'])) {
+            $conditions[] = "inp_food_item.name LIKE ?";
+            $bindArray[] = '%' . $criteria['food_name'] . '%';
+        }
+
+        // Category filter
+        if (!empty($criteria['category'])) {
+            $conditions[] = "inp_food_item.category = ?";
+            $bindArray[] = $criteria['category'];
+        }
+
+        // Staff name search
+        if (!empty($criteria['staff_name'])) {
+            $conditions[] = "users.username LIKE ?";
+            $bindArray[] = '%' . $criteria['staff_name'] . '%';
+        }
+
+        // Status filter
+        if (!empty($criteria['status'])) {
+            $conditions[] = "inp_food_request.status = ?";
+            $bindArray[] = $criteria['status'];
+        }
+
+        // Date range filter
+        if (!empty($criteria['start_date']) && !empty($criteria['end_date'])) {
+            $conditions[] = "DATE(inp_food_request.requested_date) BETWEEN ? AND ?";
+            $bindArray[] = $criteria['start_date'];
+            $bindArray[] = $criteria['end_date'];
+        }
+
+        // Build final query
+        $whereClause = "";
+        if (!empty($conditions)) {
+            $whereClause = " WHERE " . implode(" AND ", $conditions);
+        }
+
+        $query = $baseQuery . $whereClause . " ORDER BY inp_food_request.created_at DESC";
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: advanced search inp_food_request",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        $results = sqlStatement($query, $bindArray);
+
+        $total = 0;
+        foreach ($results as $value) {
+            $total++;
+        }
+
+        return [
+            'results' => $results,
+            'total' => $total
+        ];
     }
 }
