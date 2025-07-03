@@ -23,7 +23,7 @@ $authQuery = new AuthQuery();
 $procedure = $procedureQuery->getProcedure();
 $theater = $theaterQuery->getTheater();
 $providers = $authQuery->getProviders();
-$surgery = $surgeryQuery->getSurgeries();
+$surgeries = $surgeryQuery->getSurgeries();
 $inpatients = $inpatientQuery->getInpatients();
 $calenderCat =  $surgeryQuery->getCalendarCat();
 

@@ -1,33 +1,46 @@
 <div>
-
-
     <?php
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'surgery_name' => 'Appendectomy',
-            'patient_id' => 'P001',
-            'patient_name' => 'John Doe',
-            'date' => '2024-06-15',
-            'time' => '10:00 AM',
-            'surgeon' => 'Dr. Alice Smith',
-            'status' => 'Completed',
-            'room' => 'OR 1'
-        ],
-        [
-            'id' => 'S002',
-            'surgery_name' => 'Knee Arthroscopy',
-            'patient_id' => 'P003',
-            'patient_name' => 'Mike Johnson',
-            'date' => '2024-06-16',
-            'time' => '09:30 AM',
-            'surgeon' => 'Dr. Bob Williams',
-            'status' => 'Scheduled',
-            'room' => 'OR 2'
-        ],
+    $surgeriesArray = iterator_to_array($surgeries);
 
-    ];
+    // $dataSource = [
+    //     [
+    //         'id' => 'S001',
+    //         'surgery_name' => 'Appendectomy',
+    //         'patient_id' => 'P001',
+    //         'patient_name' => 'John Doe',
+    //         'date' => '2024-06-15',
+    //         'time' => '10:00 AM',
+    //         'surgeon' => 'Dr. Alice Smith',
+    //         'status' => 'Completed',
+    //         'room' => 'OR 1'
+    //     ],
+    //     [
+    //         'id' => 'S002',
+    //         'surgery_name' => 'Knee Arthroscopy',
+    //         'patient_id' => 'P003',
+    //         'patient_name' => 'Mike Johnson',
+    //         'date' => '2024-06-16',
+    //         'time' => '09:30 AM',
+    //         'surgeon' => 'Dr. Bob Williams',
+    //         'status' => 'Scheduled',
+    //         'room' => 'OR 2'
+    //     ],
+
+    // ];
+    $dataSource = array_map(function($surgery) {
+        return [
+            'id' => $surgery['id'] ?? 'N/A',
+            'surgery_name' => $surgery['procedure_name'] ?? 'N/A',
+            'patient_id' => $surgery['patient_id'] ?? 'N/A',
+            'patient_name' => trim(($surgery['fname'] ?? '') . ' ' . ($surgery['mname'] ?? '') . ' ' . ($surgery['lname'] ?? '')) ?: 'N/A',
+            'date' => $surgery['surgery_date'] ?? 'N/A',
+            'time' => $surgery['surgery_time'] ?? 'N/A',
+            'surgeon' => $surgery['surgeon'] ?? 'N/A',
+            'status' => $surgery['status'] ?? 'N/A',
+            'room' => $surgery['theater_name'] ?? 'N/A'
+        ];
+    }, $surgeriesArray);
 
 
     $columns = [
