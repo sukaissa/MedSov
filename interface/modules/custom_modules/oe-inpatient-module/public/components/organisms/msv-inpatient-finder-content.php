@@ -74,8 +74,6 @@ $surgeryQuery = new SurgeryQuery();
 $foodQuery = new FoodQuery();
 // $preDischargeChecklist = new PreDischargeChecklistQuery();
 
-
-
 $wards = $wardQuery->getWards();
 $issueList = $actionPlanQuery->getIssueList();
 $users = $authQuery->getUsers();
@@ -95,21 +93,6 @@ $message = '';
 if (isset($_GET['status'])) {
     $message = $_GET['message'];
     $display_mesasge = 'block';
-}
-$pid = isset($_GET['pid']) ? $_GET['pid'] : null;
-
-if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
-    $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
-
-    $data = [
-        'patient' => $pid,
-        'food' => $_POST['food'],
-        'staff' => $_POST['staff'],
-        'requested_date' => $_POST['requested_date'],
-        'admission_id' => $inpatientData['id'] ?? 0,
-    ];
-    $foodQuery->insertFoodRequest($data);
-
 }
 
 if (

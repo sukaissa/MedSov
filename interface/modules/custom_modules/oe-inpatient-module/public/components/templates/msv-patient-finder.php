@@ -1,24 +1,39 @@
 <?php
 ob_start();
 
-use OpenEMR\Modules\InpatientModule\InpatientQuery;
-
 require_once __DIR__ . "/../../../../../../globals.php";
-require_once __DIR__ . "/../sql/InpatientQuery.php";
 require_once __DIR__ . "/../organisms/modals/patient_info/patient_modal_content/index.php";
 
 
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
-$meal = isset($_GET['meals']) ? $_GET['meals'] : null;
+$meals = isset($_GET['meals']) ? $_GET['meals'] : null;
+
 $showModal = $pid ? true : false;
-$showMealModal = $meal ? true : false;
+$showMealsModalContent = $meals ? true : false;
 
-
-
-$inpatientQuery = new InpatientQuery();
 $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
-
 $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
+
+
+if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
+
+    $data = [
+        'patient' => $pid,
+        'food' => $_POST['food'],
+        'staff' => $_POST['staff'],
+        'requested_date' => $_POST['requested_date'],
+        'admission_id' => $inpatientData['id'] ?? 0,
+    ];
+    $foodQuery->insertFoodRequest($data);
+}
+
+if ($meals) {
+    $mealRequests = $foodQuery->getPatientFoodRequests($inpatientData['id'], $pid);
+    echo "<script>console.log(" . json_encode($mealRequests) . ");</script>";
+}
+
+
 
 
 ?>
@@ -38,9 +53,8 @@ $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("patientDetailsModal");
             if (modal) modal.classList.remove("hidden");
-            
-            <?php if ($showMealModal): ?>
-                // Show the meals modal content
+
+            <?php if ($showMealsModalContent): ?>
                 showModalContent('meals');
             <?php endif; ?>
         });

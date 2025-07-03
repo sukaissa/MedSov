@@ -164,8 +164,16 @@ class FoodQuery
     /**
      * @return array
      */
-    function getPatientFoodRequests($admission_id, $patient_id)
+    function getPatientFoodRequests($admission_id = null, $patient_id)
     {
+        $whereClause = "WHERE inp_food_request.patient_id = ?";
+        $bindArray = array($patient_id);
+        
+        if ($admission_id !== null && $admission_id !== 0) {
+            $whereClause .= " AND inp_food_request.admission_id = ?";
+            $bindArray[] = $admission_id;
+        }
+        
         $query = "SELECT inp_food_request.*,
                 patient_data.title,
                 patient_data.fname,
@@ -180,9 +188,11 @@ class FoodQuery
             JOIN users ON inp_food_request.staff_id = users.id
             JOIN inp_food_item ON inp_food_request.food_id = inp_food_item.id
             JOIN patient_data ON inp_food_request.patient_id = patient_data.pid
-            WHERE inp_food_request.patient_id=$patient_id
+            $whereClause
             ORDER BY created_at DESC";
-        $results = sqlStatement($query);
+    
+        $results = sqlStatement($query, $bindArray);
+    
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: inp_food_request",
             $patient_id, //pid
