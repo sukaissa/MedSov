@@ -1,27 +1,17 @@
 <div>
 
-
     <?php
+    $menuItemsArray = iterator_to_array($menuItems);
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'meal_name' => 'Chicken',
-            'meal_type' => 'Breakfast',
-            'price' => '100',
-            'availability' => 'Available',
-
-        ],
-        [
-            'id' => 'S002',
-            'meal_name' => 'Beef',
-            'meal_type' => 'Lunch',
-            'price' => '100',
-            'availability' => 'Available',
-        ],
-
-    ];
-
+    $dataSource = array_map(function($item) {
+        return [
+            'id' => $item['id'] ?? 'N/A',
+            'meal_name' => $item['name'] ?? 'N/A',
+            'meal_type' => $item['category'] ?? 'N/A',
+            'price' => $item['price'] ?? '0',
+            'availability' => $item['availability'] ?? 'Available',
+        ];
+    }, $menuItemsArray);
 
     $columns = [
         ['title' => 'No', 'dataIndex' => 'id'],
@@ -29,7 +19,6 @@
         ['title' => 'Meal Type', 'dataIndex' => 'meal_type'],
         ['title' => 'Price', 'dataIndex' => 'price'],
         ['title' => 'Availability', 'dataIndex' => 'availability'],
-
     ];
     $isLoading = false;
     $responsive = true;
