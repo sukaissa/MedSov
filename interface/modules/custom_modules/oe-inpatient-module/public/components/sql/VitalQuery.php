@@ -61,7 +61,7 @@ class VitalQuery
 
     function getAdmissionVitals($admissionId)
     {
-        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id=$admissionId";
+        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id=$admissionId ORDER BY time_taken DESC";
 
         EventAuditLogger::instance()->newEvent(
             "inpatient-module: inp_inpatient_vitals",
@@ -76,6 +76,28 @@ class VitalQuery
         $results = sqlStatement($query);
         return $results;
     }
+
+    function getLatestAdmissionVital($admissionId)
+    {
+        $query = "SELECT * FROM inp_inpatient_vitals WHERE admission_id = ? ORDER BY time_taken DESC LIMIT 1";
+
+        $bindArray = array($admissionId);
+
+        EventAuditLogger::instance()->newEvent(
+            "inpatient-module: inp_inpatient_vitals",
+            null, //pid
+            $_SESSION["authUser"], //authUser
+            $_SESSION["authProvider"], //authProvider
+            $query,
+            1,
+            'open-emr',
+            'dashboard'
+        );
+
+        $result = sqlQuery($query, $bindArray);
+        return $result;
+    }
+
     /**
      * @param $number
      * @param $ward_id

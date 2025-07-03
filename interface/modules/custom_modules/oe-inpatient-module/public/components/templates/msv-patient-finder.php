@@ -6,9 +6,11 @@ require_once __DIR__ . "/../organisms/modals/patient_info/patient_modal_content/
 
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
 $meals = isset($_GET['meals']) ? $_GET['meals'] : null;
+$vitals = isset($_GET['vitals']) ? $_GET['vitals'] : null;
 
 $showModal = $pid ? true : false;
 $showMealsModalContent = $meals ? true : false;
+$showVitalsModalContent = $vitals ? true : false;
 
 $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
 $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
@@ -34,6 +36,9 @@ $patientDetails = $pid ? getPatientModalContent($inpatientData, $pid) : null;
 
             <?php if ($showMealsModalContent): ?>
                 showModalContent('meals');
+            <?php endif; ?>
+            <?php if ($showVitalsModalContent): ?>
+                showModalContent('vitals');
             <?php endif; ?>
         });
     </script>
