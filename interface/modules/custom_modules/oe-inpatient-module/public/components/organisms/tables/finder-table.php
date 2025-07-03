@@ -19,7 +19,7 @@
             'dataIndex' => 'bed'
         ],
         [
-            'title' => 'Admitted',
+            'title' => 'Admitted on',
             'dataIndex' => 'admitted'
         ],
         [
@@ -51,7 +51,7 @@
                     'name' => trim(($item['fname'] ?? '') . ' ' . ($item['mname'] ?? '') . ' ' . ($item['lname'] ?? '')),
                     'ward' => $item['ward_name'] ?? '',
                     'bed' => $item['bed_number'] ?? '',
-                    'addmitted' => $item['admission_date'] ?? '',
+                    'admitted' => $item['admission_date'] ?? '',
                     'days_spent' => (isset($item['admission_date']) && $item['admission_date'])
                         ? (
                             isset($item['discharge_date']) && $item['discharge_date']
