@@ -1,31 +1,32 @@
 <div>
     <?php
+    $visitorsArray = iterator_to_array($visitors);
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'visitor_name' => 'Test1',
-            'patient_name' => 'Test1',
-            'relationship' => 'Test1',
+    $dataSource = array_map(function($visitor) {
+        // Construct full patient name
+        $patientName = trim(($visitor['patient_fname'] ?? '') . ' ' . ($visitor['patient_mname'] ?? '') . ' ' . ($visitor['patient_lname'] ?? ''));
+        if (empty($patientName)) {
+            $patientName = 'Unknown Patient';
+        }
 
+        // Construct full visitor name
+        $visitorName = trim(($visitor['visitor_fname'] ?? '') . ' ' . ($visitor['visitor_mname'] ?? '') . ' ' . ($visitor['visitor_lname'] ?? ''));
+        if (empty($visitorName)) {
+            $visitorName = $visitor['visitor_name'] ?? 'Unknown Visitor';
+        }
 
-        ],
-        [
-            'id' => 'S002',
-            'visitor_name' => 'Test2',
-            'patient_name' => 'Test2',
-            'relationship' => 'Test2',
-
-        ],
-
-    ];
-
+        return [
+            'id' => $visitor['id'] ?? 'N/A',
+            'visitor_name' => $visitorName,
+            'patient_name' => $patientName,
+            'relationship' => ucfirst(strtolower($visitor['relationship_with_patient'] ?? 'N/A')),
+        ];
+    }, $visitorsArray);
 
     $columns = [
         ['title' => 'Visitor Name', 'dataIndex' => 'visitor_name'],
         ['title' => 'Patient Name', 'dataIndex' => 'patient_name'],
         ['title' => 'Relationship', 'dataIndex' => 'relationship'],
-
     ];
     $isLoading = false;
     $responsive = true;
