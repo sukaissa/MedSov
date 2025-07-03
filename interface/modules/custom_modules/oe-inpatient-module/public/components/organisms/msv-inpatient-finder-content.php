@@ -87,9 +87,9 @@ $calenderCat =  $surgeryQuery->getCalendarCat();
 
 $sidebar_status =  'none';
 $current_list = '';
-
 $display_mesasge = 'none';
 $message = '';
+
 if (isset($_GET['status'])) {
     $message = $_GET['message'];
     $display_mesasge = 'block';

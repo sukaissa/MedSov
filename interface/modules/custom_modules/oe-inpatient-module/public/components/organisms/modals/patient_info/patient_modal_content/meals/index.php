@@ -15,8 +15,21 @@ $inpatientQuery = new InpatientQuery();
 
 $pid = isset($_GET['pid']) ? $_GET['pid'] : null;
 $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
-$mealRequests = $pid ? $foodQuery->getPatientFoodRequests($inpatientData['id'], $pid) : null;
 
+if (isset($_POST['new_food_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $inpatientData = $pid ? $inpatientQuery->getInpatientByPid($pid) : null;
+
+    $data = [
+        'patient' => $pid,
+        'food' => $_POST['food'],
+        'staff' => $_POST['staff'],
+        'requested_date' => $_POST['requested_date'],
+        'admission_id' => $inpatientData['id'] ?? 0,
+    ];
+    $foodQuery->insertFoodRequest($data);
+}
+
+$mealRequests = $pid ? $foodQuery->getPatientFoodRequests($inpatientData['id'], $pid) : null;
 $patientsMealRequests = isset($mealRequests) ? iterator_to_array($mealRequests) : [];
 echo "<script>console.log(" . json_encode($patientsMealRequests) . ");</script>";
 
