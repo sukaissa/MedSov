@@ -65,7 +65,6 @@ $foodItems = $foodQuery->getMenuItems();
 $users = $authQuery->getUsers();
 
 ?>
-
 <main class="flex-1">
     <div class="bg-gradient-to-b h-[241px] from-[#FFA97F] to-[#ED2024] p-6">
         <div class="flex justify-between items-center">
