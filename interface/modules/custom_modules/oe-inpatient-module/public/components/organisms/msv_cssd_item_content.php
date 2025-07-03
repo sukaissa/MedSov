@@ -1,9 +1,55 @@
 <?php
 
+use OpenEMR\Modules\InpatientModule\AuthQuery;
+use OpenEMR\Modules\InpatientModule\CSSDServiceQuery;
 
 require_once __DIR__ . "/../../../../../../globals.php";
+require_once __DIR__ . "/../sql/AuthQuery.php";
+require_once __DIR__ . "/../sql/CSSDServiceQuery.php";
+
+$authQuery = new AuthQuery();
+$cssd = new CSSDServiceQuery();
+
+$users = $authQuery->getUsers();
+$providers = $authQuery->getProviders();
+$getCssd = $cssd->getCSSDService();
+$getCssdItems = $cssd->getCSSDServiceItem();
+
+$display_mesasge = 'none';
+$message = '';
+if (isset($_GET['status'])) {
+    $message = $_GET['message'];
+    $display_mesasge = 'block';
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['search'])) {
+} elseif (isset($_POST['new_service_item']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'item_name' => $_POST['item_name'],
+        'created_by' => $user['fname'],
+    ];
+    $cssd->insertCSSDServiceItem($data);
+    header('location:cssd_item.php?status=success&message=CSSD Service Item Added Successfully');
+} elseif (isset($_POST['service_id']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'id' => $_POST['service_id'],
+        'item_name' => $_POST['item_name'],
+        'updated_by' => $user['fname'],
+    ];
+    $cssd->updateCSSDServiceItem($data);
+    header('location:cssd_item.php?status=success&message=CSSD Service Item Updated Successfully');
+} elseif (isset($_POST['deleteId']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $cssd->destroyCSSDServiceItem($_POST['deleteId']);
+    header('location:cssd_item.php?status=success&message=CSSD Service Item Deleted Successfully');
+}
 
 
+if (isset($_GET['search']) && $_SERVER['REQUEST_METHOD'] == "GET") {
+    $searchedWord = $_GET['search'];
+    // $getCssdItem = $cssd->searchCSSDServiceItem($searchedWord);
+} else {
+    $getCssdItem = $cssd->getCSSDServiceItem();
+}
 
 ?>
 

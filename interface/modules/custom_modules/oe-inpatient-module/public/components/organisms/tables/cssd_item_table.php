@@ -1,21 +1,13 @@
 <div>
     <?php
+    $getCssdItems = iterator_to_array($getCssdItems);
 
-    $dataSource = [
-        [
-            'id' => 'S001',
-            'service_name' => 'Test1',
-
-
-        ],
-        [
-            'id' => 'S002',
-            'service_name' => 'Test2',
-
-        ],
-
-    ];
-
+    $dataSource = array_map(function ($item) {
+        return [
+            'id' => $item['id'] ?? 'N/A',
+            'service_name' => $item['item_name'] ?? 'N/A',
+        ];
+    }, $getCssdItems);
 
     $columns = [
         ['title' => 'Service Name', 'dataIndex' => 'service_name']
@@ -27,6 +19,6 @@
     include_once __DIR__ . '/data-table.php';
     ?>
 
-
+    
 
 </div>

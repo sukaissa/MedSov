@@ -1,9 +1,74 @@
 <?php
+use OpenEMR\Modules\InpatientModule\AuthQuery;
+use OpenEMR\Modules\InpatientModule\CSSDServiceQuery;
 
 
 require_once __DIR__ . "/../../../../../../globals.php";
+require_once __DIR__ . "/../sql/AuthQuery.php";
+require_once __DIR__ . "/../sql/CSSDServiceQuery.php";
+
+$authQuery = new AuthQuery();
+$cssd = new CSSDServiceQuery();
 
 
+$providers = $authQuery->getProviders();
+$getCssd = $cssd->getCSSDService();
+$getCssdItem = $cssd->getCSSDServiceItem();
+$getCssdRequest = $cssd->getCSSDServiceRequest();
+
+
+$display_mesasge = 'none';
+$message = '';
+if (isset($_GET['status'])) {
+    $message = $_GET['message'];
+    $display_mesasge = 'block';
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['search'])) {
+    //$surgery = $surgeryQuery->searchVisitor($_POST['search']);
+    // header('Refresh:0');
+
+} elseif (isset($_POST['new_service_request']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'service_id' => $_POST['service_id'],
+        'item_id' => $_POST['item_id'],
+        'surgery_id' => 1,
+        // 'department_id' => $_POST['department_id'],
+        'quantity' => $_POST['quantity'],
+        'request_date' => $_POST['request_date'],
+        'request_by' => $_POST['request_by'],
+        'status' => "Pending",
+        'request_processed_date' => $_POST['request_processed_date'],
+        'request_processed_by' => $_POST['request_processed_by'],
+        'quantity_returned' => $_POST['quantity_returned'],
+        'receipt_date' => $_POST['receipt_date'],
+        'received_by' => $_POST['received_by'],
+    ];
+    $cssd->insertCSSDServiceRequest($data);
+    header('location:msv_cssd_request_content.php?status=success&message=CSSD Service Requested  Successfully');
+} elseif (isset($_POST['id']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $data = [
+        'id' => $_POST['id'],
+        'service_id' => $_POST['service_id'],
+        'item_id' => $_POST['item_id'],
+        // 'department_id' => $_POST['department_id'],
+        'quantity' => $_POST['quantity'],
+        'request_date' => $_POST['request_date'],
+        'request_by' => $_POST['request_by'],
+        'status' => $_POST['status'],
+        'request_processed_date' => $_POST['request_processed_date'],
+        'request_processed_by' => $_POST['request_processed_by'],
+        'quantity_returned' => $_POST['quantity_returned'],
+        'receipt_date' => $_POST['receipt_date'],
+        'received_by' => $_POST['received_by'],
+    ];
+
+    $cssd->updateCSSDServiceRequest($data);
+    header('location:msv_cssd_request_content.php?status=success&message=CSSD Service Request Updated Successfully');
+} elseif (isset($_POST['deleteId']) && $_SERVER['REQUEST_METHOD'] == "POST") {
+    $cssd->destroyCSSDServiceRequest($_POST['deleteId']);
+    header('location:msv_cssd_request_content.php?status=success&message=CSSD Service Request Deleted Successfully');
+}
 
 ?>
 
